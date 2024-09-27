@@ -3,7 +3,6 @@
 import Layout from "@/layout";
 import React from "react";
 import InputComponent from "@/components/Global/InputComponent";
-import DropdownComponent from "@/components/Global/DropdownComponent";
 import Button from "../../components/Global/Button";
 import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
@@ -22,7 +21,7 @@ function Contact() {
   const sendEmail = async () => {
     try {
       if (!name || !email || !phone || !message) {
-        toast.error("Please fill all the fields");
+        toast.error("Kindly fill all the fields");
       } else {
         setLoading(true);
         const templateParams = {
@@ -41,7 +40,9 @@ function Contact() {
 
         console.log(res);
         setLoading(false);
-        toast.success("Email sent successfully");
+        toast.success(
+          "Thank you for reaching out to WeCr8t! We have received your message and will get back to you shortly."
+        );
         setEmail("");
         setName("");
         setPhone("");

@@ -77,9 +77,9 @@ export const TEAMS = [
 // REVIEWS
 export const REVIEWS = [
   {
-    name: "Mfoniso Ibokette",
-    position: "Designer BWL",
-    text: "“The work was done superbly, they were able to present my ideas in visuals, from the flowcharts to illustration, Excellent!”",
+    name: "Harold Uku",
+    position: "Founding Partner H.O.D Legal",
+    text: "We had the pleasure of engaging WeCr8T to develop a website for our firm, and the entire experience was exceptional. The team delivered a website that was sleek, user-friendly, and responsive, perfectly aligning with our vision. One standout aspect of their service was how quickly they understood our needs and translated them into a functional and attractive site that has significantly improved our client engagement.",
     image: "/mfoniso.png",
   },
   {
