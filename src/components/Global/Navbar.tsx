@@ -18,7 +18,7 @@ function Navbar() {
     <div className="flex items-center justify-between border-b border-[#2025261A] border-opacity-[0.1] font-grotesk text-base font-medium sticky top-0 z-20 h-[100px] text-[#ADADAD] bg-[#F4F4F4] px-[80px]">
       <div className="lg:hidden">
         <Link href="/" className="">
-          <Image src={LOGO} width={138.5} height={50} alt="Logo" />
+          <Image src={LOGO} width={109.33} height={40} alt="Logo" />
         </Link>
       </div>
 
@@ -60,7 +60,7 @@ function Navbar() {
       {/* Logo */}
       <div className="">
         <Link href="/" className="">
-          <Image src={LOGO} width={138.5} height={50} alt="Logo" />
+          <Image src={LOGO} width={109.33} height={40} alt="Logo" />
         </Link>
       </div>
 
