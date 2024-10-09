@@ -9,8 +9,8 @@ import AnimatedButton from "../ui/animatedButton";
 
 function HomeHero() {
   return (
-    <section className=" font-grotesk text-[#202526] space-y-[20px] pt-[70px] flex flex-col items-center justify-center hero_bg">
-      <div className="flex flex-col gap-10 items-center justify-center ">
+    <section className=" font-grotesk text-[#202526] pt-[100px] flex flex-col items-center justify-center hero_bg ">
+      <div className="flex flex-col gap-[50px] items-center justify-center ">
         <div>
           <p className="leading-[30px] lg:leading-[81px] font-bold text-[24px] lg:text-[70px] text-center ">
             Transform Your{" "}
@@ -21,20 +21,20 @@ function HomeHero() {
           </p>
 
           <p className="text-center text-[12px] lg:text-lg font-poppins font-normal leading-6 text-[#202526CC] pt-5">
-            At <span>LetsCr8T,</span> we build more than just websites – we
-            create online experiences that help your
+            At <span>LetsCr8T,</span> we create unforgettable first digital
+            experiences – that help your
             <br className="hidden lg:block" />
             business grow.
             <br className="hidden lg:block" />
             Whether you&apos;re a startup, small business, or an established
             company,
             <br className="hidden lg:block" />
-            we are devoted in bringing your vision to life and making sure your
+            we are devoted in bringing your vision to life and ensuring your
             brand shines online.
           </p>
         </div>
 
-        <div className="flex gap-10 ">
+        <div className="flex gap-[34px]">
           <Link href="/contact" className="">
             <AnimatedButton
               className="w-[160px] lg:w-[229px] h-[56px] "
@@ -44,13 +44,13 @@ function HomeHero() {
             </AnimatedButton>
           </Link>
           <Link href="/portfolio" className="">
-            <Button className="border border-[#FF5A12] rounded-full  w-[160px] lg:w-[229px] h-[56px] hover:bg-[#FF5A12] hover:text-white">
+            <Button className="border border-[#FF5A12] rounded-full  w-[160px] lg:w-[229px] h-[56px] hover:bg-[#FF5A12] hover:text-white font-manrope font-semibold text-base">
               See Portfolio
             </Button>
           </Link>
         </div>
 
-        <div className="text-[#ADADAD] text-[13px] font-normal flex gap-1 items-center font-poppins">
+        <div className="text-[#ADADAD] text-[13px] font-normal flex gap-[11px] items-center font-poppins">
           <h3>SCROLL</h3>
           <MoveDown size={13} className="animate-bounce" color="#FF5A12" />
         </div>
@@ -60,7 +60,7 @@ function HomeHero() {
         Trusted By The Big Names
       </h3>
 
-      <div className="mt-[50px] flex justify-center items-center w-full h-[150px] bg-[#202526] ">
+      <div className="mt-[20px] flex justify-center items-center w-full h-[150px] bg-[#202526] ">
         <Marquee
           pauseOnClick
           pauseOnHover
@@ -72,7 +72,7 @@ function HomeHero() {
           gradientWidth={300}
           className="flex justify-center items-center overflow-x-hidden h-full"
         >
-          <div className="flex items-center gap-[29px] h-[41px] ">
+          <div className="flex items-center gap-[100px] h-[41px] ">
             <Image
               src="/logo-white-dark.png"
               alt="wecr8t"

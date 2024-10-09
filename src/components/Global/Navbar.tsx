@@ -15,7 +15,7 @@ function Navbar() {
   const [open, setOpen] = React.useState(false);
 
   return (
-    <div className="flex items-center justify-evenly border-b border-[#2025261A] border-opacity-[0.1] font-grotesk text-base font-medium sticky top-0 z-20 h-[100px] text-[#ADADAD] bg-white">
+    <div className="flex items-center justify-between border-b border-[#2025261A] border-opacity-[0.1] font-grotesk text-base font-medium sticky top-0 z-20 h-[100px] text-[#ADADAD] bg-[#F4F4F4] px-[80px]">
       <div className="lg:hidden">
         <Link href="/" className="">
           <Image src={LOGO} width={138.5} height={50} alt="Logo" />
@@ -39,17 +39,17 @@ function Navbar() {
           <Link
             key={index}
             href={link.url}
-            className={`relative uppercase text-[14px] lg:text-[16px] font-[600] text-center ${
+            className={`relative uppercase font-medium text-[#202526] text-center ${
               currentPath === link.url
                 ? "text-[#202526]"
                 : "text-[#ADADAD] hover:text-[#202526]"
-            } before:content-[''] before:absolute before:w-0 before:h-[2px] before:bottom-0 before:left-0 before:bg-[#FF5A12] before:transition-width before:duration-300 before:ease-in-out hover:before:w-full`}
+            } before:content-[''] before:absolute before:w-0 before:h-[1.5px] before:bottom-0 before:left-0 before:bg-[#FF5A12] before:transition-width before:duration-300 before:ease-in-out hover:before:w-full`}
           >
             {link.name}
             <div
               className={
                 currentPath === link.url
-                  ? "bg-[#FF5A12]  w-full h-[1.5px] absolute  "
+                  ? "bg-[#FF5A12]  w-full h-[1.5px] absolute hover:h-0  "
                   : ""
               }
             />
@@ -65,7 +65,7 @@ function Navbar() {
       </div>
 
       {/* Social Media Icons */}
-      <div className="flex gap-5 items-center">
+      <div className="flex gap-[30px] items-center">
         <div className="flex gap-[20px] items-center">
           <Linkedin
             color="gray"
@@ -81,8 +81,8 @@ function Navbar() {
             className="text-gray-500 hover:fill-[#FF5A12] cursor-pointer transition-colors duration-300"
           />
         </div>
-        <Link href="/contact" className="">
-          <AnimatedButton to="/contact" className="w-[147px] h-[56px]">
+        <Link href="/project" className="">
+          <AnimatedButton className="w-[147px] h-[56px]">
             Contact Us
           </AnimatedButton>
         </Link>
@@ -110,7 +110,7 @@ function Navbar() {
         </div>
         <div className="mt-20">
           <Link href="/contact" className="pt-[20px] w-[180px]">
-            <AnimatedButton to="/contact">Get Started</AnimatedButton>
+            <AnimatedButton>Get Started</AnimatedButton>
           </Link>
         </div>
       </div>

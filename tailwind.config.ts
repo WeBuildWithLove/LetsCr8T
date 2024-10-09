@@ -87,7 +87,7 @@ const config = {
       },
       heartbeat: {
         "0%, 70%": { width: "26px" }, // Initial state, hold for 30% of the duration
-        "40%": { width: "14px" }, // Shrink to 14px
+        "40%": { width: "19px" }, // Shrink to 14px
         "50%": { width: "26px" }, // Back to original size
         "100%": { width: "26px" },
       },
