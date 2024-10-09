@@ -41,18 +41,13 @@ function Navbar() {
             href={link.url}
             className={`relative uppercase font-medium text-[#202526] text-center ${
               currentPath === link.url
-                ? "text-[#202526]"
-                : "text-[#ADADAD] hover:text-[#202526]"
-            } before:content-[''] before:absolute before:w-0 before:h-[1.5px] before:bottom-0 before:left-0 before:bg-[#FF5A12] before:transition-width before:duration-300 before:ease-in-out hover:before:w-full`}
+                ? "text-[#202526]" // Active link: no hover effect, underline applied
+                : "text-[#ADADAD] hover:text-[#202526] hover:before:w-full"
+            } before:content-[''] before:absolute before:w-0 before:h-[1.5px] before:bottom-0 before:left-0 before:bg-[#FF5A12] before:transition-all before:duration-300 before:ease-in-out ${
+              currentPath === link.url ? "before:w-full" : "hover:before:w-full"
+            }`}
           >
             {link.name}
-            <div
-              className={
-                currentPath === link.url
-                  ? "bg-[#FF5A12]  w-full h-[1.5px] absolute hover:h-0  "
-                  : ""
-              }
-            />
           </Link>
         ))}
       </div>
