@@ -48,22 +48,6 @@ function Footer() {
             </Link>
           </div>
         </div>
-        {/* <div className="">
-          <p className="uppercase text-[20px] font-[600]">
-            SUBSCRIBE to our Newsletter
-          </p>
-          <p>
-            Want to stay up to date with news and updates about our product?
-            Subscribe.
-          </p>
-          <div className="flex flex-row lg:flex-col w-full mt-[20px]  lg:space-y-[20px] space-x-[10px] lg:space-x-0">
-            <input
-              type="text"
-              className="w-full h-[40px] lg:h-[50px] px-[10px] rounded-[5px] border outline-none"
-            />
-            <Button type="filled" fill="#4B0082" text="Subscribe" />
-          </div>
-        </div> */}
       </div>
       <div className="w-full border-t p-[20px] border-[#CFCFD1] flex items-center justify-center space-x-[5px] mt-[50px]">
         <FaRegCopyright />

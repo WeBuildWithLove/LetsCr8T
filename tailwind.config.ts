@@ -1,13 +1,13 @@
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
 
 const config = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   prefix: "",
   theme: {
     container: {
@@ -18,8 +18,12 @@ const config = {
       },
     },
     extend: {
-      fontFamily:{
-        manrope: ["Manrope", "sans-serif"]
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+        urban: ["var(--font-urban)", "sans-serif"], // Use Urban Storm font
+        grotesk: ["var(--font-grotesk)", "sans-serif"],
+        eb_garamond: ["eb_garamond", "sans-serif"],
+        manrope: ["Manrope", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -57,6 +61,14 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+
+        cr8tBlack: "#202526",
+        cr8tOrange: "#FF5A12",
+        cr8tWhite: "rgb(255, 255, 255)",
+        trustBlack: "rgb(0, 0, 0)",
+      },
+      transitionProperty: {
+        width: "width", // Custom transition property for width
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -73,14 +85,20 @@ const config = {
           to: { height: "0" },
         },
       },
+      heartbeat: {
+        "0%, 70%": { width: "26px" }, // Initial state, hold for 30% of the duration
+        "40%": { width: "14px" }, // Shrink to 14px
+        "50%": { width: "26px" }, // Back to original size
+        "100%": { width: "26px" },
+      },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        heartbeat: "heartbeat 2.5s ease-in-out infinite",
       },
-
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config
+} satisfies Config;
 
-export default config
+export default config;

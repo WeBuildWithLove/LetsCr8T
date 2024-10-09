@@ -1,6 +1,7 @@
 // MEET THE TEAM SECTION
 export const TEAMS = [
   {
+    id: "1",
     name: "Preye Omusuku",
     position: "Frontend Developer",
     description:
@@ -10,6 +11,7 @@ export const TEAMS = [
     image: "/preye.png",
   },
   {
+    id: "2",
     name: "Aniebiet Obo",
     position: "Frontend Developer",
     description:
@@ -19,6 +21,7 @@ export const TEAMS = [
     image: "/aniebet.png",
   },
   {
+    id: "3",
     name: "Kufre-abasi Bassey",
     position: "Frontend Developer",
     description:
@@ -28,6 +31,7 @@ export const TEAMS = [
     image: "/kufre.png",
   },
   {
+    id: "4",
     name: "Mfoniso Ibokette",
     position: "Product Designer",
     description:
@@ -37,6 +41,7 @@ export const TEAMS = [
     image: "/mfoniso.png",
   },
   {
+    id: "5",
     name: "Shalom James",
     position: "UX/UI Designer",
     description:
@@ -46,6 +51,7 @@ export const TEAMS = [
     image: "/shalom.png",
   },
   {
+    id: "6",
     name: "Gift Okoro",
     position: "Frontend Developer",
     description:
@@ -55,6 +61,7 @@ export const TEAMS = [
     image: "/gift.png",
   },
   {
+    id: "7",
     name: "Christian Nnaji",
     position: "UX/UI Designer",
     description:
@@ -64,6 +71,7 @@ export const TEAMS = [
     image: "/christian.png",
   },
   {
+    id: "8",
     name: "Osunkoya Jubril",
     position: "Frontend Developer",
     description:
@@ -111,27 +119,32 @@ export const REVIEWS = [
 // FAQs
 export const FAQS = [
   {
+    id: "1",
     question: "What services does WeCr8t offer?",
     answer:
       "We specialize in website and web app development, branding and identity design, web maintenance and support, and content strategy and copywriting. Whether you're building from scratch or need ongoing support, we’ve got you covered.",
   },
   {
+    id: "2",
     question: "How can I get started with WeCr8t?",
     answer:
       "It’s easy! Just click the 'Start Project' button and fill out a quick form, or schedule a free consultation with our team. We’ll discuss your needs and create a plan that’s right for your business.",
   },
   {
+    id: "3",
     question: "How long does it take to build a website?",
     answer:
       "The timeline depends on the complexity of your project, but typically, a custom website can take anywhere from 4 to 8 weeks from start to launch. We’ll provide you with a detailed timeline after our initial consultation.",
   },
   {
+    id: "4",
     question:
       "What are the criteria for selecting small businesses for the charity initiative?",
     answer:
       "We focus on small businesses that demonstrate a need for support in building their online presence. Each month, we choose one business based on their application, growth potential, and how we can best assist them with free web services.",
   },
   {
+    id: "5",
     question: "What are your prices?",
     answer:
       "Our prices vary depending on the type and complexity of the project. For example, a basic website will cost less than a custom web app with advanced features. Contact us for a personalized quote based on your specific needs.",

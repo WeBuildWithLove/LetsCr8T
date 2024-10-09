@@ -36,11 +36,11 @@ const FAQ = () => {
       </p>
       <div className="mt-7">
         <Accordion type="single" collapsible>
-          {FAQS.map((faq) => (
+          {FAQS.map((faq, index) => (
             <ReviewItem
               question={faq.question}
               answer={faq.answer}
-              key={faq.question}
+              key={index}
             />
           ))}
         </Accordion>

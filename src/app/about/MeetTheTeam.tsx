@@ -100,9 +100,9 @@ const MeetTheTeam = () => {
         </p>
       </div>
       <div className="hidden mt-6 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-10 lg:gap-20">
-        {TEAMS.map((team) => (
+        {TEAMS.map((team, id) => (
           <TeamItem
-            key={team.name}
+            key={id}
             name={team.name}
             desc={team.description}
             position={team.position}

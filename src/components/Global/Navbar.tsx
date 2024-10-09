@@ -1,12 +1,13 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
-
 import Link from "next/link";
 import React from "react";
-import Button from "./Button";
-import { FiMenu } from "react-icons/fi";
-import { FiPlus } from "react-icons/fi";
+import { FiMenu, FiPlus } from "react-icons/fi";
 import { usePathname, useRouter } from "next/navigation";
+import LOGO from "../../../public/LOGO.svg";
+import Image from "next/image";
+import { Github, Linkedin } from "lucide-react";
+import Twitter from "@/app/assets/icons/Twitter";
+import AnimatedButton from "../ui/animatedButton";
 
 function Navbar() {
   const router = useRouter();
@@ -14,55 +15,84 @@ function Navbar() {
   const [open, setOpen] = React.useState(false);
 
   return (
-    <div className="flex items-center justify-between p-0 lg:p-[20px_30px] border font-manrope sticky bg-white top-0 z-20 shadow">
-      <div className="p-[20px] lg:p-0 flex items-center justify-between lg:justify-start w-full lg:w-fit">
-        <Link href="/" className="flex flex-col text-end">
-          <img src="/logo.png" className="lg:w-[150px] w-[120px]" alt="Logo" />
-          <p className="text-[11px]">Your Vision, Our Craft</p>
+    <div className="flex items-center justify-evenly border-b border-[#2025261A] border-opacity-[0.1] font-grotesk text-base font-medium sticky top-0 z-20 h-[100px] text-[#ADADAD] bg-white">
+      <div className="lg:hidden">
+        <Link href="/" className="">
+          <Image src={LOGO} width={138.5} height={50} alt="Logo" />
         </Link>
-
-        <div className="lg:hidden" onClick={() => setOpen(!open)}>
-          {open ? (
-            <FiPlus
-              onClick={() => setOpen(!open)}
-              className="text-[30px] rotate-45"
-            />
-          ) : (
-            <FiMenu className="text-[25px]" />
-          )}
-        </div>
       </div>
-      <div className="hidden  lg:flex items-center space-x-[40px] mr-[-10%] ">
+
+      <div className="lg:hidden" onClick={() => setOpen(!open)}>
+        {open ? (
+          <FiPlus
+            onClick={() => setOpen(!open)}
+            className="text-[30px] rotate-45"
+          />
+        ) : (
+          <FiMenu className="text-[25px]" />
+        )}
+      </div>
+
+      {/* Navigation Links */}
+      <div className="hidden lg:flex items-center gap-[20px]">
         {links.map((link, index) => (
           <Link
             key={index}
             href={link.url}
-            className={
+            className={`relative uppercase text-[14px] lg:text-[16px] font-[600] text-center ${
               currentPath === link.url
-                ? "text-[#4B0082] hover:text-primary uppercase text-[14px] lg:text-[16px] font-[600] text-center relative"
-                : "uppercase"
-            }
+                ? "text-[#202526]"
+                : "text-[#ADADAD] hover:text-[#202526]"
+            } before:content-[''] before:absolute before:w-0 before:h-[2px] before:bottom-0 before:left-0 before:bg-[#FF5A12] before:transition-width before:duration-300 before:ease-in-out hover:before:w-full`}
           >
             {link.name}
             <div
               className={
                 currentPath === link.url
-                  ? "bg-[#4B0082] w-full h-[3px] absolute top-[54px] "
+                  ? "bg-[#FF5A12]  w-full h-[1.5px] absolute  "
                   : ""
               }
             />
           </Link>
         ))}
       </div>
-      <Link href="/contact" className="hidden lg:flex w-[180px]">
-        <Button type="outlined" text="Get Started" fill="#4B0082" />
-      </Link>
+
+      {/* Logo */}
+      <div className="">
+        <Link href="/" className="">
+          <Image src={LOGO} width={138.5} height={50} alt="Logo" />
+        </Link>
+      </div>
+
+      {/* Social Media Icons */}
+      <div className="flex gap-5 items-center">
+        <div className="flex gap-[20px] items-center">
+          <Linkedin
+            color="gray"
+            size={24}
+            strokeWidth={1}
+            className="text-gray-500 hover:fill-[#FF5A12] cursor-pointer transition-colors duration-300"
+          />
+          <Twitter className="text-gray-500 hover:fill-[#FF5A12] hover:text-[#FF5A12] cursor-pointer transition-colors duration-300" />
+          <Github
+            color="gray"
+            size={24}
+            strokeWidth={1}
+            className="text-gray-500 hover:fill-[#FF5A12] cursor-pointer transition-colors duration-300"
+          />
+        </div>
+        <Link href="/contact" className="">
+          <AnimatedButton to="/contact" className="w-[147px] h-[56px]">
+            Contact Us
+          </AnimatedButton>
+        </Link>
+      </div>
 
       {/* Mobile Menu */}
       <div
         className={`${
           open ? "left-0" : "left-[-100%]"
-        } lg:hidden fixed top-0 h-screen bg-[#4B0082] w-[80%] p-[20px] transition-all duration-300 ease-in-out`} // Add smooth transition here
+        } lg:hidden fixed top-0 h-screen bg-[#4B0082] w-[80%] p-[20px] transition-all duration-300 ease-in-out`}
       >
         <div className="flex flex-col items-start space-y-[40px]">
           {links.map((link, index) => (
@@ -70,11 +100,9 @@ function Navbar() {
               key={index}
               onClick={() => setOpen(!open)}
               href={link.url}
-              className={
-                currentPath === link.url
-                  ? "text-white hover:text-primary uppercase text-[20px] font-[600] text-center"
-                  : "uppercase text-white"
-              }
+              className={`uppercase text-white font-[600] text-center ${
+                currentPath === link.url ? "text-white" : "hover:text-[#4B0082]"
+              }`}
             >
               {link.name}
             </Link>
@@ -82,7 +110,7 @@ function Navbar() {
         </div>
         <div className="mt-20">
           <Link href="/contact" className="pt-[20px] w-[180px]">
-            <Button type="outlined" text="Get Started" fill="#4B0082" />
+            <AnimatedButton to="/contact">Get Started</AnimatedButton>
           </Link>
         </div>
       </div>
@@ -92,25 +120,10 @@ function Navbar() {
 
 export default Navbar;
 
+// Link items for navigation
 const links = [
-  {
-    name: "Home",
-    url: "/",
-  },
-  {
-    name: "About",
-    url: "/about",
-  },
-  {
-    name: "Portfolio",
-    url: "/portfolio",
-  },
-  {
-    name: "Services",
-    url: "/services",
-  },
-  {
-    name: "Contact",
-    url: "/contact",
-  },
+  { name: "Home", url: "/" },
+  { name: "Portfolio", url: "/portfolio" },
+  { name: "Services", url: "/services" },
+  { name: "About", url: "/about" },
 ];

@@ -45,9 +45,9 @@ const Recommendations = () => {
     <section className="max-container padding-container mb:mb-28">
       <Carousel className="w-full">
         <CarouselContent className="flex gap-10">
-          {REVIEWS.map((review) => (
+          {REVIEWS.map((review, index) => (
             <ReviewItem
-              key={review.name}
+              key={index}
               name={review.name}
               text={review.text}
               position={review.position}

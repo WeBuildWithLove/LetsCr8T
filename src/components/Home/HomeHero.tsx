@@ -1,96 +1,123 @@
 "use client";
-
 import React from "react";
-import Button from "../Global/Button";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
 import Link from "next/link";
+import { Button } from "../ui/button";
+import { MoveDown } from "lucide-react";
+import AnimatedButton from "../ui/animatedButton";
 
 function HomeHero() {
   return (
-    <div className="space-y-[20px] lg:space-y-[40px] font-manrope pt-[100px] flex flex-col items-center justify-center">
-      <p className="leading-[30px] lg:leading-[75px] font-[800] text-[24px] lg:text-[70px] text-center text-typography2">
-        Transform Your <span className="text-[#4B0082]">Business</span> with{" "}
-        <br className="hidden lg:block" /> Stunning Digital Solutions
-      </p>
+    <section className=" font-grotesk text-[#202526] space-y-[20px] pt-[70px] flex flex-col items-center justify-center hero_bg">
+      <div className="flex flex-col gap-10 items-center justify-center ">
+        <div>
+          <p className="leading-[30px] lg:leading-[81px] font-bold text-[24px] lg:text-[70px] text-center ">
+            Transform Your{" "}
+            <span className="text-[#FF5A12] font-normal font-urban ">
+              Business
+            </span>{" "}
+            with <br className="hidden lg:block" /> Stunning Digital Solutions
+          </p>
 
-      <p className="text-center text-[12px] lg:text-[16px] px-[10px]">
-        At <span>WeCr8t,</span> we build more than just websites – we create
-        online experiences that help your business grow.
-        <br className="hidden lg:block" />
-        Whether you&apos;re a startup, small business, or an established
-        company,
-        <br className="hidden lg:block" />
-        we bring your vision to life and make sure your brand shines online.
-      </p>
+          <p className="text-center text-[12px] lg:text-lg font-poppins font-normal leading-6 text-[#202526CC] pt-5">
+            At <span>LetsCr8T,</span> we build more than just websites – we
+            create online experiences that help your
+            <br className="hidden lg:block" />
+            business grow.
+            <br className="hidden lg:block" />
+            Whether you&apos;re a startup, small business, or an established
+            company,
+            <br className="hidden lg:block" />
+            we are devoted in bringing your vision to life and making sure your
+            brand shines online.
+          </p>
+        </div>
 
-      <Link href="/contact" className="w-[160px] lg:w-[220px]">
-        <Button type="filled" text="START PROJECT" fill="#4B0082" />
-      </Link>
-      <div className="h-[69px] w-full bg-[#4B0082] mt-[50px] flex justify-center items-center">
-        <Marquee pauseOnClick pauseOnHover className=" ">
-          <div className="flex items-center gap-[60px]">
-            <div className="flex justify-center items-center w-[120px]">
-              <Image src="/chess.png" alt="chess" width={60} height={60} />
-            </div>
-            <div className="flex justify-center items-center w-[120px]">
-              <Image
-                src="/logo-white-dark.png"
-                alt="wecr8t"
-                width={150}
-                height={69}
-              />
-            </div>
-            <div className="flex justify-center items-center w-[120px]">
-              <Image
-                src="/white-hod.png"
-                alt="white-hod"
-                width={100}
-                height={60}
-              />
-            </div>
-            <div className="flex justify-center items-center w-[120px]">
-              <Image
-                src="/save-d-bride.png"
-                alt="save-d-bride"
-                width={80}
-                height={60}
-              />
-            </div>
-            <div className="flex justify-center items-center w-[120px]">
-              <Image
-                src="/splash-screen.png"
-                alt="splash-screen"
-                width={100}
-                height={60}
-              />
-            </div>
-            <div className="flex justify-center items-center w-[120px]">
-              <Image
-                src="/nurtifeed.png"
-                alt="nurtifeed"
-                width={100}
-                height={60}
-              />
-            </div>
-            <div className="flex justify-center items-center w-[120px]">
-              <Image
-                src="/frameasy.png"
-                alt="frameasy"
-                width={100}
-                height={60}
-              />
-            </div>
-            <div className="flex justify-center items-center w-[120px]">
-              <Image src="/readr.png" alt="readr" width={65} height={60} />
-            </div>
-            <div className="flex justify-center items-center w-[120px]">
-              <Image src="/gericht.png" alt="gericht" width={60} height={60} />
-            </div>
+        <div className="flex gap-10 ">
+          <Link href="/contact" className="">
+            <AnimatedButton
+              className="w-[160px] lg:w-[229px] h-[56px] "
+              withHeartbeat
+            >
+              Start Project
+            </AnimatedButton>
+          </Link>
+          <Link href="/portfolio" className="">
+            <Button className="border border-[#FF5A12] rounded-full  w-[160px] lg:w-[229px] h-[56px] hover:bg-[#FF5A12] hover:text-white">
+              See Portfolio
+            </Button>
+          </Link>
+        </div>
+
+        <div className="text-[#ADADAD] text-[13px] font-normal flex gap-1 items-center font-poppins">
+          <h3>SCROLL</h3>
+          <MoveDown size={13} className="animate-bounce" color="#FF5A12" />
+        </div>
+      </div>
+
+      <h3 className="text-[#ADADAD] font-grotesk font-medium text-2xl pt-[30px]">
+        Trusted By The Big Names
+      </h3>
+
+      <div className="mt-[50px] flex justify-center items-center w-full h-[150px] bg-[#202526] ">
+        <Marquee
+          pauseOnClick
+          pauseOnHover
+          autoFill
+          loop={0}
+          speed={60}
+          gradient={true}
+          gradientColor="#202526"
+          gradientWidth={300}
+          className="flex justify-center items-center overflow-x-hidden h-full"
+        >
+          <div className="flex items-center gap-[29px] h-[41px] ">
+            <Image
+              src="/logo-white-dark.png"
+              alt="wecr8t"
+              width={150}
+              height={40}
+            />
+
+            <Image
+              src="/white-hod.png"
+              alt="white-hod"
+              width={100}
+              height={40}
+            />
+
+            <Image
+              src="/save-d-bride.png"
+              alt="save-d-bride"
+              width={80}
+              height={40}
+            />
+
+            <Image
+              src="/splash-screen.png"
+              alt="splash-screen"
+              width={100}
+              height={40}
+            />
+
+            <Image
+              src="/nurtifeed.png"
+              alt="nurtifeed"
+              width={100}
+              height={40}
+            />
+
+            <Image src="/frameasy.png" alt="frameasy" width={100} height={40} />
+
+            <Image src="/readr.png" alt="readr" width={65} height={40} />
+
+            <Image src="/gericht.png" alt="gericht" width={60} height={40} />
+            <div className="w-[10px]" />
           </div>
         </Marquee>
       </div>
-    </div>
+    </section>
   );
 }
 
