@@ -9,10 +9,10 @@ import AnimatedButton from "../ui/animatedButton";
 
 function HomeHero() {
   return (
-    <section className=" font-grotesk text-[#202526] pt-[100px] flex flex-col items-center justify-center hero_bg ">
-      <div className="flex flex-col gap-[50px] items-center justify-center ">
+    <section className="font-grotesk text-[#202526] lg:pt-[100px] pt-[50px] flex flex-col items-center justify-center hero_bg ">
+      <div className="flex flex-col lg:gap-[50px] gap-[25px] items-center justify-center ">
         <div>
-          <p className="leading-[30px] lg:leading-[81px] font-bold text-[24px] lg:text-[70px] text-center ">
+          <p className="leading-[44.8px] lg:leading-[81px] font-bold text-[32px] lg:text-[70px] text-center ">
             Transform Your{" "}
             <span className="text-[#FF5A12] font-normal font-urban ">
               Business
@@ -20,7 +20,7 @@ function HomeHero() {
             with <br className="hidden lg:block" /> Stunning Digital Solutions
           </p>
 
-          <p className="text-center text-[12px] lg:text-lg font-poppins font-normal leading-6 text-[#202526CC] pt-5">
+          <p className="text-center text-base lg:text-lg font-poppins font-normal leading-6 text-[#202526CC] pt-5">
             At <span>LetsCr8T,</span> we create unforgettable first digital
             experiences – that help your
             <br className="hidden lg:block" />
@@ -34,17 +34,17 @@ function HomeHero() {
           </p>
         </div>
 
-        <div className="flex gap-[34px]">
+        <div className="flex lg:gap-[34px] gap-[20px] flex-wrap items-center justify-center">
           <Link href="/contact" className="">
             <AnimatedButton
-              className="w-[160px] lg:w-[229px] h-[56px] "
+              className="w-[199px] lg:w-[229px] lg:h-[56px] h-[50px] "
               withHeartbeat
             >
               Start Project
             </AnimatedButton>
           </Link>
           <Link href="/portfolio" className="">
-            <Button className="border border-[#FF5A12] rounded-full  w-[160px] lg:w-[229px] h-[56px] hover:bg-[#FF5A12] hover:text-white font-manrope font-semibold text-base">
+            <Button className="border border-[#FF5A12] rounded-full w-[199px] lg:w-[229px] lg:h-[56px] h-[50px] hover:bg-[#FF5A12] hover:text-white font-manrope font-semibold text-base">
               See Portfolio
             </Button>
           </Link>
@@ -56,11 +56,11 @@ function HomeHero() {
         </div>
       </div>
 
-      <h3 className="text-[#ADADAD] font-grotesk font-medium text-2xl pt-[30px]">
+      <h3 className="text-[#ADADAD] font-grotesk font-medium text-base lg:text-2xl lg:pt-[30px] pt-[20px]">
         Trusted By The Big Names
       </h3>
 
-      <div className="mt-[20px] flex justify-center items-center w-full h-[150px] bg-[#202526] ">
+      <div className="mt-[20px] flex justify-center items-center w-full h-[100px] lg:h-[150px] bg-[#202526] ">
         <Marquee
           pauseOnClick
           pauseOnHover

@@ -65,7 +65,8 @@ const config = {
         cr8tBlack: "#202526",
         cr8tOrange: "#FF5A12",
         cr8tWhite: "rgb(255, 255, 255)",
-        trustBlack: "rgb(0, 0, 0)",
+        Cr8tGray: "#ADADAD",
+        cr8tLightBlack: "#1A1A1A",
       },
       transitionProperty: {
         width: "width", // Custom transition property for width
@@ -86,9 +87,9 @@ const config = {
         },
       },
       heartbeat: {
-        "0%, 70%": { width: "26px" }, // Initial state, hold for 30% of the duration
-        "40%": { width: "19px" }, // Shrink to 14px
-        "50%": { width: "26px" }, // Back to original size
+        "0%, 70%": { width: "26px" },
+        "40%": { width: "19px" },
+        "50%": { width: "26px" },
         "100%": { width: "26px" },
       },
       animation: {

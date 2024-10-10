@@ -27,8 +27,13 @@ body{
   background-image: url('/hero-image-1.svg'), url('/hero-image-2.svg');
   background-repeat: no-repeat;
   background-position: left 80px top 31px, right 80px top 51px;
-  background-size: 384px
-  
+  background-size: 384px, 414px
+}
+.footer_bg{
+  background-image: url('/hero-image-2.svg');
+  background-repeat: no-repeat;
+  background-position: right 80px top 17px;
+  background-size:414px 
   
 }
 
@@ -106,4 +111,16 @@ body{
   left: 0;
   top: 0;
   transform-origin: center; /* Ensure it scales relative to the center */
+}
+@keyframes spin-slow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 2s linear infinite;
 }

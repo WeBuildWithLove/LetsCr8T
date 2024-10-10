@@ -1,3 +1,9 @@
+import Image from "next/image";
+import WebIcon from "../public/web-development.svg";
+import BrandingIcon from "../public/branding.svg";
+import SupportIcon from "../public/support.svg";
+import ContentIcon from "../public/content.svg";
+
 // MEET THE TEAM SECTION
 export const TEAMS = [
   {
@@ -87,7 +93,7 @@ export const REVIEWS = [
   {
     name: "Harold Uku",
     position: "Founding Partner H.O.D Legal",
-    text: "We had the pleasure of engaging WeCr8T to develop a website for our firm, and the entire experience was exceptional. The team delivered a website that was sleek, user-friendly, and responsive, perfectly aligning with our vision. One standout aspect of their service was how quickly they understood our needs and translated them into a functional and attractive site that has significantly improved our client engagement.",
+    text: "We had the pleasure of engaging WeCr8T to develop a website for our firm, and the entire experience was exceptional. The team delivered a website that was sleek, user-friendly, and responsive, perfectly aligning with our vision. ",
     image: "/mfoniso.png",
   },
   {
@@ -138,16 +144,15 @@ export const FAQS = [
   },
   {
     id: "4",
-    question:
-      "What are the criteria for selecting small businesses for the charity initiative?",
-    answer:
-      "We focus on small businesses that demonstrate a need for support in building their online presence. Each month, we choose one business based on their application, growth potential, and how we can best assist them with free web services.",
-  },
-  {
-    id: "5",
     question: "What are your prices?",
     answer:
       "Our prices vary depending on the type and complexity of the project. For example, a basic website will cost less than a custom web app with advanced features. Contact us for a personalized quote based on your specific needs.",
+  },
+  {
+    id: "5",
+    question: "How do we select small businesses for the charity initiative?",
+    answer:
+      "We focus on small businesses that demonstrate a need for support in building their online presence. Each month, we choose one business based on their application, growth potential, and how we can best assist them with free web services.",
   },
 ];
 
@@ -226,6 +231,114 @@ export const SERVICES_SEC = [
     description:
       "We write engaging content that tells your story and connects with your audience, making it easier to attract and keep customers.",
     image: "/marketing.svg",
+  },
+];
+
+export const Services = [
+  {
+    icon: (
+      <Image
+        src={WebIcon}
+        alt="icon of website development"
+        width={90}
+        height={90}
+      />
+    ),
+    service: "Mobile & Web App Development",
+    description: (
+      <>
+        We create custom{" "}
+        <span className="text-cr8tOrange font-medium font-urban capitalize">
+          Mobile
+        </span>{" "}
+        and{" "}
+        <span className="text-cr8tOrange font-medium font-urban capitalize">
+          {" "}
+          web
+        </span>{" "}
+        apps that are easy to use, responsive, and fit your business needs.
+        Whether you need a simple web or a complex web app, we’ve got you
+        covered.
+      </>
+    ),
+    width: "607px",
+  },
+
+  {
+    icon: (
+      <Image
+        src={BrandingIcon}
+        alt="icon of website development"
+        width={90}
+        height={90}
+      />
+    ),
+    service: "Branding & Identity Design",
+
+    description: (
+      <>
+        We help build your{" "}
+        <span className="text-cr8tOrange font-medium font-urban capitalize">
+          brand
+        </span>{" "}
+        with a unique logo, colors, and style that make your{" "}
+        <span className="text-cr8tOrange font-medium font-urban capitalize">
+          business
+        </span>{" "}
+        easy to recognize and memorable.
+      </>
+    ),
+    width: "488px",
+  },
+  {
+    icon: (
+      <Image
+        src={SupportIcon}
+        alt="icon of maintenance and support"
+        width={90}
+        height={90}
+      />
+    ),
+    service: "Web Maintenance & Support",
+
+    description: (
+      <>
+        We keep your website or app{" "}
+        <span className="text-cr8tOrange font-medium font-urban capitalize">
+          running smoothly
+        </span>{" "}
+        by handling updates, security, and fixes so you don’t have to worry
+        about a thing.
+      </>
+    ),
+    width: "488px",
+  },
+  {
+    icon: (
+      <Image
+        src={ContentIcon}
+        alt="icon of Content Strategy & Copywriting"
+        width={90}
+        height={90}
+      />
+    ),
+    service: "Content Strategy & Copywriting",
+
+    description: (
+      <>
+        We write engaging{" "}
+        <span className="text-cr8tOrange font-medium font-urban capitalize">
+          {" "}
+          content
+        </span>{" "}
+        that tells your story and connects with your
+        <span className="text-cr8tOrange font-medium font-urban capitalize">
+          audience
+        </span>
+        , making it easier to attract and keep customers.
+      </>
+    ),
+    width: "513px",
   },
 ];
 

@@ -5,7 +5,7 @@ import { FiMenu, FiPlus } from "react-icons/fi";
 import { usePathname, useRouter } from "next/navigation";
 import LOGO from "../../../public/LOGO.svg";
 import Image from "next/image";
-import { Github, Linkedin } from "lucide-react";
+import { Github, Linkedin, Plus, X } from "lucide-react";
 import Twitter from "@/app/assets/icons/Twitter";
 import AnimatedButton from "../ui/animatedButton";
 
@@ -15,21 +15,23 @@ function Navbar() {
   const [open, setOpen] = React.useState(false);
 
   return (
-    <div className="flex items-center justify-between border-b border-[#2025261A] border-opacity-[0.1] font-grotesk text-base font-medium sticky top-0 z-20 h-[100px] text-[#ADADAD] bg-[#F4F4F4] px-[80px]">
-      <div className="lg:hidden">
+    <div className="flex justify-between border-b border-[#2025261A] border-opacity-[0.1] font-grotesk text-base font-medium sticky top-0 z-20 lg:h-[100px] h-[50px] text-[#ADADAD] bg-[#F4F4F4] px-[24px] lg:px-[80px] items-center">
+      <div className="lg:hidden block">
         <Link href="/" className="">
-          <Image src={LOGO} width={109.33} height={40} alt="Logo" />
+          <Image src={LOGO} width={82} height={30} alt="Logo" />
         </Link>
       </div>
 
       <div className="lg:hidden" onClick={() => setOpen(!open)}>
         {open ? (
-          <FiPlus
+          <X
             onClick={() => setOpen(!open)}
-            className="text-[30px] rotate-45"
+            size={18.5}
+            strokeWidth={3}
+            color="#202526"
           />
         ) : (
-          <FiMenu className="text-[25px]" />
+          <Plus size={18.5} color="#202526" strokeWidth={3} />
         )}
       </div>
 
@@ -53,14 +55,14 @@ function Navbar() {
       </div>
 
       {/* Logo */}
-      <div className="">
+      <div className="hidden lg:block">
         <Link href="/" className="">
           <Image src={LOGO} width={109.33} height={40} alt="Logo" />
         </Link>
       </div>
 
       {/* Social Media Icons */}
-      <div className="flex gap-[30px] items-center">
+      <div className="hidden gap-[30px] items-center lg:flex">
         <div className="flex gap-[20px] items-center">
           <Linkedin
             color="gray"

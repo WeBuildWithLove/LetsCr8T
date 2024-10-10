@@ -1,23 +1,24 @@
 import React from "react";
-import Button from "../Global/Button";
 import Link from "next/link";
+import AnimatedButton from "../ui/animatedButton";
 
 const ElevateCard = () => {
   return (
-    <div className="max-container padding-container mx-auto flex items-center justify-center my-16 md:my-32">
-      <div
-        className="border shadow w-[90vw] lg:w-[90vw]  p-[40px_20px] rounded-[10px] flex flex-col items-center justify-center space-y-[10px] lg:space-y-[20px] relative bg-cover bg-center"
-        style={{ backgroundImage: "url('/elevatebg.svg')" }}
-      >
-        <p className="text-white text-center my-3 text-4xl">
-          Ready to Elevate Your Digital Presence?
+    <div className="w-[592px] bg-[#F8F8F8] shadow-[10%] rounded-[25px] h-[275px] mx-[80px] ">
+      <div className="w-[462px] flex flex-col justify-center items-center mx-auto py-[35px]">
+        <h1 className=" text-cr8tBlack text-[32px] font-grotesk font-medium">
+          Have a <span className="text-cr8tOrange font-normal">PROJECT</span> in
+          mind?
+        </h1>
+        <p className="pt-[10px] text-[#202526CC] text-base font-normal font-poppins leading-[23px]">
+          We don’t just work—we create with joy, blending creativity and
+          determination to turn ideas into reality. Let’s bring your next great
+          project to life together.
         </p>
-        <p className="w-full lg:w-[60%] text-[14px] lg:text-[26px] text-center text-white">
-          Let’s bring your vision to life! Contact us today to discuss your
-          project and see how we can help you reach your goals.
-        </p>
-        <Link href="/contact" className="w-[150px] lg:w-[18%]">
-          <Button type="outlined" text="Contact Us" />
+        <Link href="/contact" className="mt-[25px]">
+          <AnimatedButton className="w-[147px] h-[56px]">
+            Contact Us
+          </AnimatedButton>
         </Link>
       </div>
     </div>

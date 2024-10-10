@@ -2,10 +2,7 @@
 import Image from "next/image";
 import React from "react";
 import { REVIEWS } from "../../../constants";
-// import {
-//   IoArrowBackCircleOutline,
-//   IoArrowForwardCircleOutline,
-// } from "react-icons/io5";
+
 import {
   Carousel,
   CarouselContent,
@@ -13,6 +10,8 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Link from "next/link";
+import AnimatedButton from "../ui/animatedButton";
 
 type REVIEWITEM = {
   name: string;
@@ -23,28 +22,35 @@ type REVIEWITEM = {
 
 const ReviewItem = ({ name, position, text, image }: REVIEWITEM) => {
   return (
-    <CarouselItem className="px-7 py-10 flex flex-col gap-4 items-center border border-solid border-[#E1E1E1] rounded-xl md:basis-1/2 lg:basis-1/3">
-      <Image
-        src={image}
-        width={87}
-        height={87}
-        alt={name}
-        className="rounded-full"
-      />
-      <div>
-        <h5 className="text-xs md:text-base font-bold">{name}</h5>
-        <p className="text-[#4B0082]">{position}</p>
+    <CarouselItem className="flex flex-col gap-4 items-center border border-solid border-[#E1E1E1] rounded-xl md:basis-1/2 lg:basis-1/4 h-[400px] ">
+      <div className=" mt-[17px] w-[266px] flex flex-col justify-center items-center">
+        <Image
+          src={image}
+          width={80}
+          height={80}
+          alt={name}
+          className="rounded-full"
+        />
+
+        <div className="w-[266px] flex flex-col justify-center items-center pt-[14px] gap-[5px]">
+          <h5 className="text-base font-grotesk font-bold text-cr8tBlack">
+            {name}
+          </h5>
+          <p className=" text-cr8tOrange font-urban text-[14px]">{position}</p>
+        </div>
+        <p className="font-poppins font-normal text-base text-[#202526CC] pt-[10px] text-center pb-[17px]">
+          {text}
+        </p>
       </div>
-      <p className="text-[#5D5F61] text-center">{text}</p>
     </CarouselItem>
   );
 };
 
 const Recommendations = () => {
   return (
-    <section className="max-container padding-container mb:mb-28">
-      <Carousel className="w-full">
-        <CarouselContent className="flex gap-10">
+    <section className="flex flex-col justify-center items-center w-full ">
+      <Carousel className="w-full overflow-x-hidden ">
+        <CarouselContent className="flex gap-10 ">
           {REVIEWS.map((review, index) => (
             <ReviewItem
               key={index}
@@ -58,26 +64,30 @@ const Recommendations = () => {
         <CarouselPrevious className="hidden md:flex" />
         <CarouselNext className="hidden md:flex" />
       </Carousel>
-      <div className="border my-16 md:my-40 border-solid border-[#E1E1E1] rounded-xl px-8 md:px-32 lg:px-64 py-8 md:py-16 relative max-w-[1080px] mx-auto">
-        <Image
-          src="/think.svg"
-          alt="business-deal"
-          width={220}
-          height={220}
-          className="lg:absolute right-3 top-5 mx-auto"
-        />
-        <div>
-          <h2 className="text-[#4B0082] text-center my-3 text-4xl">
-            Why work with us
-          </h2>
-          <p className="md:max-w-[580px] text-center text-[10px] md:text-xl mx-auto">
-            We’re a team of passionate professionals who deliver innovative
-            solutions with a focus on your needs. Our transparent process and
-            client-first approach ensure that we meet—and exceed—your
-            expectations every time.
-          </p>
-        </div>
+
+      <div className="pt-[200px] text-[32px] w-[744px] flex flex-col justify-center items-center mx-auto text-center gap-[10px]">
+        <h1 className="text-cr8tBlack font-medium font-grotesk">
+          Let’s brew something{" "}
+          <span className="text-cr8tOrange font-normal font-urban capitalize">
+            great
+          </span>{" "}
+          together!
+        </h1>
+
+        <p className="text-[#202526CC] font-normal font-poppins text-lg leading-7  ">
+          You're not just searching for a service provider; you're seeking a
+          true partner—someone dedicated to deeply understanding your challenges
+          to ensure your project's success. We know that not every problem can
+          be solved with code alone. That's why we go beyond delivering just any
+          solution—we strive to provide the best solution, tailored specifically
+          to your unique needs
+        </p>
       </div>
+      <Link href="/contact" className="mt-[20px]">
+        <AnimatedButton className="w-[156px] h-[56px]">
+          Get In Touch
+        </AnimatedButton>
+      </Link>
     </section>
   );
 };
