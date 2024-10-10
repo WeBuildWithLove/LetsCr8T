@@ -20,7 +20,7 @@ function HomeHero() {
             with <br className="hidden lg:block" /> Stunning Digital Solutions
           </p>
 
-          <p className="text-center text-base lg:text-lg font-poppins font-normal leading-6 text-[#202526CC] pt-5">
+          <p className="text-center text-base lg:text-lg font-poppins font-normal leading-6 text-cr8tLightBlack pt-5">
             At <span>LetsCr8T,</span> we create unforgettable first digital
             experiences – that help your
             <br className="hidden lg:block" />
@@ -60,59 +60,94 @@ function HomeHero() {
         Trusted By The Big Names
       </h3>
 
-      <div className="mt-[20px] flex justify-center items-center w-full h-[100px] lg:h-[150px] bg-[#202526] ">
+      <div className="relative overflow-hidden bg-[#202526] w-full h-[100px] lg:h-[150px] flex justify-center items-center mt-[20px]">
         <Marquee
           pauseOnClick
           pauseOnHover
-          autoFill
           loop={0}
-          speed={60}
+          speed={50}
           gradient={true}
           gradientColor="#202526"
-          gradientWidth={300}
-          className="flex justify-center items-center overflow-x-hidden h-full"
+          gradientWidth={200}
+          className=""
         >
-          <div className="flex items-center gap-[100px] h-[41px] ">
-            <Image
-              src="/logo-white-dark.png"
-              alt="wecr8t"
-              width={150}
-              height={40}
-            />
+          <div className="flex items-center gap-[100px]">
+            <div className="flex justify-center items-center w-[120px]">
+              <Image src="/chess.png" alt="chess" width={60} height={60} />
+            </div>
+            <div className="flex justify-center items-center w-[120px]">
+              <Image
+                src="/logo-white-dark.png"
+                alt="wecr8t"
+                width={150}
+                height={40}
+                loading="lazy"
+              />
+            </div>
+            <div className="flex justify-center items-center w-[120px]">
+              <Image
+                src="/white-hod.png"
+                alt="white-hod"
+                width={100}
+                height={40}
+                loading="lazy"
+              />
+            </div>
+            <div className="flex justify-center items-center w-[120px]">
+              <Image
+                src="/save-d-bride.png"
+                alt="save-d-bride"
+                width={80}
+                height={40}
+                loading="lazy"
+              />
+            </div>
+            <div className="flex justify-center items-center w-[120px]">
+              <Image
+                src="/splash-screen.png"
+                alt="splash-screen"
+                width={100}
+                height={40}
+                loading="lazy"
+              />
+            </div>
+            <div className="flex justify-center items-center w-[120px]">
+              <Image
+                src="/nurtifeed.png"
+                alt="nurtifeed"
+                width={100}
+                height={40}
+                loading="lazy"
+              />
+            </div>
+            <div className="flex justify-center items-center w-[120px]">
+              <Image
+                src="/frameasy.png"
+                alt="frameasy"
+                width={100}
+                height={40}
+                loading="lazy"
+              />
+            </div>
+            <div className="flex justify-center items-center w-[120px]">
+              <Image
+                src="/readr.png"
+                alt="readr"
+                width={65}
+                height={40}
+                loading="lazy"
+              />
+            </div>
+            <div className="flex justify-center items-center w-[120px]">
+              <Image
+                src="/gericht.png"
+                alt="gericht"
+                width={60}
+                height={40}
+                loading="lazy"
+              />
+            </div>
 
-            <Image
-              src="/white-hod.png"
-              alt="white-hod"
-              width={100}
-              height={40}
-            />
-
-            <Image
-              src="/save-d-bride.png"
-              alt="save-d-bride"
-              width={80}
-              height={40}
-            />
-
-            <Image
-              src="/splash-screen.png"
-              alt="splash-screen"
-              width={100}
-              height={40}
-            />
-
-            <Image
-              src="/nurtifeed.png"
-              alt="nurtifeed"
-              width={100}
-              height={40}
-            />
-
-            <Image src="/frameasy.png" alt="frameasy" width={100} height={40} />
-
-            <Image src="/readr.png" alt="readr" width={65} height={40} />
-
-            <Image src="/gericht.png" alt="gericht" width={60} height={40} />
             <div className="w-[10px]" />
           </div>
         </Marquee>

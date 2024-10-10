@@ -66,7 +66,7 @@ const config = {
         cr8tOrange: "#FF5A12",
         cr8tWhite: "rgb(255, 255, 255)",
         Cr8tGray: "#ADADAD",
-        cr8tLightBlack: "#1A1A1A",
+        cr8tLightBlack: "#797C7D",
       },
       transitionProperty: {
         width: "width", // Custom transition property for width

@@ -12,27 +12,34 @@ import Twitter from "@/app/assets/icons/Twitter";
 
 function Footer() {
   return (
-    <div className="pt-[294px] ">
-      <div className="absolute mt-[-97px]">
+    <div className="md:pt-[294px] pt-[153px] ">
+      <div className="absolute md:mt-[-97px] mt-[-100px] md:mx-[80px] mx-6">
         <ElevateCard />
       </div>
-      <footer className="w-full bg-white rounded-t-[50px] h-[526px] pt-[294px] px-[80px] footer_bg ">
-        <Image src={Logo} alt="image of logo" width={138} height={50} />
-        <div className=" flex gap-[100px] text-base font-normal font-poppins text-cr8tLightBlack items-center">
-          <p className="leading-7 w-[418px] pt-5">
+
+      <footer className="w-full bg-white rounded-t-[50px] md:h-[526px]  md:pt-[294px] pt-[220px] md:px-[80px] px-6 footer_bg footer_mobile_bg">
+        <Image
+          src={Logo}
+          alt="image of logo"
+          width={138}
+          height={50}
+          className="w-[69.15px] md:w-[138px] h-[25px] md:h-[50px]"
+        />
+        <div className=" flex md:gap-[100px] gap-[30px] text-base font-normal font-poppins text-cr8tLightBlack items-center flex-wrap md:flex-nowrap">
+          <p className=" leading-[29px] md:leading-7 md:w-[418px] w-[315px] md:pt-5 pt-[15px]">
             At LetsCr8T, we design and develop stunning, high-quality websites
-            and web applications for businesses of all sizes
+            and web applications for businesses of all sizes.
           </p>
 
-          <div className="flex flex-col gap-[3.5px]">
+          <div className="flex flex-col  md:gap-[3.5px] gap-[5px] pt-[30px] md:pt-0">
             <p className="uppercase font-medium text-cr8tBlack">Contact Us</p>
 
-            <span className="flex items-center gap-[2.5px]">
+            <span className="flex items-center  md:gap-[2.5px] gap-[5px]">
               <CiMail size={24} />
               <p className="">contact@LetsCr8T.xyz</p>
             </span>
           </div>
-          <div className="flex flex-col gap-[3.5px]">
+          <div className="flex flex-col  md:gap-[3.5px] gap-[5px]">
             <p className="uppercase font-medium text-cr8tBlack">
               Connect With Us
             </p>
@@ -53,9 +60,10 @@ function Footer() {
             </span>
           </div>
         </div>
-        <div className="w-full border-t mt-5 border-[#CFCFD1] flex gap-[5px] font-poppins pt-[15px]">
-          <Copyright size={24} color="#ADADAD" />
-          <p className="text-base text-Cr8tGray">
+        <div className="w-full border-t mt-5 border-[#CFCFD1] flex gap-[5px] font-poppins pt-[15px] items-center">
+          <Copyright size={24} color="#ADADAD" className="hidden md:block" />
+          <Copyright size={18} color="#ADADAD" className="block md:hidden" />
+          <p className="md:text-base text-xs text-Cr8tGray">
             2024,<span className=" font-semibold">LetsCr8T.</span>All Right
             Reserved.
           </p>

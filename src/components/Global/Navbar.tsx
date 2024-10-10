@@ -15,7 +15,7 @@ function Navbar() {
   const [open, setOpen] = React.useState(false);
 
   return (
-    <div className="flex justify-between border-b border-[#2025261A] border-opacity-[0.1] font-grotesk text-base font-medium sticky top-0 z-20 lg:h-[100px] h-[50px] text-[#ADADAD] bg-[#F4F4F4] px-[24px] lg:px-[80px] items-center">
+    <div className="flex justify-between border-b border-cr8tLightBlack border-opacity-[0.1] font-grotesk text-base font-medium sticky top-0 z-20 lg:h-[100px] h-[50px] text-Cr8tGray bg-[#F4F4F4] px-[24px] lg:px-[80px] items-center">
       <div className="lg:hidden block">
         <Link href="/" className="">
           <Image src={LOGO} width={82} height={30} alt="Logo" />
@@ -78,7 +78,7 @@ function Navbar() {
             className="text-gray-500 hover:fill-[#FF5A12] cursor-pointer transition-colors duration-300"
           />
         </div>
-        <Link href="/project" className="">
+        <Link href="/contact" className="">
           <AnimatedButton className="w-[147px] h-[56px]">
             Contact Us
           </AnimatedButton>

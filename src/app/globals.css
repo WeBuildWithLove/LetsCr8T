@@ -38,6 +38,21 @@ body{
 }
 
 
+@media (max-width: 480px) {
+  .footer_bg{
+background-image: none;
+  }
+
+  .footer_mobile_bg{
+    background-image: url('/hero-image-2.svg');
+    background-repeat: no-repeat;
+    background-position: right 24px top 200px;
+    background-size:250px 
+    
+  }
+}
+
+
 
 .max-container {
   @apply mx-auto max-w-[1440px];

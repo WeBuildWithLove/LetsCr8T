@@ -19,6 +19,7 @@ type CarouselProps = {
   plugins?: CarouselPlugin;
   orientation?: "horizontal" | "vertical";
   setApi?: (api: CarouselApi) => void;
+  childrenCount?: number;
 };
 
 type CarouselContextProps = {
@@ -52,8 +53,9 @@ const Carousel = React.forwardRef<
       opts,
       setApi,
       plugins,
-      className,
       children,
+      className,
+      childrenCount,
       ...props
     },
     ref
@@ -67,14 +69,14 @@ const Carousel = React.forwardRef<
     );
     const [canScrollPrev, setCanScrollPrev] = React.useState(false);
     const [canScrollNext, setCanScrollNext] = React.useState(false);
+    const [selectedIndex, setSelectedIndex] = React.useState(0);
 
     const onSelect = React.useCallback((api: CarouselApi) => {
-      if (!api) {
-        return;
-      }
+      if (!api) return;
 
       setCanScrollPrev(api.canScrollPrev());
       setCanScrollNext(api.canScrollNext());
+      setSelectedIndex(api.selectedScrollSnap());
     }, []);
 
     const scrollPrev = React.useCallback(() => {
@@ -99,17 +101,12 @@ const Carousel = React.forwardRef<
     );
 
     React.useEffect(() => {
-      if (!api || !setApi) {
-        return;
-      }
-
+      if (!api || !setApi) return;
       setApi(api);
     }, [api, setApi]);
 
     React.useEffect(() => {
-      if (!api) {
-        return;
-      }
+      if (!api) return;
 
       onSelect(api);
       api.on("reInit", onSelect);
@@ -124,10 +121,9 @@ const Carousel = React.forwardRef<
       <CarouselContext.Provider
         value={{
           carouselRef,
-          api: api,
+          api,
           opts,
-          orientation:
-            orientation || (opts?.axis === "y" ? "vertical" : "horizontal"),
+          orientation,
           scrollPrev,
           scrollNext,
           canScrollPrev,
@@ -143,6 +139,10 @@ const Carousel = React.forwardRef<
           {...props}
         >
           {children}
+          <CarouselDots
+            count={childrenCount || 0}
+            selectedIndex={selectedIndex}
+          />
         </div>
       </CarouselContext.Provider>
     );
@@ -206,9 +206,9 @@ const CarouselPrevious = React.forwardRef<
       variant={variant}
       size={size}
       className={cn(
-        "absolute  h-8 w-8 rounded-full",
+        "absolute  h-[36px] w-[36px] rounded-full border-[2px] border-[#202526] ",
         orientation === "horizontal"
-          ? "-left-12 top-1/2 -translate-y-1/2"
+          ? "top-1/2 -translate-y-1/2"
           : "-top-12 left-1/2 -translate-x-1/2 rotate-90",
         className
       )}
@@ -216,7 +216,7 @@ const CarouselPrevious = React.forwardRef<
       onClick={scrollPrev}
       {...props}
     >
-      <ArrowLeft className="h-4 w-4" />
+      <ArrowLeft className="h-4 w-4" color="#202526" />
       <span className="sr-only">Previous slide</span>
     </Button>
   );
@@ -251,6 +251,31 @@ const CarouselNext = React.forwardRef<
   );
 });
 CarouselNext.displayName = "CarouselNext";
+
+// New CarouselDots Component
+const CarouselDots = ({
+  count,
+  selectedIndex,
+}: {
+  count: number;
+  selectedIndex: number;
+}) => {
+  return (
+    <div className="flex justify-center gap-[5px] mt-[15px] md:hidden ">
+      {Array.from({ length: count }).map((_, index) => (
+        <div
+          key={index}
+          className={cn(
+            "h-2 w-2 rounded-full transition-colors",
+            index === selectedIndex
+              ? "bg-cr8tOrange w-[20px]"
+              : "bg-[#ADADAD40] opacity-[0.5]"
+          )}
+        />
+      ))}
+    </div>
+  );
+};
 
 export {
   type CarouselApi,
