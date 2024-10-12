@@ -7,9 +7,9 @@ import AnimatedButton from "../ui/animatedButton";
 
 function Commitment() {
   return (
-    <section className="md:pt-[200px] pt-[50px] flex items-center justify-center gap-[50px] flex-wrap lg:flex-nowrap">
-      <div className="bg-[#F8F8F8] font-poppins flex flex-col  items-center md:w-[692px] w-[342px] md:gap-[50px] gap-[20px] order-2 md:-order-none">
-        <div className="w-[474px] md:pt-[41px] pt-[27px] flex flex-col md:gap-[10px] gap-[5px] text-center ">
+    <section className="md:pt-[150px] pt-[50px] flex items-center justify-center gap-[50px] flex-wrap lg:flex-nowrap lg:px-[80px] px-6">
+      <div className="bg-[#F8F8F8] font-poppins flex flex-col  items-center md:w-[692px] w-[342px] md:gap-[50px] gap-[20px] order-2 lg:-order-none">
+        <div className="md:w-[474px] w-[316px] md:pt-[41px] pt-[27px] flex flex-col md:gap-[10px] gap-[5px] text-center  items-center">
           <p className="md:text-2xl text-base font-semibold text-cr8tBlack">
             Free Web projects for small businesses
           </p>
@@ -30,7 +30,7 @@ function Commitment() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col md:gap-[10px]  gap-[5px] order-1 md:-order-none text-cr8tBlack ">
+      <div className=" flex flex-col md:gap-[10px]  gap-[5px] order-1 lg:-order-none text-cr8tBlack ">
         <h1 className="md:text-3xl text-2xl font-grotesk font-medium">
           Our Commitment to{" "}
           <span className="font-urban text-cr8tOrange font-normal">
@@ -38,18 +38,19 @@ function Commitment() {
           </span>
         </h1>
 
-        <p className="font-poppins text-cr8tLightBlack md:text-lg text-base leading-6 font-normal md:w-[610px] w-[327px] md:leading-7">
+        <p className="font-poppins text-cr8tLightBlack md:text-lg text-base leading-6 font-light md:w-[610px] w-[327px] md:leading-7 pr-[15px] md:pr-0 overflow-x-hidden ">
           At LetsCr8T, we believe in giving back. Every month, we offer free web
           services to one small business, helping them build a strong online
           presence and grow. We understand the challenges small businesses face
           and are here to help them succeed.
         </p>
+
         <Link
           href="https://forms.gle/H3TpBS64a2CBNUSb9"
           target="_blank"
-          className="md:mt-[15px] mt-[20px] "
+          className="md:mt-[15px] mt-[20px] md:w-[140px] w-[130px]"
         >
-          <AnimatedButton className="w-[140px] h-[56px] flex flex-col">
+          <AnimatedButton className="md:w-[140px] w-[130px] h-[56px] flex flex-col">
             Apply Now
           </AnimatedButton>
         </Link>

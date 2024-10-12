@@ -1,8 +1,8 @@
 import Image from "next/image";
-import WebIcon from "../public/web-development.svg";
-import BrandingIcon from "../public/branding.svg";
-import SupportIcon from "../public/support.svg";
-import ContentIcon from "../public/content.svg";
+import WebIcon from "../public/web&mobile.gif";
+import BrandingIcon from "../public/branding.gif";
+import SupportIcon from "../public/web-mintenance.gif";
+import ContentIcon from "../public/content.gif";
 
 // MEET THE TEAM SECTION
 export const TEAMS = [

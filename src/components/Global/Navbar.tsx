@@ -15,7 +15,7 @@ function Navbar() {
   const [open, setOpen] = React.useState(false);
 
   return (
-    <div className="flex justify-between border-b border-cr8tLightBlack border-opacity-[0.1] font-grotesk text-base font-medium sticky top-0 z-20 lg:h-[100px] h-[50px] text-Cr8tGray bg-[#F4F4F4] px-[24px] lg:px-[80px] items-center">
+    <div className="flex justify-between border-b border-cr8tLightBlack border-opacity-[0.1] font-grotesk text-base font-medium sticky top-0 z-20 lg:h-[100px] h-[50px] text-Cr8tGray bg-[#F4F4F4] px-[24px] xl:px-[80px]  items-center w-full">
       <div className="lg:hidden block">
         <Link href="/" className="">
           <Image src={LOGO} width={82} height={30} alt="Logo" />

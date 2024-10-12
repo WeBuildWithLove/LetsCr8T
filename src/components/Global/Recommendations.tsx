@@ -69,7 +69,7 @@ const Recommendations = () => {
         <CarouselNext className="hidden md:flex right-[100px]" />
       </Carousel>
 
-      <div className="md:pt-[200px] pt-[50px] text-2xl md:text-[32px] md:w-[744px] w-[333px] flex flex-col justify-center items-center mx-auto text-center md:gap-[10px] gap-[5px]">
+      <div className="md:pt-[150px] pt-[50px] text-2xl md:text-[32px] md:w-[744px] w-[333px] flex flex-col justify-center items-center mx-auto text-center md:gap-[10px] gap-[5px]">
         <h1 className="text-cr8tBlack font-medium font-grotesk leading-[33.6px] px-[4.5px]">
           Let’s brew something{" "}
           <span className="text-cr8tOrange font-normal font-urban capitalize">
@@ -78,7 +78,7 @@ const Recommendations = () => {
           together!
         </h1>
 
-        <p className=" text-cr8tLightBlack font-normal font-poppins text-base md:text-lg leading-6 md:leading-7  ">
+        <p className=" text-cr8tLightBlack font-light font-poppins text-base md:text-lg leading-6 md:leading-7  ">
           You're not just searching for a service provider; you're seeking a
           true partner. Someone dedicated to deeply understanding your
           challenges to ensure your project's success. We know that not every
@@ -87,7 +87,10 @@ const Recommendations = () => {
           tailored specifically to your unique needs
         </p>
       </div>
-      <Link href="/contact" className="md:mt-[20px] mt-[25px]">
+      <Link
+        href="/contact"
+        className="md:mt-[20px] mt-[25px]  w-[146px] md:w-[156px] "
+      >
         <AnimatedButton className="md:w-[156px] h-[56px] w-[146px]">
           Get In Touch
         </AnimatedButton>

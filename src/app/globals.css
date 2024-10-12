@@ -40,17 +40,50 @@ body{
 
 @media (max-width: 480px) {
   .footer_bg{
-background-image: none;
+background-image: block;
   }
 
+  .hero_bg{
+    background-image: none;
+      }
+
   .footer_mobile_bg{
-    background-image: url('/hero-image-2.svg');
+    background-image:block;
     background-repeat: no-repeat;
-    background-position: right 24px top 200px;
+    background-position: right 24px top 250px;
     background-size:250px 
     
   }
 }
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .hero_bg{
+    background-image: block;
+    background-repeat: no-repeat;
+    background-position: left 30px top 31px, right 30px top 51px;
+    background-size: 250px, 300px
+      }
+
+      .footer_mobile_bg{
+        background-image: block;
+        background-repeat: no-repeat;
+        background-position: right 50px top 200px;
+        background-size:414px 
+        
+      }
+      
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .hero_bg{
+    background-image: block;
+    background-repeat: no-repeat;
+    background-position: left 40px top 31px, right 40px top 51px;
+    background-size: 324px, 356px;
+  
+
+      }
+}
+
 
 
 

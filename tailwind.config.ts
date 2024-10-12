@@ -19,8 +19,8 @@ const config = {
     },
     extend: {
       fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
-        urban: ["var(--font-urban)", "sans-serif"], // Use Urban Storm font
+        poppins: ["Poppins", "Geometric sans serif"],
+        urban: ["var(--font-urban)", "sans-serif"],
         grotesk: ["var(--font-grotesk)", "sans-serif"],
         eb_garamond: ["eb_garamond", "sans-serif"],
         manrope: ["Manrope", "sans-serif"],
