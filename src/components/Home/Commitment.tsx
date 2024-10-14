@@ -8,7 +8,7 @@ import AnimatedButton from "../ui/animatedButton";
 function Commitment() {
   return (
     <section className="md:pt-[150px] pt-[50px] flex items-center justify-center gap-[50px] flex-wrap lg:flex-nowrap lg:px-[80px] px-6">
-      <div className="bg-[#F8F8F8] font-poppins flex flex-col  items-center md:w-[692px] w-[342px] md:gap-[50px] gap-[20px] order-2 lg:-order-none">
+      <div className="bg-[#F8F8F8] rounded-[20px] font-poppins flex flex-col  items-center md:w-[692px] w-[342px] md:gap-[50px] gap-[20px] order-2 lg:-order-none">
         <div className="md:w-[474px] w-[316px] md:pt-[41px] pt-[27px] flex flex-col md:gap-[10px] gap-[5px] text-center  items-center">
           <p className="md:text-2xl text-base font-semibold text-cr8tBlack">
             Free Web projects for small businesses
@@ -25,7 +25,7 @@ function Commitment() {
             height={241}
             className="w-[301.52px] md:w-[363px]"
           />
-          <div className="bg-white md:w-[271px] w-[240px] h-[30.7px] font-poppins font-semibold text-center text-[14px]  md:text-base text-Cr8tGray flex flex-col justify-center">
+          <div className="bg-white md:w-[271px] w-[240px] h-[30.7px] font-poppins font-semibold text-center text-[14px]  md:text-base text-Cr8tGray flex flex-col justify-center rounded-[5px]">
             <p className="">12+ Website completed in 2024</p>
           </div>
         </div>

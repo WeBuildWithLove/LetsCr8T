@@ -50,11 +50,11 @@ function HomeHero() {
           </Link>
         </div>
 
-        <div className="text-[#ADADAD] text-[13px] font-normal flex gap-[11px] items-center font-poppins">
+        <div className="text-[#ADADAD] text-[13px] font-normal flex gap-[11px] items-center font-poppins lg:pt-3 xl:pt-0">
           <h3>SCROLL</h3>
           <MoveDown size={13} className="animate-bounce" color="#FF5A12" />
         </div>
-        <h3 className="text-[#ADADAD] font-grotesk font-medium text-base md:text-2xl ">
+        <h3 className="text-[#ADADAD] font-grotesk font-medium text-base md:text-2xl lg:pt-2 xl:pt-0">
           Trusted By The Big Names
         </h3>
       </div>
@@ -72,24 +72,32 @@ function HomeHero() {
         >
           <div className="flex items-center md:gap-[80px] gap-[50px]">
             <div className="flex justify-center items-center w-[120px]">
-              <Image src="/chess.png" alt="chess" width={60} height={60} />
+              <Image
+                src="/chess.png"
+                alt="chess"
+                width={60}
+                height={60}
+                style={{ width: "auto" }}
+              />
             </div>
-            <div className="flex justify-center items-center w-[120px]">
+            <div className="flex justify-center items-center w-[120px] ">
               <Image
                 src="/logo-white-dark.png"
                 alt="wecr8t"
                 width={150}
                 height={40}
                 loading="lazy"
+                style={{ width: "auto" }}
               />
             </div>
-            <div className="flex justify-center items-center w-[120px]">
+            <div className="flex justify-center items-center w-[120px] ">
               <Image
                 src="/white-hod.png"
                 alt="white-hod"
                 width={100}
                 height={40}
                 loading="lazy"
+                style={{ width: "auto" }}
               />
             </div>
             <div className="flex justify-center items-center w-[120px]">
@@ -99,6 +107,7 @@ function HomeHero() {
                 width={80}
                 height={40}
                 loading="lazy"
+                style={{ width: "auto" }}
               />
             </div>
             <div className="flex justify-center items-center w-[120px]">
@@ -108,6 +117,7 @@ function HomeHero() {
                 width={100}
                 height={40}
                 loading="lazy"
+                style={{ width: "auto" }}
               />
             </div>
             <div className="flex justify-center items-center w-[120px]">
@@ -117,6 +127,7 @@ function HomeHero() {
                 width={100}
                 height={40}
                 loading="lazy"
+                style={{ width: "auto" }}
               />
             </div>
             <div className="flex justify-center items-center w-[120px]">
@@ -126,6 +137,7 @@ function HomeHero() {
                 width={100}
                 height={40}
                 loading="lazy"
+                style={{ width: "auto" }}
               />
             </div>
             <div className="flex justify-center items-center w-[120px]">
@@ -135,6 +147,7 @@ function HomeHero() {
                 width={65}
                 height={40}
                 loading="lazy"
+                style={{ width: "auto" }}
               />
             </div>
             <div className="flex justify-center items-center w-[120px]">
@@ -144,6 +157,7 @@ function HomeHero() {
                 width={60}
                 height={40}
                 loading="lazy"
+                style={{ width: "auto" }}
               />
             </div>
 

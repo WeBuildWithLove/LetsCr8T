@@ -17,12 +17,12 @@ const ReviewItem = ({ question, answer }: FAQITEM) => {
   return (
     <AccordionItem
       value={question}
-      className=" rounded-[15px] md:px-[30px] px-[10px] mb-5 md:text-lg text-base leading-[23px] md:leading-none font-poppins font-[450px] text-cr8tBlack  flex flex-col  bg-[#F8F8F8] gap-[17px] md:w-[641px] w-[342px] "
+      className=" rounded-[15px] md:px-[30px] px-[10px] mb-5 md:text-lg text-base  font-poppins font-normal text-cr8tBlack  flex flex-col  bg-[#F8F8F8] gap-[10px] md:w-[641px] w-[342px] "
     >
-      <AccordionTrigger className="h-[60px] text-left">
+      <AccordionTrigger className="h-[60px] text-left ">
         {question}
       </AccordionTrigger>
-      <AccordionContent className="md:w-[582px] font-light text-cr8tLightBlack w-[283px]">
+      <AccordionContent className="md:w-[582px] font-light text-cr8tLightBlack  w-[303px] md:leading-7 leading-6">
         {answer}
       </AccordionContent>
     </AccordionItem>
@@ -31,7 +31,7 @@ const ReviewItem = ({ question, answer }: FAQITEM) => {
 
 const FAQ = () => {
   return (
-    <section className="md:pt-[150px] pt-[50px] flex justify-center md:px-[80px] xl:px-[80px] lg:px-[30px] flex-wrap lg:flex-nowrap px-[24px] items-center ">
+    <section className="md:pt-[150px] pt-[50px] flex  md:px-[80px] xl:px-[80px] lg:px-[30px] flex-wrap lg:flex-nowrap px-6 items-center ">
       <div className="">
         <div className="md:w-[571px] xl:w-[571px] lg:w-[400px] w-[285px] ">
           <h1 className=" text-cr8tOrange font-urban md:text-2xl font-normal text-base">
@@ -61,7 +61,7 @@ const FAQ = () => {
             />
           ))}
         </Accordion>
-        <div className="lg:hidden mt-[25px] md:mt-0  ">
+        <div className="lg:hidden mt-[25px] md:mt-0">
           <Image
             src={QuestionMarkIcon}
             alt="question mark icon"

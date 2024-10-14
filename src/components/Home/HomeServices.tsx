@@ -8,7 +8,7 @@ import ConnectingDots from "../../../public/connecting-dots.svg";
 import AnimatedButton from "../ui/animatedButton";
 import AnimatedContainer from "../Animations/AnimatedContainer";
 import ServicePlayer from "../../../public/service.gif";
-import SettingsIcon from "../../../public/settings.gif";
+import AnimatedSettings from "../../../public/settings.gif";
 
 const HomeServices = () => {
   return (
@@ -66,14 +66,11 @@ const HomeServices = () => {
       </div>
       <div className="flex justify-center mt-[25px]">
         <Link href="/services" className="">
-          <AnimatedButton className="w-[199px] lg:w-[223px] lg:h-[56px] h-[50px] ">
+          <AnimatedButton
+            className="w-[199px] lg:w-[223px] lg:h-[56px] h-[50px]"
+            isSettingsButton={true} // Enables the settings hover effect
+          >
             View All Services
-            <Image
-              src={SettingsIcon}
-              alt="settings icon gif"
-              width={30}
-              height={20}
-            />
           </AnimatedButton>
         </Link>
       </div>

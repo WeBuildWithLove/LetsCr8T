@@ -4,7 +4,7 @@ import AnimatedButton from "../ui/animatedButton";
 
 const ElevateCard = () => {
   return (
-    <div className="md:w-[592px] w-[342px] bg-[#F8F8F8] shadow-[0.15] rounded-[25px] md:h-[275px] absolute md:mt-[-150px] mt-[-100px] ">
+    <div className="md:w-[592px] w-[342px] bg-[#F8F8F8] shadow-[0.15] rounded-[25px] md:h-[275px] absolute lg:mt-[-150px] mt-[100px] ">
       <div className="md:w-[462px] w-[298px] flex flex-col md:py-[35px] py-6 md:pl-[35px] pl-6">
         <h1 className=" text-cr8tBlack md:text-[32px] text-2xl font-grotesk font-medium">
           Have a{" "}
