@@ -1,16 +1,16 @@
-import Layout from '@/layout'
-import Hero from './Hero'
-import PortfolioWorks from './PortfolioWorks'
-import ElevateCard from '@/components/Home/ElevateCard'
+import Layout from "@/layout";
+import Hero from "./Hero";
+import PortfolioWorks from "./PortfolioWorks";
+import Advert from "@/components/Global/Advert";
 
 const page = () => {
   return (
     <Layout>
-        <Hero />
-        <PortfolioWorks />
-        <ElevateCard />
+      <Hero />
+      <PortfolioWorks />
+      <Advert />
     </Layout>
-  )
-}
+  );
+};
 
-export default page
+export default page;
