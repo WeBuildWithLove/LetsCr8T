@@ -222,3 +222,62 @@ export const PORTFOLIO = [
     link: "/",
   },
 ];
+
+export const teamMembers = [
+  {
+    name: 1,
+    image: "/gift.svg",
+    hoverImage: "/gift2.svg",
+    normalWidth: 140,
+    normalHeight: 140,
+  },
+  {
+    id: 2,
+    image: "/PREYE.svg",
+    hoverImage: "/PREYE2.svg",
+    normalWidth: 140,
+    normalHeight: 140,
+  },
+  {
+    id: 3,
+    image: "/kufre.svg",
+    hoverImage: "/kufre2.svg",
+    normalWidth: 140,
+    normalHeight: 140,
+  },
+  {
+    id: 4,
+    image: "/aniebet.svg",
+    hoverImage: "/aniebet2.svg",
+    normalWidth: 140,
+    normalHeight: 140,
+  },
+  {
+    id: 5,
+    image: "/abraham.svg",
+    hoverImage: "/abraham2.svg",
+    normalWidth: 140,
+    normalHeight: 140,
+  },
+  {
+    id: 6,
+    image: "/shalom.svg",
+    hoverImage: "/shalom2.svg",
+    normalWidth: 140,
+    normalHeight: 140,
+  },
+  {
+    id: 7,
+    image: "/chris.svg",
+    hoverImage: "/chris2.svg",
+    normalWidth: 140,
+    normalHeight: 140,
+  },
+  {
+    id: 8,
+    image: "/jubril.svg",
+    hoverImage: "/jubril2.svg",
+    normalWidth: 140,
+    normalHeight: 140,
+  },
+];

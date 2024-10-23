@@ -17,12 +17,12 @@ const ReviewItem = ({ question, answer }: FAQITEM) => {
   return (
     <AccordionItem
       value={question}
-      className=" rounded-[15px] md:px-[30px] px-[10px] mb-5 md:text-lg text-base  font-poppins font-normal text-cr8tBlack  flex flex-col  bg-[#F8F8F8] gap-[10px] md:w-[641px] w-[342px] "
+      className=" rounded-[15px] md:px-[30px] px-[10px] mb-5   font-poppins font-normal text-cr8tBlack  flex flex-col  bg-[#F8F8F8] gap-[10px] md:w-[641px] w-[342px] "
     >
-      <AccordionTrigger className="h-[60px] text-left ">
+      <AccordionTrigger className="h-[60px] text-left md:text-lg text-base ">
         {question}
       </AccordionTrigger>
-      <AccordionContent className="md:w-[582px] font-light text-cr8tLightBlack  w-[303px] md:leading-7 leading-6">
+      <AccordionContent className="md:w-[582px] font-light text-cr8tLightBlack  w-[303px] md:leading-7 leading-6 md:text-lg text-base">
         {answer}
       </AccordionContent>
     </AccordionItem>
