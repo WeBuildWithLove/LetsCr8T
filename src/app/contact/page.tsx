@@ -3,7 +3,6 @@
 import Layout from "@/layout";
 import React from "react";
 import InputComponent from "@/components/Global/InputComponent";
-
 import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
 import AnimatedButton from "@/components/ui/animatedButton";

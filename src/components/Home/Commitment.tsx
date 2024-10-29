@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "../Global/Button";
 import Image from "next/image";
 import Link from "next/link";
 import Scale from "../../../public/scale.svg";

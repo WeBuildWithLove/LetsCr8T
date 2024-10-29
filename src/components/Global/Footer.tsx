@@ -1,9 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaRegCopyright, FaSquareXTwitter } from "react-icons/fa6";
 import { CiMail } from "react-icons/ci";
-import Link from "next/link";
 import ElevateCard from "../Home/ElevateCard";
 import Image from "next/image";
 import Logo from "../../../public/LOGO.svg";

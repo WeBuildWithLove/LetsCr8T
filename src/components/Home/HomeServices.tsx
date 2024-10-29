@@ -8,7 +8,6 @@ import ConnectingDots from "../../../public/connecting-dots.svg";
 import AnimatedButton from "../ui/animatedButton";
 import AnimatedContainer from "../Animations/AnimatedContainer";
 import ServicePlayer from "../../../public/service.gif";
-import AnimatedSettings from "../../../public/settings.gif";
 
 const HomeServices = () => {
   return (

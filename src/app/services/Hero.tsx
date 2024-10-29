@@ -1,6 +1,3 @@
-import ButtonIcon from "@/components/Global/ButtonIcon";
-import Link from "next/link";
-
 const Hero = () => {
   return (
     <section className="pt-[50px] px-[80px]">

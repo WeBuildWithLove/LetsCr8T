@@ -1,5 +1,4 @@
 // import React from "react";
-// import WhatShot from "./Icons/WhatShot";
 
 // type ButtonProps = {
 //   fill?: string;
@@ -24,7 +23,6 @@
 //         backgroundColor: `${type === "outlined" ? "white" : fill}`,
 //       }}
 //     >
-//       <WhatShot fill={`${type === "outlined" ? "#1A1A1A" : "#FFFFFF"}`} />
 //       <p className="font-[600] text-[12px] lg:text-[18px] uppercase leading-[30px]">
 //         {text}
 //       </p>
