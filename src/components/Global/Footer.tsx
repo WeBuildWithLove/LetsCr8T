@@ -45,19 +45,37 @@ function Footer() {
               Connect With Us
             </p>
             <span className="flex items-center gap-5">
-              <Linkedin
-                color="gray"
-                size={24}
-                strokeWidth={1}
-                className="text-gray-500 hover:fill-[#FF5A12] cursor-pointer transition-colors duration-300"
-              />
-              <Twitter className="text-gray-500 hover:fill-[#FF5A12] hover:text-[#FF5A12] cursor-pointer transition-colors duration-300" />
-              <Github
-                color="gray"
-                size={24}
-                strokeWidth={1}
-                className="text-gray-500 hover:fill-[#FF5A12] cursor-pointer transition-colors duration-300"
-              />
+              <a
+                href="https://www.linkedin.com/company/letscr8t"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Linkedin
+                  color="gray"
+                  size={24}
+                  strokeWidth={1}
+                  className="text-gray-500 hover:fill-[#FF5A12] cursor-pointer transition-colors duration-300"
+                />
+              </a>
+              <a
+                href="https://x.com/LetsCr8T"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Twitter className="text-gray-500 hover:fill-[#FF5A12] hover:text-[#FF5A12] cursor-pointer transition-colors duration-300" />
+              </a>
+              <a
+                href="https://github.com/WeBuildWithLove"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Github
+                  color="gray"
+                  size={24}
+                  strokeWidth={1}
+                  className="text-gray-500 hover:fill-[#FF5A12] cursor-pointer transition-colors duration-300"
+                />
+              </a>
             </span>
           </div>
         </div>

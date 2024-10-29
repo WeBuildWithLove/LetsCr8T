@@ -27,7 +27,7 @@ const OurTeam = () => {
 
   // Handler function to select group
   const handleGroupSelection = (group: "developers" | "designers") => {
-    setSelectedGroup(group === selectedGroup ? null : group); // Toggle selection on click
+    setSelectedGroup(group === selectedGroup ? null : group);
   };
 
   return (

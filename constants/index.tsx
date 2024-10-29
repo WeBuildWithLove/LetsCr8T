@@ -180,49 +180,6 @@ export const Services = [
   },
 ];
 
-// PORTFOLIO
-export const PORTFOLIO = [
-  {
-    image: "/port1.svg",
-    project: "Daniel Araromi",
-    span: "– Portfolio Website",
-    link: "/",
-  },
-  {
-    image: "/port2.svg",
-    project: "H.O.D LEGAL",
-    span: " – Website Development",
-    link: "/",
-  },
-  {
-    image: "/port1.svg",
-    project: "Xhibit",
-    span: " – Web Application",
-    link: "/",
-  },
-  {
-    image: "/port2.svg",
-    project: "WeCr8T ",
-    span: " – Agency Website",
-
-    link: "/",
-  },
-  {
-    image: "/port1.svg",
-    project: "H.O.D LEGAL",
-    span: " – Website Development",
-
-    link: "/",
-  },
-  {
-    image: "/port2.svg",
-    project: "R&R Therapy",
-    span: " – Web Application",
-
-    link: "/",
-  },
-];
-
 export const teamMembers = [
   {
     name: 1,
@@ -279,5 +236,68 @@ export const teamMembers = [
     hoverImage: "/jubril2.svg",
     normalWidth: 140,
     normalHeight: 140,
+  },
+];
+
+export const PORTFOLIO = [
+  {
+    image: "/port1.svg",
+    project: "Daniel Araromi",
+    span: "– Portfolio Website",
+    link: "https://www.hodlegal.org/",
+  },
+  {
+    image: "/port2.svg",
+    project: "H.O.D LEGAL",
+    span: " – Website Development",
+    link: "https://www.hodlegal.org/",
+  },
+  {
+    image: "/port1.svg",
+    project: "Xhibit",
+    span: " – Web Application",
+    link: "https://www.hodlegal.org/",
+  },
+  {
+    image: "/port2.svg",
+    project: "WeCr8T ",
+    span: " – Agency Website",
+    link: "https://www.hodlegal.org/",
+  },
+  {
+    image: "/port1.svg",
+    project: "H.O.D LEGAL",
+    span: " – Website Development",
+    link: "https://www.hodlegal.org/",
+  },
+  {
+    image: "/port2.svg",
+    project: "R&R Therapy",
+    span: " – Web Application",
+    link: "https://www.hodlegal.org/",
+  },
+];
+
+export const ServiceListingData = [
+  {
+    service_name: "Design",
+    one: "User Experience",
+    two: "Prototyping",
+    three: "Web Accessibility",
+    four: "User testing",
+  },
+  {
+    service_name: "Branding",
+    one: "Brand Strategy ",
+    two: " Visual & Motion identity",
+    three: " Brand Guidelines",
+  },
+
+  {
+    service_name: "Creative Tech",
+    one: "Web Development",
+    two: "Mobile App Development",
+    three: "Web Maintenance & Support",
+    four: "Content Strategy & Copywriting",
   },
 ];

@@ -3,20 +3,22 @@ import React from "react";
 
 const OurStory = () => {
   return (
-    <section className="mt-[100px] font-grotesk px-[80px]">
-      <h2 className=" font-semibold text-[32px] text-cr8tBlack">Our Story</h2>
-      <div className=" flex justify-between">
+    <section className="md:mt-[100px] mt-[25px] font-grotesk md:px-[80px] px-[25px]">
+      <h2 className=" font-semibold md:text-[32px] text-2xl text-cr8tBlack">
+        Our Story
+      </h2>
+      <div className=" flex justify-between flex-wrap">
         <div className="flex flex-col">
           <div className="flex gap-[6px] mt-5">
-            <span className=" h-[60px] w-[60px] bg-cr8tOrange rounded-[7px] font-normal text-[32px] text-[#F4F4F4] flex flex-col items-center">
+            <span className=" md:h-[60px] md:w-[60px] h-[48px] w-[48px] bg-cr8tOrange rounded-[7px] font-normal md:text-[32px] text-lg text-[#F4F4F4] flex flex-col items-center justify-center">
               <p>At </p>
             </span>
-            <div className="flex flex-col  text-lg leading-[27px]">
+            <div className="flex flex-col md:text-lg md:leading-[27px] text-base leading-6">
               <Paragraph message="LetsCr8T, we design and develop high-quality websites" />
               <Paragraph message="and web applications for businesses of all sizes." />
             </div>
           </div>
-          <p className="flex flex-col  text-lg leading-[27px] w-[572px]">
+          <p className="flex flex-col  md:text-lg md:leading-[27px] text-base leading-6 w-[572px]">
             <Paragraph message="Our skilled team blends creativity with technical know-how to craft custom digital solutions that not only help your business grow but also connect you with more customers in meaningful ways." />
             <br />
 

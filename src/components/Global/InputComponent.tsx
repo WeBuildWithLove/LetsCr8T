@@ -21,7 +21,7 @@ const InputComponent: React.FC<InputComponentProps> = ({
       type={type}
       placeholder={placeholder}
       onChange={onChange}
-      className={`border-b-2 border-gray-400 h-16  focus:outline-none focus:border-gray-600 transition-colors duration-300 ${className}`}
+      className={`border border-cr8tOrange h-14 text-base text-cr8tLightBlack opacity-[0.5] font-poppins   focus:border-cr8tOrange rounded-[5px] pl-[10px] transition-colors duration-300 ${className}`}
     />
   );
 };

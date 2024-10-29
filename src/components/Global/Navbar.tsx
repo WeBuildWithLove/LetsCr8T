@@ -76,19 +76,37 @@ function Navbar() {
         {/* Social Media Icons (Desktop) */}
         <div className="hidden gap-[30px] items-center lg:flex">
           <div className="flex gap-[20px] items-center">
-            <Linkedin
-              color="gray"
-              size={24}
-              strokeWidth={1}
-              className="text-gray-500 hover:fill-[#FF5A12] cursor-pointer transition-colors duration-300"
-            />
-            <Twitter className="text-gray-500 hover:fill-[#FF5A12] hover:text-[#FF5A12] cursor-pointer transition-colors duration-300" />
-            <Github
-              color="gray"
-              size={24}
-              strokeWidth={1}
-              className="text-gray-500 hover:fill-[#FF5A12] cursor-pointer transition-colors duration-300"
-            />
+            <a
+              href="https://www.linkedin.com/company/letscr8t"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Linkedin
+                color="gray"
+                size={24}
+                strokeWidth={1}
+                className="text-gray-500 hover:fill-[#FF5A12] cursor-pointer transition-colors duration-300"
+              />
+            </a>
+            <a
+              href="https://x.com/LetsCr8T"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Twitter className="text-gray-500 hover:fill-[#FF5A12] hover:text-[#FF5A12] cursor-pointer transition-colors duration-300" />
+            </a>
+            <a
+              href="https://github.com/WeBuildWithLove"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Github
+                color="gray"
+                size={24}
+                strokeWidth={1}
+                className="text-gray-500 hover:fill-[#FF5A12] cursor-pointer transition-colors duration-300"
+              />
+            </a>
           </div>
           <Link href="/contact" className="">
             <AnimatedButton className="w-[147px] h-[56px]">
@@ -101,8 +119,8 @@ function Navbar() {
       {/* Mobile Menu */}
       <div
         className={`${
-          open ? "top-[70px]" : "top-[-100%]"
-        } lg:hidden fixed bg-[#F4F4F4] w-full h-screen p-[20px] flex flex-col justify-center items-center transition-all duration-700 ease-in-out `}
+          open ? "top-[60px]" : "top-[-100%]"
+        } lg:hidden fixed bg-[#F4F4F4] w-full h-screen p-[20px] flex flex-col justify-center items-center transition-all duration-700 ease-in-out`}
       >
         <div className="flex flex-col items-center font-grotesk text-base font-medium text-Cr8tGray gap-5">
           {links.map((link, index) => (
@@ -127,19 +145,37 @@ function Navbar() {
 
         <div className=" gap-[40px] items-center lg:hidden flex flex-col mt-[220px]">
           <div className="flex gap-[20px] items-center">
-            <Linkedin
-              color="gray"
-              size={24}
-              strokeWidth={1}
-              className="text-gray-500 hover:fill-[#FF5A12] cursor-pointer transition-colors duration-300"
-            />
-            <Twitter className="text-gray-500 hover:fill-[#FF5A12] hover:text-[#FF5A12] cursor-pointer transition-colors duration-300" />
-            <Github
-              color="gray"
-              size={24}
-              strokeWidth={1}
-              className="text-gray-500 hover:fill-[#FF5A12] cursor-pointer transition-colors duration-300"
-            />
+            <a
+              href="https://www.linkedin.com/company/letscr8t"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Linkedin
+                color="gray"
+                size={24}
+                strokeWidth={1}
+                className="text-gray-500 hover:fill-[#FF5A12] cursor-pointer transition-colors duration-300"
+              />
+            </a>
+            <a
+              href="https://x.com/LetsCr8T"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Twitter className="text-gray-500 hover:fill-[#FF5A12] hover:text-[#FF5A12] cursor-pointer transition-colors duration-300" />
+            </a>
+            <a
+              href="https://github.com/WeBuildWithLove"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Github
+                color="gray"
+                size={24}
+                strokeWidth={1}
+                className="text-gray-500 hover:fill-[#FF5A12] cursor-pointer transition-colors duration-300"
+              />
+            </a>
           </div>
           <Link href="/contact" className="">
             <AnimatedButton className="w-[147px] h-[56px]">

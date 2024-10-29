@@ -10,7 +10,8 @@ interface AnimatedButtonProps {
   className?: string;
   onClick?: () => void;
   withHeartbeat?: boolean;
-  isSettingsButton?: boolean; // Prop to indicate the settings button
+  isSettingsButton?: boolean;
+  disabled?: boolean;
 }
 
 const AnimatedButton: React.FC<AnimatedButtonProps> = ({
@@ -18,7 +19,8 @@ const AnimatedButton: React.FC<AnimatedButtonProps> = ({
   className,
   onClick,
   withHeartbeat = false,
-  isSettingsButton = false, // Default to false
+  isSettingsButton = false,
+  disabled,
 }) => {
   const baseClasses = `
     group default-transition relative z-10 overflow-hidden flex items-center justify-center gap-[5px] rounded-full text-center text-mobileButton leading-mobileButton block
@@ -28,7 +30,11 @@ const AnimatedButton: React.FC<AnimatedButtonProps> = ({
   `;
 
   return (
-    <button onClick={onClick} className={clsx(baseClasses, className)}>
+    <button
+      onClick={onClick}
+      className={clsx(baseClasses, className)}
+      disabled={disabled}
+    >
       {children}
 
       {/* Conditionally render the settings icon (static/animated) */}

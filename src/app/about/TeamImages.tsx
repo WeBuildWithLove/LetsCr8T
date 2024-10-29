@@ -6,8 +6,8 @@ interface TeamImagesProps {
   hoverSrc: string;
   normalWidth: number;
   normalHeight: number;
-  hoverScale: number; // Scale factor for hover effect
-  isDimmed?: boolean; // Dimmed effect based on group selection
+  hoverScale: number;
+  isDimmed?: boolean;
 }
 
 const TeamImages: React.FC<TeamImagesProps> = ({
@@ -29,7 +29,7 @@ const TeamImages: React.FC<TeamImagesProps> = ({
       <Image
         src={src}
         alt="Team member"
-        className={`absolute group-hover:hidden transition-all duration-300 ease-in-out`}
+        className={`absolute group-hover:hidden transition duration-500 ease-in-out transform group-hover:opacity-0 group-hover:scale-95`}
         width={normalWidth}
         height={normalHeight}
         priority
@@ -39,8 +39,8 @@ const TeamImages: React.FC<TeamImagesProps> = ({
       <Image
         src={hoverSrc}
         alt="Team member hover"
-        className={`absolute hidden group-hover:block transition-all duration-300 ease-in-out`}
-        style={{ transform: `scale(${hoverScale})`, transformOrigin: "center" }} // Apply scaling on hover
+        className={`absolute hidden group-hover:block transition duration-500 ease-in-out transform group-hover:opacity-100 group-hover:scale-[${hoverScale}]`}
+        style={{ transformOrigin: "center" }} // Apply scaling on hover
         width={normalWidth}
         height={normalHeight}
         priority

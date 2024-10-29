@@ -22,6 +22,7 @@
 }
 body{
   background:#F4F4F4;
+  color: #202526;
 }
 .hero_bg {
   background-image: url('/hero-image-1.svg'), url('/hero-image-2.svg');
@@ -190,5 +191,12 @@ button:hover .settings-static-icon {
 button:hover .settings-animated-icon {
   display: block; /* Show the animated icon */
 }
+
+
+
+
+
+
+
 
 

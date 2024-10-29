@@ -10,8 +10,6 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import Link from "next/link";
-import AnimatedButton from "../ui/animatedButton";
 import Advert from "./Advert";
 
 type REVIEWITEM = {
