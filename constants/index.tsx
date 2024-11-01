@@ -10,31 +10,31 @@ export const REVIEWS = [
     name: "Harold Uku",
     position: "Founding Partner H.O.D Legal",
     text: "We had the pleasure of engaging WeCr8T to develop a website for our firm, and the entire experience was exceptional. The team delivered a website that was sleek, user-friendly, and responsive, perfectly aligning with our vision. ",
-    image: "/mfoniso.png",
+    image: "/ClientPhoto.svg",
   },
   {
     name: "Shalom James",
     position: "Designer BWL",
     text: "“From the onboarding to the work proper and then the revisions and the final work, it was an exception experience working with Viraaly on our deck.”",
-    image: "/shalom.png",
+    image: "/ClientPhoto.svg",
   },
   {
     name: "Aniebiet Obo",
     position: "Developer BWL",
     text: "WeCr8t provided us with reliable and efficient web solutions that streamlined our business operations.",
-    image: "/aniebet.png",
+    image: "/ClientPhoto.svg",
   },
   {
     name: "Aniebiet Obo",
     position: "Developer BWL",
     text: "WeCr8t provided us with reliable and efficient web solutions that streamlined our business operations.",
-    image: "/aniebet.png",
+    image: "/ClientPhoto.svg",
   },
   {
     name: "Aniebiet Obo",
     position: "Developer BWL",
     text: "WeCr8t provided us with reliable and efficient web solutions that streamlined our business operations.",
-    image: "/aniebet.png",
+    image: "/ClientPhoto.svg",
   },
 ];
 

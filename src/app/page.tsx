@@ -2,8 +2,9 @@ import Commitment from "@/components/Home/Commitment";
 import HomeHero from "@/components/Home/HomeHero";
 import Layout from "@/layout";
 import HomeClient from "@/components/Home/HomeClient";
-import FAQ from "./about/FAQ";
+import FAQ from "../components/Home/FAQ";
 import HomeServices from "@/components/Home/HomeServices";
+import FAQs from "@/components/Home/FAQs";
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
       <HomeServices />
       <Commitment />
       <HomeClient />
-      <FAQ />
+      <FAQs />
     </Layout>
   );
 }

@@ -11,7 +11,6 @@ type PROJECTITEM = {
 const ProjectItem = ({ project, image, link, span }: PROJECTITEM) => {
   return (
     <div className="project-item">
-      {/* Portfolio image */}
       <Image
         src={image}
         alt="portfolio images"
@@ -20,16 +19,13 @@ const ProjectItem = ({ project, image, link, span }: PROJECTITEM) => {
         className="w-full"
       />
 
-      {/* Group parent for hover effects */}
-      <p className="text-lg font-medium font-grotesk text-black pt-[25px] group hover:text-cr8tOrange">
-        {/* Anchor element */}
+      <p className="lg:text-lg text-base font-medium font-grotesk text-black lg:pt-[25px] pt-[15px] group hover:text-cr8tOrange">
         <a
           href={link}
           target="_blank"
           rel="noopener noreferrer"
           className="cursor-pointer hover:underline hover:decoration-cr8tOrange"
         >
-          {/* Project text */}
           {project}
 
           {/* Span element inside the link */}

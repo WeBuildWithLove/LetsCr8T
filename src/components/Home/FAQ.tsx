@@ -31,8 +31,8 @@ const ReviewItem = ({ question, answer }: FAQITEM) => {
 
 const FAQ = () => {
   return (
-    <section className="md:pt-[150px] pt-[50px] flex md:px-[80px] xl:px-[80px] lg:px-[30px] flex-wrap lg:flex-nowrap px-6 items-start">
-      <div className="md:w-[571px] xl:w-[571px] lg:w-[400px] w-[285px] flex flex-col items-start">
+    <section className="md:pt-[150px] pt-[50px] flex md:px-[80px] xl:px-[80px] lg:px-[30px] flex-wrap lg:flex-nowrap px-6 items-center justify-center  w-full ">
+      <div className="md:w-[571px] xl:w-[571px] lg:w-[400px] w-[285px] flex flex-col">
         <h1 className="text-cr8tOrange font-urban md:text-2xl font-normal text-base">
           FAQs
         </h1>
@@ -48,7 +48,7 @@ const FAQ = () => {
         />
       </div>
 
-      <div className="md:w-[701px] xl:w-[701px] lg:w-[301px] w-[342px] flex flex-col justify-center items-center mx-auto mt-[25px] lg:mt-0   h-[502px] ">
+      <div className="md:w-[701px] xl:w-[701px] lg:w-[301px] w-[342px] flex flex-col justify-center items-center mx-auto mt-[25px] lg:mt-0  h-[500px] ">
         <Accordion type="single" collapsible>
           {FAQS.map((faq, index) => (
             <ReviewItem

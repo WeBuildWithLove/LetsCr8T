@@ -4,8 +4,8 @@ import Recommendations from "../Global/Recommendations";
 
 const Clients = () => {
   return (
-    <section className=" md:pt-[150px] pt-[50px] flex flex-col md:gap-[50px] gap-[25px] ">
-      <div className=" leading-[33.6px] md:leading-normal md:text-[32px] text-2xl flex flex-col justify-center items-center mx-auto md:w-[524px] w-[326px] gap-[10px] text-cr8tBlack">
+    <section className=" md:pt-[150px] pt-[50px] flex flex-col md:gap-[50px] gap-[25px]  ">
+      <div className=" leading-[33.6px] md:leading-normal md:text-[32px] text-2xl flex flex-col items-center mx-auto md:w-[524px] w-[326px] gap-[10px] text-cr8tBlack ">
         <h1 className=" font-grotesk md:w-full w-[306px] text-center">
           What Our{" "}
           <span className="text-cr8tOrange capitalize font-urban font-normal">

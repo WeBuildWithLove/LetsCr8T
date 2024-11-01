@@ -38,6 +38,16 @@ body{
   
 }
 
+/* .accordionBackground {
+  background-image: url('../../public/question-mark.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  background-size: 342px 343px;
+  
+} */
+
+
 
 @media (max-width: 480px) {
   .footer_bg{
@@ -55,6 +65,11 @@ background-image: block;
     background-size:250px 
     
   }
+  /* .accordionBackground {
+    background-image: url('../../public/question-mark.svg');
+  
+  } */
+  
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
@@ -72,6 +87,11 @@ background-image: block;
         background-size:414px 
         
       }
+      /* .accordionBackground {
+        background-image: block;
+      
+      }
+       */
       
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
@@ -83,6 +103,10 @@ background-image: block;
   
 
       }
+      /* .accordionBackground {
+        background-image: none;
+      
+      } */
 }
 
 

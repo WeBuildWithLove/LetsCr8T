@@ -9,11 +9,11 @@ import Service4 from "../../../public/service4.svg";
 
 const Services = () => {
   return (
-    <section className="pt-[100px] px-[80px] text-cr8tBlack">
-      <div className="flex flex-col gap-[100px]">
-        <div className="flex flex-col gap-[25px]">
+    <section className="lg:pt-[100px] pt-[23px] lg:px-[80px]  text-cr8tBlack">
+      <div className="flex flex-col md:gap-[100px] gap-[25px] px-6 lg:px-0">
+        <div className="flex flex-col lg:gap-[25px] gap-[15px] md:gap-0 ">
           <div className="flex justify-between">
-            <div className="flex gap-[25px]">
+            <div className="flex xl:gap-[25px] gap-[10px] xl:w-[320px] lg:w-[270px] lg:h-[478px] h-[112px] w-[82px] md:w-[220px] md:h-[438px]">
               <Image
                 src={Service4}
                 alt="services image"
@@ -29,7 +29,7 @@ const Services = () => {
                 height={478}
               />
             </div>
-            <div>
+            <div className="xl:w-[320px] lg:w-[270px] lg:h-[478px] h-[112px] w-[82px] md:w-[220px] md:h-[438px] mx_auto flex flex-col items-center justify-center  ">
               <Image
                 src={Service2}
                 alt="services image"
@@ -39,7 +39,7 @@ const Services = () => {
               />
             </div>
           </div>
-          <div className="flex items-end justify-end">
+          <div className="ml-auto w-[175px] xl:w-[686px] md:w-[400px] lg:w-[550px]  lg:h-[478px] md:h-[200px] h-[112px]">
             <Image
               src={Service3}
               alt="services image"
@@ -49,10 +49,10 @@ const Services = () => {
             />
           </div>
         </div>
-        <div className="flex justify-between font-normal font-poppins">
+        <div className="flex md:justify-between gap-[10px] md:gap-0 flex-wrap md:flex-nowrap font-normal font-poppins md:mt-[80px] lg:mt-0">
           <h3 className="text-base text-cr8tBlack">APPROACH</h3>
 
-          <p className="text-lg w-[572px] text-cr8tLightBlack leading-[27px]">
+          <p className="lg:text-lg text-base leading-6 lg:w-[572px] w-[256px] text-cr8tLightBlack md:leading-[27px] ml-auto lg:ml-0">
             Whether you require help with strategy, branding, web or product
             design, development, app creation we have the expertise and
             experience to deliver uniquely branded and interactive solutions for
@@ -64,7 +64,7 @@ const Services = () => {
             services to meet our client's needs.`}
           </p>
         </div>
-        <div className="pr-[123px] font-grotesk text-[70px] leading-[98px] ">
+        <div className="md:pr-[123px] w-[341px] md:w-full font-grotesk xl:text-[70px]  lg:text-[50px] text-[32px] leading-[44.8px] xl:leading-[98px] lg:leading-[68px] ">
           <p>
             {` We're committed to creating exceptional `}
             <span className="font-urban font-normal  text-cr8tOrange">
@@ -74,13 +74,13 @@ const Services = () => {
             innovative development.
           </p>
         </div>
-        <div className="flex justify-between font-normal font-poppins">
+        <div className="flex lg:justify-between flex-wrap lg:flex-nowrap font-normal font-poppins pt-[18px] lg:pt-0 gap-[10px] lg:gap-0  ">
           <h3 className="text-base text-cr8tBlack">SERVICES</h3>
-          <div className="font-poppins text-lg  w-[301px] flex flex-col gap-[25px]">
+          <div className="font-poppins text-lg lg:w-[301px] w-[254px] flex flex-col gap-[25px]  ml-auto lg:ml-0">
             {ServiceListingData.map((service, index) => (
-              <div key={index} className="flex flex-col gap-[5px]">
+              <div key={index} className="flex flex-col gap-[5px] ">
                 <h2 className=" font-medium">{service.service_name}</h2>
-                <ul className=" font-normal text-cr8tLightBlack">
+                <ul className=" font-normal text-base lg:text-lg text-cr8tLightBlack">
                   <li>{service.one}</li>
                   <li>{service.two}</li>
                   <li>{service.three}</li>
@@ -91,7 +91,7 @@ const Services = () => {
           </div>
         </div>
       </div>
-      <div className="my-[150px]">
+      <div className="lg:my-[150px] my-[50px] flex flex-col items-center justify-center mx-auto">
         <Advert />
       </div>
     </section>

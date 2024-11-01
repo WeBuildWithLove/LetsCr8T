@@ -43,7 +43,7 @@ function Contact() {
         console.log(res);
         setLoading(false);
         toast.success(
-          "Thank you for reaching out to WeCr8t! We have received your message and will get back to you shortly."
+          "Thank you for contacting LetsCr8T! We will get back to you shortly."
         );
         setEmail("");
         setName("");
@@ -59,78 +59,77 @@ function Contact() {
   };
   return (
     <Layout>
-      <div className="pt-[80px] x-[80px]">
-        <div className="flex flex-col item-center justify-center gap-[10px] w-[630px] text-center mx-auto">
-          <h1 className="text-5xl font-medium font-grotesk">
-            Contact LectsCr8T
+      <div className=" lg:pt-[80px] pt-[50px] lg:px-[80px] px-[25px] pb-[50px]">
+        <div className="flex flex-col item-center justify-center gap-[10px] lg:w-[630px] md:w-[470px] w-[340px]  text-center mx-auto items-center">
+          <h1 className="lg:text-5xl text-[32px] font-normal md:font-medium font-grotesk ">
+            Contact LetsCr8T
           </h1>
-          <p className=" text-lg font-normal leading-[27px] text-cr8tLightBlack font-poppins">
+          <p className=" text-base md:text-lg font-light md:leading-[27px] text-cr8tLightBlack font-poppins leading-6">
             If you&apos;d like to get in touch with LetsCr8T regarding your
             project or need more information? Fill out the form below to get in
             touch with us. At LetsCr8T, we&apos;re here to help your business
             thrive with our exceptional digital solutions.
           </p>
         </div>
-        <div className="mt-10 bg-white rounded-[20px] w-[894px] mx-auto px-8 flex flex-col gap-8 py-8">
-          <div className="text-[21px] font-medium font-poppins">
+        <div className="md:mt-10 mt-[30px] bg-white rounded-[20px] max-w-[894px] mx-auto lg:px-8 px-[10px] flex flex-col gap-8 py-8">
+          <div className="lg:text-[21px] text-base font-normal lg:font-medium font-poppins">
             <h3>Leave Us a message</h3>
             <div className="border-2 border-cr8tOrange w-[100px]"></div>
           </div>
           <form className="space-y-4">
             {/* First Name and Last Name */}
-            <div className="flex space-x-4">
+            <div className="flex gap-5 flex-wrap lg:flex-nowrap">
               <InputComponent
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 type="text"
                 placeholder="First Name"
-                className="w-1/2"
+                className="w-full"
               />
               <InputComponent
                 value={lastName}
                 onChange={(e) => setLastName(e.target.value)}
                 type="text"
                 placeholder="Last Name"
-                className="w-1/2"
+                className="w-full"
               />
             </div>
 
             {/* Email and Phone Number */}
-            <div className="flex space-x-4">
+            <div className="flex gap-5 flex-wrap lg:flex-nowrap">
               <InputComponent
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 type="email"
                 placeholder="Email"
-                className="w-1/2"
+                className="w-full"
               />
               <InputComponent
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
                 type="tel"
                 placeholder="Phone Number"
-                className="w-1/2"
+                className="w-full"
               />
             </div>
 
             {/* Message Textarea */}
             <textarea
-              className="flex min-h-[170px] w-full border-input bg-background px-3 py-2 placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50 border border-cr8tOrange h-14 text-base text-cr8tLightBlack opacity-[0.5] font-poppins focus:ring-0  rounded-[5px] pl-[10px] transition-colors duration-300 focus:!border-cr8tOrange"
+              className="flex min-h-[170px] w-full border-input bg-background px-3 py-2 disabled:cursor-not-allowed  border  h-14 text-base rounded-[5px] pl-[10px] font-medium font-poppins focus:outline-none focus:ring focus:ring-cr8tOrange text-cr8tLightBlack text-opacity-25"
               placeholder="Leave a message "
               value={message}
               onChange={(e) => setMessage(e.target.value)}
             />
+            <div className="mx-auto">
+              <AnimatedButton
+                className="lg:w-[282px] h-[56px] w-full"
+                disabled={loading}
+                onClick={sendEmail}
+              >
+                {`${loading ? "SENDING..." : "Submit your message"}`}
+              </AnimatedButton>
+            </div>
           </form>
-
-          <div className="mx-auto">
-            <AnimatedButton
-              className="w-[282px] h-[56px] flex flex-col"
-              disabled={loading}
-              onClick={sendEmail}
-            >
-              {`${loading ? "SENDING..." : "Submit your message"}`}
-            </AnimatedButton>
-          </div>
         </div>
       </div>
     </Layout>

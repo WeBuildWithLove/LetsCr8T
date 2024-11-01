@@ -27,36 +27,34 @@ const OurTeam = () => {
 
   // Handler function to select group
   const handleGroupSelection = (group: "developers" | "designers") => {
-    setSelectedGroup(group === selectedGroup ? null : group);
+    setSelectedGroup(group === selectedGroup ? null : group); // Toggle selection on click
   };
 
   return (
-    <section className="mt-[150px] px-[80px] mb-[-187px]">
-      <h3 className="text-Cr8tGray font-semibold text-5xl font-grotesk text-center">
+    <section className="lg:mt-[150px] mt-[50px] lg:px-[80px] px-6 lg:mb-[-187px] mb-[-50px]">
+      <h3 className="text-Cr8tGray font-semibold lg:text-5xl text-2xl md:text-[32px] font-grotesk text-center">
         Our Team
       </h3>
 
-      <div className="w-[807px] pt-[50px]">
-        <p className="font--semibold text-[70px] font-grotesk text-cr8tBlack leading-[82px] ">
+      <div className="lg:w-[807px]  md:w-[500px] w-[344px] lg:pt-[50px] md:pt-[25px] pt-[5px]">
+        <p className="font-semibold lg:text-[70px] md:text-[32px]  text-2xl font-grotesk text-cr8tBlack lg:leading-[82px] leading-[33.6px]  md:leading-[52px] ">
           “When Love And Skill Work Together, Expect A Masterpiece”
         </p>
-        <span className="text-lg font-poppins font-medium italic text-cr8tLightBlack pt-5">
+        <span className=" text-base lg:text-lg font-poppins font-medium italic text-cr8tLightBlack pt-5">
           John Ruskin
         </span>
       </div>
 
       {/* Team members */}
-      <div className="flex justify-end flex-col items-end translate-y-[-130px]">
+      <div className="lg:flex justify-end flex-col items-end translate-y-[-130px] hidden lg:mt-16 xl:mt-0">
         {/* Developers section */}
-        <div
-          className="flex gap-[5px] items-center cursor-pointer"
-          onClick={() => handleGroupSelection("developers")}
-        >
+        <div className="flex gap-[5px] items-center cursor-pointer">
           {/* Developers Button */}
           <div
             className={`w-[135px] h-[135px] bg-cr8tOrange rounded-full flex flex-col items-center justify-center font-semibold font-poppins text-cr8tWhite text-lg ${
               selectedGroup === "developers" && "opacity-50"
             }`}
+            onClick={() => handleGroupSelection("developers")}
           >
             Developers
           </div>
@@ -66,7 +64,8 @@ const OurTeam = () => {
               hoverSrc={Kufre2}
               normalWidth={180}
               normalHeight={180}
-              hoverScale={1.05}
+              // hoverHeight={190}
+              // hoverWidth={190}
               isDimmed={selectedGroup === "designers"} // Dimmed if Designers are selected
             />
           </div>
@@ -81,7 +80,8 @@ const OurTeam = () => {
                 hoverSrc={Gift2}
                 normalWidth={270}
                 normalHeight={270}
-                hoverScale={1.05}
+                // hoverHeight={280}
+                // hoverWidth={280}
                 isDimmed={selectedGroup === "designers"} // Gift is a developer
               />
             </div>
@@ -101,7 +101,8 @@ const OurTeam = () => {
                 hoverSrc={Preye2}
                 normalWidth={270}
                 normalHeight={270}
-                hoverScale={1.05}
+                // hoverHeight={280}
+                // hoverWidth={280}
                 isDimmed={selectedGroup === "designers"}
               />
             </div>
@@ -111,7 +112,8 @@ const OurTeam = () => {
                 hoverSrc={Mfoniso2}
                 normalWidth={180}
                 normalHeight={180}
-                hoverScale={1.05}
+                // hoverHeight={190}
+                // hoverWidth={190}
                 isDimmed={selectedGroup === "developers"}
               />
             </div>
@@ -126,7 +128,8 @@ const OurTeam = () => {
               hoverSrc={Abraham2}
               normalWidth={270}
               normalHeight={270}
-              hoverScale={1.05}
+              // hoverHeight={280}
+              // hoverWidth={280}
               isDimmed={selectedGroup === "developers"}
             />
           </div>
@@ -137,7 +140,8 @@ const OurTeam = () => {
                 hoverSrc={Aniebet2}
                 normalWidth={180}
                 normalHeight={180}
-                hoverScale={1.05}
+                // hoverHeight={190}
+                // hoverWidth={190}
                 isDimmed={selectedGroup === "designers"}
               />
             </div>
@@ -147,7 +151,8 @@ const OurTeam = () => {
                 hoverSrc={Shalom2}
                 normalWidth={180}
                 normalHeight={180}
-                hoverScale={1.05}
+                // hoverHeight={190}
+                // hoverWidth={190}
                 isDimmed={selectedGroup === "developers"}
               />
             </div>
@@ -162,8 +167,9 @@ const OurTeam = () => {
               hoverSrc={Jubril2}
               normalWidth={180}
               normalHeight={180}
-              hoverScale={1.05}
-              isDimmed={selectedGroup === "designers"}
+              // hoverHeight={190}
+              // hoverWidth={190}
+              isDimmed={selectedGroup === "developers"}
             />
           </div>
           <div className="translate-y-[-70px] translate-x-[30px]">
@@ -172,10 +178,120 @@ const OurTeam = () => {
               hoverSrc={Chris2}
               normalWidth={270}
               normalHeight={270}
-              hoverScale={1.05}
+              // hoverHeight={280}
+              // hoverWidth={280}
               isDimmed={selectedGroup === "developers"}
             />
           </div>
+        </div>
+      </div>
+
+      {/* mobile view */}
+      <div className=" grid grid-rows-5 md:grid-rows-4 md:grid-cols-2 px-[10px] justify-center items-center md:justify-end md:items-end mt-[25px] lg:hidden ">
+        <div className=" flex gap-[7px] ">
+          <div
+            className={`w-[135px] h-[135px] bg-cr8tOrange rounded-full flex flex-col items-center justify-center font-semibold font-poppins text-cr8tWhite text-lg ${
+              selectedGroup === "developers" && "opacity-50"
+            }`}
+            onClick={() => handleGroupSelection("developers")}
+          >
+            Developers
+          </div>
+          <TeamImages
+            src={Kufre}
+            hoverSrc={Kufre2}
+            normalWidth={180}
+            normalHeight={180}
+            isDimmed={selectedGroup === "designers"} // Dimmed if Designers are selected
+          />
+        </div>
+        <div className=" flex gap-[12px] ">
+          <div className="translate-y-[-40px]">
+            <TeamImages
+              src={Preye}
+              hoverSrc={Preye2}
+              normalWidth={180}
+              normalHeight={180}
+              isDimmed={selectedGroup === "designers"}
+            />
+          </div>
+          <div className=" pt-[15px]">
+            <TeamImages
+              src={Mfoniso}
+              hoverSrc={Mfoniso2}
+              normalWidth={130}
+              normalHeight={130}
+              isDimmed={selectedGroup === "developers"}
+            />
+          </div>
+        </div>
+        <div className=" flex gap-[5px] ">
+          <div className=" translate-y-[-20px]">
+            <div
+              className="w-[135px] h-[135px] bg-cr8tBlack leading-[27px] rounded-full flex flex-col items-center justify-center font-semibold font-poppins text-cr8tWhite text-lg cursor-pointer"
+              onClick={() => handleGroupSelection("designers")}
+            >
+              <span className="text-3xl font-semibold">UX</span> DESIGNERS
+            </div>
+          </div>
+          <div className=" translate-y-[-20px] md:translate-y-0">
+            <TeamImages
+              src={Gift}
+              hoverSrc={Gift2}
+              normalWidth={180}
+              normalHeight={180}
+              isDimmed={selectedGroup === "designers"}
+            />
+          </div>
+        </div>
+        <div className=" flex gap-[14px] ">
+          <div className=" translate-y-[-60px] md:translate-y-[-30px]">
+            <TeamImages
+              src={Abraham}
+              hoverSrc={Abraham2}
+              normalWidth={180}
+              normalHeight={180}
+              isDimmed={selectedGroup === "developers"}
+            />
+          </div>
+          <div className=" translate-y-[-10px]">
+            <TeamImages
+              src={Aniebet}
+              hoverSrc={Aniebet2}
+              normalWidth={130}
+              normalHeight={130}
+              isDimmed={selectedGroup === "designers"}
+            />
+          </div>
+        </div>
+        <div className=" flex gap-[7px] ">
+          <div className=" translate-y-[-50px]">
+            <TeamImages
+              src={Shalom}
+              hoverSrc={Shalom2}
+              normalWidth={130}
+              normalHeight={130}
+              isDimmed={selectedGroup === "developers"}
+            />
+          </div>
+          <div className=" translate-y-[-55px] md:translate-y-1">
+            <TeamImages
+              src={Chris}
+              hoverSrc={Chris2}
+              normalWidth={180}
+              normalHeight={190}
+              isDimmed={selectedGroup === "developers"}
+            />
+          </div>
+        </div>
+        <div className=" translate-y-[-105px] md:translate-y-[-80px]  translate-x-10 md:translate-x-[-20px] ">
+          <TeamImages
+            src={Jubril}
+            hoverSrc={Jubril2}
+            normalWidth={130}
+            normalHeight={130}
+            isDimmed={selectedGroup === "developers"}
+          />
         </div>
       </div>
     </section>

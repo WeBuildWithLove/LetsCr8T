@@ -1,3 +1,4 @@
+// TeamImages.tsx
 import React from "react";
 import Image from "next/image";
 
@@ -6,7 +7,9 @@ interface TeamImagesProps {
   hoverSrc: string;
   normalWidth: number;
   normalHeight: number;
-  hoverScale: number;
+  hoverWidth?: number;
+  hoverHeight?: number;
+  // hoverScale?: number;
   isDimmed?: boolean;
 }
 
@@ -15,21 +18,26 @@ const TeamImages: React.FC<TeamImagesProps> = ({
   hoverSrc,
   normalWidth,
   normalHeight,
-  hoverScale,
+  hoverWidth,
+  hoverHeight,
+  // hoverScale = 1.05,
   isDimmed,
 }) => {
   return (
     <div
-      className={`group relative transition-all duration-500 ease-in-out ${
+      className={`group relative transition-all duration-500 ease-in-out  ${
         isDimmed ? "opacity-10 scale-[0.95]" : "opacity-100 scale-100"
       }`}
-      style={{ width: normalWidth, height: normalHeight }} // Fixed size container
+      style={{
+        width: hoverWidth || normalWidth,
+        height: hoverHeight || normalHeight,
+      }}
     >
       {/* Normal image */}
       <Image
         src={src}
         alt="Team member"
-        className={`absolute group-hover:hidden transition duration-500 ease-in-out transform group-hover:opacity-0 group-hover:scale-95`}
+        className="absolute group-hover:hidden transition ease-in-out duration-300"
         width={normalWidth}
         height={normalHeight}
         priority
@@ -39,10 +47,15 @@ const TeamImages: React.FC<TeamImagesProps> = ({
       <Image
         src={hoverSrc}
         alt="Team member hover"
-        className={`absolute hidden group-hover:block transition duration-500 ease-in-out transform group-hover:opacity-100 group-hover:scale-[${hoverScale}]`}
-        style={{ transformOrigin: "center" }} // Apply scaling on hover
-        width={normalWidth}
-        height={normalHeight}
+        className={`absolute hidden group-hover:block transition ease-in-out hover:scale-[1.08] duration-300 `}
+        style={{
+          width: hoverWidth || normalWidth,
+          height: hoverHeight || normalHeight,
+          transformOrigin: "center",
+          // scale: hoverScale,
+        }}
+        width={hoverWidth || normalWidth}
+        height={hoverHeight || normalHeight}
         priority
       />
     </div>
