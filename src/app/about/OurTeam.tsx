@@ -169,7 +169,7 @@ const OurTeam = () => {
               normalHeight={180}
               // hoverHeight={190}
               // hoverWidth={190}
-              isDimmed={selectedGroup === "developers"}
+              isDimmed={selectedGroup === "designers"}
             />
           </div>
           <div className="translate-y-[-70px] translate-x-[30px]">
