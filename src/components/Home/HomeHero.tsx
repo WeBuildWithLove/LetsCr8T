@@ -50,11 +50,11 @@ function HomeHero() {
           </Link>
         </div>
 
-        <div className="text-[#ADADAD] text-[13px] font-normal flex gap-[11px] items-center font-poppins lg:pt-3 xl:pt-0">
+        <div className="text-[#ADADAD] text-[13px] font-normal flex gap-[11px] items-center font-poppins lg:pt-6 xl:pt-0">
           <h3>SCROLL</h3>
           <MoveDown size={13} className="animate-bounce" color="#FF5A12" />
         </div>
-        <h3 className="text-[#ADADAD] font-grotesk font-medium text-base md:text-2xl lg:pt-2 xl:pt-0">
+        <h3 className="text-[#ADADAD] font-grotesk font-medium text-base md:text-2xl lg:pt-4 xl:pt-0">
           Trusted By The Big Names
         </h3>
       </div>

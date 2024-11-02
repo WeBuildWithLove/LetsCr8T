@@ -6,7 +6,7 @@ import AnimatedButton from "../ui/animatedButton";
 
 function Commitment() {
   return (
-    <section className="md:pt-[150px] pt-[50px] flex items-center  justify-between lg:gap-5 xl:gap-0 flex-wrap lg:flex-nowrap lg:px-[80px] px-6">
+    <section className="md:pt-[150px] pt-[50px] flex items-center justify-between lg:gap-5 xl:gap-0 flex-wrap lg:flex-nowrap xl:px-[80px] px-6">
       <div className="bg-[#F8F8F8] rounded-[20px] font-poppins flex flex-col  items-center md:w-[692px] xl:w-[692px] lg:w-[500px] w-[342px] md:gap-[50px] gap-[20px] order-2 lg:-order-none p-4">
         <div className="md:w-[474px] w-[316px] md:pt-[41px] pt-[27px] flex flex-col md:gap-[10px] gap-[5px] text-center  items-center">
           <p className="md:text-2xl text-base font-semibold text-cr8tBlack">
@@ -24,7 +24,7 @@ function Commitment() {
             height={241}
             className="w-[301.52px] md:w-[363px]"
           />
-          <div className="bg-white md:w-[271px] w-[240px] h-[30.7px] font-poppins font-semibold text-center text-[14px]  md:text-base text-Cr8tGray flex flex-col justify-center rounded-[5px]">
+          <div className="bg-white md:w-[271px] w-[240px]  h-[30.7px] font-poppins font-semibold text-center text-[14px]  md:text-base text-Cr8tGray flex flex-col justify-center rounded-[5px]">
             <p className="">12+ Website completed in 2024</p>
           </div>
         </div>
@@ -37,7 +37,7 @@ function Commitment() {
           </span>
         </h1>
 
-        <p className="font-poppins text-cr8tLightBlack md:text-lg text-base leading-6 font-light md:w-[610px] xl:w-[610px] lg:w[500px] w-[327px] md:leading-7 pr-[15px] md:pr-0  ">
+        <p className="font-poppins text-cr8tLightBlack md:text-lg text-base leading-6 font-light md:w-[610px] xl:w-[610px] lg:w-[400px] w-[327px] md:leading-7 pr-[15px] md:pr-0  ">
           At LetsCr8T, we believe in giving back. Every month, we offer free web
           services to one small business, helping them build a strong online
           presence and grow. We understand the challenges small businesses face
