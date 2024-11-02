@@ -34,7 +34,7 @@ function Footer() {
 
             <span className="flex items-center  md:gap-[2.5px] gap-[5px]">
               <CiMail size={24} />
-              <p className="">contact@LetsCr8T.xyz</p>
+              <p className="">contact@letscr8t.xyz</p>
             </span>
           </div>
           <div className="flex flex-col  md:gap-[3.5px] gap-[5px]">

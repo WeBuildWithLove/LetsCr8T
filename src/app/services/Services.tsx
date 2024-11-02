@@ -53,15 +53,13 @@ const Services = () => {
           <h3 className="text-base text-cr8tBlack">APPROACH</h3>
 
           <p className="lg:text-lg text-base leading-6 lg:w-[572px] w-[256px] text-cr8tLightBlack md:leading-[27px] ml-auto lg:ml-0">
-            Whether you require help with strategy, branding, web or product
-            design, development, app creation we have the expertise and
+            Whether you need assistance with strategy, branding, web or product
+            design, development, or app creation, we have the expertise and
             experience to deliver uniquely branded and interactive solutions for
-            your audience.
+            your audience
             <br />
             <br />
-            {`We understand that each client, project, and context is different.
-            We adopt a flexible approach, allowing us to adapt and tailor our
-            services to meet our client's needs.`}
+            {`We recognize that each client, project, and context is different, so we adopt a flexible approach that allows us to tailor our services to meet our clients' needs.`}
           </p>
         </div>
         <div className="md:pr-[123px] w-[341px] md:w-full font-grotesk xl:text-[70px]  lg:text-[50px] text-[32px] leading-[44.8px] xl:leading-[98px] lg:leading-[68px] ">

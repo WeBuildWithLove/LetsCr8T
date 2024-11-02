@@ -9,7 +9,7 @@ export const REVIEWS = [
   {
     name: "Harold Uku",
     position: "Founding Partner H.O.D Legal",
-    text: "We had the pleasure of engaging WeCr8T to develop a website for our firm, and the entire experience was exceptional. The team delivered a website that was sleek, user-friendly, and responsive, perfectly aligning with our vision. ",
+    text: "LetsCr8T exceeded our expectations with a sleek, user-friendly website that perfectly captured our vision. The entire development process exceptional.",
     image: "/ClientPhoto.svg",
   },
   {
@@ -42,13 +42,13 @@ export const REVIEWS = [
 export const FAQS = [
   {
     id: "1",
-    question: "What services does WeCr8t offer?",
+    question: "What services does LetsCr8t offer?",
     answer:
       "We specialize in website and web app development, branding and identity design, web maintenance and support, and content strategy and copywriting. Whether you're building from scratch or need ongoing support, we’ve got you covered.",
   },
   {
     id: "2",
-    question: "How can I get started with WeCr8t?",
+    question: "How can I get started with LetsCr8t?",
     answer:
       "It’s easy! Just click the 'Start Project' button and fill out a quick form, or schedule a free consultation with our team. We’ll discuss your needs and create a plan that’s right for your business.",
   },

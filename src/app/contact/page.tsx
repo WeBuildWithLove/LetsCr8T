@@ -65,10 +65,10 @@ function Contact() {
             Contact LetsCr8T
           </h1>
           <p className=" text-base md:text-lg font-light md:leading-[27px] text-cr8tLightBlack font-poppins leading-6">
-            If you&apos;d like to get in touch with LetsCr8T regarding your
-            project or need more information? Fill out the form below to get in
-            touch with us. At LetsCr8T, we&apos;re here to help your business
-            thrive with our exceptional digital solutions.
+            If you&apos;d like to get in touch with us regarding your project or
+            need more information, please fill out the form below. At LetsCr8T,
+            we’re here to help your business thrive with our exceptional digital
+            solutions.
           </p>
         </div>
         <div className="md:mt-10 mt-[30px] bg-white rounded-[20px] max-w-[894px] mx-auto lg:px-8 px-[10px] flex flex-col gap-8 py-8">
@@ -122,7 +122,7 @@ function Contact() {
             />
             <div className="mx-auto">
               <AnimatedButton
-                className="lg:w-[282px] h-[56px] w-full"
+                className="lg:w-[282px] h-[56px] w-full mx-auto"
                 disabled={loading}
                 onClick={sendEmail}
               >

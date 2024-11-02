@@ -7,7 +7,7 @@ const OurStory = () => {
       <h2 className=" font-semibold md:text-[32px] text-2xl text-cr8tBlack">
         Our Story
       </h2>
-      <div className=" flex md:justify-between flex-wrap md:flex-nowrap gap-[25px] lg:gap-0 items-center">
+      <div className=" flex md:justify-between flex-wrap md:flex-nowrap gap-[25px] xl:gap-2 items-center">
         <div className="flex flex-col">
           <div className="flex gap-[6px] md:mt-5 mt-[10px] items-center ">
             <span className=" hidden lg:flex md:h-[60px] md:w-[60px] h-[48px] w-[48px] bg-cr8tOrange rounded-[7px] font-normal md:text-[32px] text-lg text-[#F4F4F4]  flex-col items-center justify-center">
@@ -42,8 +42,8 @@ const OurStory = () => {
             />
           </div>
         </div>
-        <div className="border border-Cr8tGray hidden md:block h-[317px] border-opacity-20 lg:mr-[2%] xl:mr-0"></div>
-        <div className="flex flex-col lg:gap-[30px] gap-[25px] items-center">
+        <div className="border border-Cr8tGray hidden md:block h-[317px] border-opacity-20 lg:mr-[2%] xl:mr-0 "></div>
+        <div className="flex flex-col lg:gap-[30px] gap-[25px] items-center ">
           <div className="flex flex-col lg:gap-5 gap-[5px]">
             <span className="lg:w-[125px] w-[114px] lg:h-[45px] h-[42px] p-[10px] bg-opacity-[0.1] bg-Cr8tGray rounded-[5px] text-cr8tBlack lg:text-lg font-grotesk font-medium text-base">
               Our Mission
@@ -51,7 +51,7 @@ const OurStory = () => {
 
             <Paragraph
               message="Our mission is simple: We want to empower businesses to become profitable and shine with innovative digital solutions that truly reflect who they are."
-              className="flex flex-col lg:text-lg text-base  lg:leading-[27px] leading-6 xl:w-[572px] lg:w-[472px]  w-[342px]"
+              className="flex flex-col lg:text-lg text-base  lg:leading-[27px] leading-6 xl:w-[572px] lg:w-[472px]  w-[342px] "
             />
           </div>
           <div className="flex flex-col lg:gap-5 gap-[5px]">

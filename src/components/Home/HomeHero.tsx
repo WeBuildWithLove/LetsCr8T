@@ -55,7 +55,7 @@ function HomeHero() {
           <MoveDown size={13} className="animate-bounce" color="#FF5A12" />
         </div>
         <h3 className="text-[#ADADAD] font-grotesk font-medium text-base md:text-2xl lg:pt-4 xl:pt-0">
-          Trusted By The Big Names
+          Trusted by Businesses Like Yours
         </h3>
       </div>
 
