@@ -57,9 +57,9 @@ const Recommendations = () => {
             />
           ))}
         </CarouselContent>
-        <div className="w-[200px] bg-blue-400">
-          <CarouselPrevious className="hidden md:flex left-[100px]   " />
-        </div>
+
+        <CarouselPrevious className="hidden md:flex left-[100px]  z-20  " />
+
         <CarouselNext className="hidden md:flex right-[100px]" />
       </Carousel>
       <div className="md:pt-[150px] pt-[50px] ">

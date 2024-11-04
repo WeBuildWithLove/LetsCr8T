@@ -52,7 +52,7 @@ const Services = () => {
         <div className="flex md:justify-between gap-[10px] md:gap-0 flex-wrap md:flex-nowrap font-normal font-poppins md:mt-[80px] lg:mt-0">
           <h3 className="text-base text-cr8tBlack">APPROACH</h3>
 
-          <p className="lg:text-lg text-base leading-6 lg:w-[572px] w-[256px] text-cr8tLightBlack md:leading-[27px] ml-auto lg:ml-0">
+          <p className="lg:text-lg text-base leading-6 lg:w-[572px] w-[256px] text-cr8tLightBlack md:leading-[27px] ml-auto lg:ml-0 font-light">
             Whether you need assistance with strategy, branding, web or product
             design, development, or app creation, we have the expertise and
             experience to deliver uniquely branded and interactive solutions for
@@ -78,7 +78,7 @@ const Services = () => {
             {ServiceListingData.map((service, index) => (
               <div key={index} className="flex flex-col gap-[5px] ">
                 <h2 className=" font-medium">{service.service_name}</h2>
-                <ul className=" font-normal text-base lg:text-lg text-cr8tLightBlack">
+                <ul className=" font-light text-base lg:text-lg text-cr8tLightBlack">
                   <li>{service.one}</li>
                   <li>{service.two}</li>
                   <li>{service.three}</li>
