@@ -241,40 +241,42 @@ export const teamMembers = [
 
 export const PORTFOLIO = [
   {
-    image: "/port1.svg",
+    image: "/portfolio-img1.png",
     project: "Daniel Araromi",
     span: "– Portfolio Website",
+    link: "https://offer-portfolio.vercel.app/",
+  },
+  {
+    image: "/portfolio-img6.png",
+    project: "LetsCr8T",
+    span: " – Agency Website",
     link: "https://www.hodlegal.org/",
   },
   {
-    image: "/port2.svg",
+    image: "/portfolio-img5.png",
+    project: "R&R Therapy",
+    span: " – Web Application",
+    link: "https://therapy-nine-ivory.vercel.app/",
+  },
+
+  {
+    image: "/portfolio-img2.png",
     project: "H.O.D LEGAL",
     span: " – Website Development",
     link: "https://www.hodlegal.org/",
   },
+
   {
-    image: "/port1.svg",
+    image: "/portfolio-img4.png",
     project: "Xhibit",
     span: " – Web Application",
     link: "https://www.hodlegal.org/",
   },
   {
-    image: "/port2.svg",
+    image: "/portfolio-img3.png",
     project: "WeCr8T ",
     span: " – Agency Website",
-    link: "https://www.hodlegal.org/",
-  },
-  {
-    image: "/port1.svg",
-    project: "H.O.D LEGAL",
-    span: " – Website Development",
-    link: "https://www.hodlegal.org/",
-  },
-  {
-    image: "/port2.svg",
-    project: "R&R Therapy",
-    span: " – Web Application",
-    link: "https://www.hodlegal.org/",
+    link: "https://www.wecr8t.xyz",
   },
 ];
 

@@ -8,7 +8,7 @@ const Hero = () => {
           CRAFTING MEANINGFUL CONNECTIONS BETWEEN BUSINESSES AND PEOPLE.
         </p>
       </div>
-      <div className="lg:pt-[100px] pt-[50px] font-grotesk xl:text-[150px] lg:text-[80px] md:text-[50px] text-[32px] font-normal text-cr8tBlack xl:leading-[150px] lg:leading-[110px] leading-[44px] md:leading-[70px] px-[28px]  md:px-[80px]">
+      <div className="lg:pt-[100px] pt-[50px] font-grotesk xl:text-[150px] lg:text-[100px] md:text-[80px]  text-[32px] font-normal text-cr8tBlack xl:leading-[150px]  leading-[44px]  md:leading-[110px] px-[28px]  md:px-[28px]">
         <h1>Your Vision</h1>
         {/* <span className="font-urban text-cr8tOrange ">,</span> */}
         <div className="flex items-end justify-end lg:gap-[50px] gap-[21px]">

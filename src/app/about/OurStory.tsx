@@ -22,7 +22,7 @@ const OurStory = () => {
                 message="and web applications for businesses of all sizes."
                 className="lg:block hidden"
               /> */}
-              <p className="w-[342px] font-poppins font-light text-cr8tLightBlack block lg:hidden text-base">
+              <p className="min-w-[342px] font-poppins font-light text-cr8tLightBlack block lg:hidden text-base">
                 <span className=" px-[6px] py-[6px] mr-1 bg-cr8tOrange rounded-[7px] font-normal  text-lg text-[#F4F4F4]">
                   At
                 </span>
@@ -31,7 +31,7 @@ const OurStory = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-col lg:text-lg md:leading-[27px] text-base leading-6 xl:w-[572px] lg:w-[472px]  w-[342px]">
+          <div className="flex flex-col lg:text-lg md:leading-[27px] text-base leading-6 xl:w-[572px] lg:w-[472px]  min-w-[342px]">
             <Paragraph message="Our skilled team blends creativity with technical know-how to craft custom digital solutions that not only help your business grow but also connect you with more customers in meaningful ways." />
             <br />
 
@@ -51,7 +51,7 @@ const OurStory = () => {
 
             <Paragraph
               message="Our mission is simple: We want to empower businesses to become profitable and shine with innovative digital solutions that truly reflect who they are."
-              className="flex flex-col lg:text-lg text-base  lg:leading-[27px] leading-6 xl:w-[572px] lg:w-[472px]  w-[342px] "
+              className="flex flex-col lg:text-lg text-base  lg:leading-[27px] leading-6 xl:w-[572px] lg:w-[472px]  min-w-[342px] "
             />
           </div>
           <div className="flex flex-col lg:gap-5 gap-[5px]">
@@ -61,7 +61,7 @@ const OurStory = () => {
 
             <Paragraph
               message="We envision a world where every company stands out. Through exceptional digital experiences and strong brand identities, we help businesses thrive in competitive industries."
-              className="flex flex-col  lg:text-lg text-base lg:leading-[27px] leading-6 xl:w-[572px] lg:w-[472px] w-[342px]"
+              className="flex flex-col  lg:text-lg text-base lg:leading-[27px] leading-6 xl:w-[572px] lg:w-[472px] min-w-[342px]"
             />
           </div>
         </div>

@@ -11,8 +11,8 @@ import QuestionMarkIcon from "../../../public/question-mark.svg";
 
 const FAQs = () => {
   return (
-    <section className="lg:px-[80px] md:pt-[150px] pt-[50px] px-6 relative ">
-      <div className="flex lg:justify-between flex-wrap lg:flex-nowrap gap-[25px] lg:gap-0  relative">
+    <section className="lg:px-[80px] md:pt-[150px] pt-[50px] px-6 relative  ">
+      <div className="flex lg:justify-between flex-wrap lg:flex-nowrap gap-[25px] lg:gap-0  relative justify-center ">
         <div className=" flex flex-col lg:gap-[25px] gap-5px relative z-10">
           <h1 className="text-cr8tOrange font-urban md:text-2xl font-normal text-base">
             FAQs

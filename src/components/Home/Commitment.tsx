@@ -6,7 +6,7 @@ import AnimatedButton from "../ui/animatedButton";
 
 function Commitment() {
   return (
-    <section className="md:pt-[150px] pt-[50px] flex items-center justify-between lg:gap-5 xl:gap-0 flex-wrap lg:flex-nowrap xl:px-[80px] px-6">
+    <section className="md:pt-[150px] pt-[50px] flex items-center lg:justify-between  xl:gap-10 flex-wrap lg:flex-nowrap xl:px-[80px] px-6  justify-center gap-5">
       <div className="bg-[#F8F8F8] rounded-[20px] font-poppins flex flex-col  items-center md:w-[692px] xl:w-[692px] lg:w-[500px] w-[342px] md:gap-[50px] gap-[20px] order-2 lg:-order-none p-4">
         <div className="md:w-[474px] w-[316px] md:pt-[41px] pt-[27px] flex flex-col md:gap-[10px] gap-[5px] text-center  items-center">
           <p className="md:text-2xl text-base font-semibold text-cr8tBlack">
