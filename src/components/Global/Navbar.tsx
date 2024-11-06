@@ -16,7 +16,7 @@ function Navbar() {
   return (
     <div className="sticky top-0 z-20 w-full">
       {/* Header */}
-      <div className="flex justify-between border-b border-cr8tLightBlack border-opacity-[0.1] font-grotesk text-base font-medium lg:h-[100px] h-[70px] text-Cr8tGray bg-[#F4F4F4] px-[24px] xl:px-[80px] lg:px-[40px] items-center">
+      <div className="flex justify-between border-b border-cr8tLightBlack border-opacity-[0.1] font-grotesk text-base font-medium lg:h-[100px] h-[70px] text-Cr8tGray  px-[24px] xl:px-[80px] lg:px-[40px] items-center">
         {/* Logo */}
         <div className="lg:hidden block">
           <Link href="/" className="">
