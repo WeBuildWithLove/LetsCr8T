@@ -10,7 +10,6 @@ import AnimatedButton from "../ui/animatedButton";
 function HomeHero() {
   return (
     <section className="font-grotesk text-[#202526] xl:pt-[80px] pt-[50px] flex flex-col items-center justify-center hero_bg  ">
-      <h1>God when</h1>
       <div className="flex flex-col xl:gap-[50px] gap-[25px] items-center justify-center xl:px-[123px] md:px-[80px] px-[24px] ">
         <div>
           <p className="leading-[44.8px] lg:leading-[81px]  font-bold text-[32px] xl:text-[70px] lg:text-[60px] md:text-[50px] md:leading-[71px] text-center ">
