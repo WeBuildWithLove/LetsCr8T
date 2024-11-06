@@ -1,6 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import Recommendations from "../Global/Recommendations";
+import Marquee from "react-fast-marquee";
+import Advert from "../Global/Advert";
 
 const Clients = () => {
   return (
@@ -20,8 +22,21 @@ const Clients = () => {
           experiences that drive results.
         </p>
       </div>
-
-      <Recommendations />
+      <Marquee
+        autoFill
+        pauseOnClick
+        pauseOnHover
+        loop={0}
+        className="hidden md:flex"
+      >
+        <Recommendations />
+      </Marquee>
+      <div className="flex md:hidden">
+        <Recommendations />
+      </div>
+      <div className="md:pt-[150px] pt-[50px] ">
+        <Advert />
+      </div>
     </section>
   );
 };

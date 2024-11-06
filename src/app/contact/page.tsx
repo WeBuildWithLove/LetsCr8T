@@ -115,7 +115,7 @@ function Contact() {
 
             {/* Message Textarea */}
             <textarea
-              className="flex min-h-[170px] w-full border-input bg-background px-3 py-2 disabled:cursor-not-allowed  border  h-14 text-base rounded-[5px] pl-[10px] font-medium font-poppins focus:outline-none focus:ring focus:ring-cr8tOrange text-cr8tLightBlack text-opacity-25"
+              className="flex min-h-[170px] w-full border-input bg-background px-3 py-2 disabled:cursor-not-allowed  border  h-14 text-base rounded-[5px] pl-[10px] font-light font-poppins focus:outline-none focus:ring focus:ring-cr8tOrange text-cr8tLightBlack text-opacity-25"
               placeholder="Leave a message "
               value={message}
               onChange={(e) => setMessage(e.target.value)}

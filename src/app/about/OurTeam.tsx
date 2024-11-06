@@ -19,6 +19,15 @@ import Jubril from "../../../public/jubril.svg";
 import Jubril2 from "../../../public/jubril2.svg";
 import Mfoniso from "../../../public/mfon.svg";
 import Mfoniso2 from "../../../public/mfon2.svg";
+import Mfoniso3 from "../../../public/mfon3.svg";
+import Jubril3 from "../../../public/jubril3.svg";
+import Chris3 from "../../../public/chris3.svg";
+import Kufre3 from "../../../public/kufre3.svg";
+import Aniebet3 from "../../../public/aniebet3.svg";
+import Abraham3 from "../../../public/abraham3.svg";
+import Shalom3 from "../../../public/shalom3.svg";
+import Gift3 from "../../../public/gift3.svg";
+import Preye3 from "../../../public/PREYE3.svg";
 
 const OurTeam = () => {
   const [selectedGroup, setSelectedGroup] = useState<
@@ -64,8 +73,6 @@ const OurTeam = () => {
               hoverSrc={Kufre2}
               normalWidth={180}
               normalHeight={180}
-              // hoverHeight={190}
-              // hoverWidth={190}
               isDimmed={selectedGroup === "designers"} // Dimmed if Designers are selected
             />
           </div>
@@ -80,8 +87,6 @@ const OurTeam = () => {
                 hoverSrc={Gift2}
                 normalWidth={270}
                 normalHeight={270}
-                // hoverHeight={280}
-                // hoverWidth={280}
                 isDimmed={selectedGroup === "designers"} // Gift is a developer
               />
             </div>
@@ -101,8 +106,6 @@ const OurTeam = () => {
                 hoverSrc={Preye2}
                 normalWidth={270}
                 normalHeight={270}
-                // hoverHeight={280}
-                // hoverWidth={280}
                 isDimmed={selectedGroup === "designers"}
               />
             </div>
@@ -112,8 +115,6 @@ const OurTeam = () => {
                 hoverSrc={Mfoniso2}
                 normalWidth={180}
                 normalHeight={180}
-                // hoverHeight={190}
-                // hoverWidth={190}
                 isDimmed={selectedGroup === "developers"}
               />
             </div>
@@ -128,8 +129,6 @@ const OurTeam = () => {
               hoverSrc={Abraham2}
               normalWidth={270}
               normalHeight={270}
-              // hoverHeight={280}
-              // hoverWidth={280}
               isDimmed={selectedGroup === "developers"}
             />
           </div>
@@ -140,8 +139,6 @@ const OurTeam = () => {
                 hoverSrc={Aniebet2}
                 normalWidth={180}
                 normalHeight={180}
-                // hoverHeight={190}
-                // hoverWidth={190}
                 isDimmed={selectedGroup === "designers"}
               />
             </div>
@@ -151,8 +148,6 @@ const OurTeam = () => {
                 hoverSrc={Shalom2}
                 normalWidth={180}
                 normalHeight={180}
-                // hoverHeight={190}
-                // hoverWidth={190}
                 isDimmed={selectedGroup === "developers"}
               />
             </div>
@@ -167,8 +162,6 @@ const OurTeam = () => {
               hoverSrc={Jubril2}
               normalWidth={180}
               normalHeight={180}
-              // hoverHeight={190}
-              // hoverWidth={190}
               isDimmed={selectedGroup === "designers"}
             />
           </div>
@@ -178,8 +171,6 @@ const OurTeam = () => {
               hoverSrc={Chris2}
               normalWidth={270}
               normalHeight={270}
-              // hoverHeight={280}
-              // hoverWidth={280}
               isDimmed={selectedGroup === "developers"}
             />
           </div>
@@ -199,7 +190,7 @@ const OurTeam = () => {
           </div>
           <TeamImages
             src={Kufre}
-            hoverSrc={Kufre2}
+            hoverSrc={Kufre3}
             normalWidth={180}
             normalHeight={180}
             isDimmed={selectedGroup === "designers"} // Dimmed if Designers are selected
@@ -209,7 +200,7 @@ const OurTeam = () => {
           <div className="translate-y-[-40px]">
             <TeamImages
               src={Preye}
-              hoverSrc={Preye2}
+              hoverSrc={Preye3}
               normalWidth={180}
               normalHeight={180}
               isDimmed={selectedGroup === "designers"}
@@ -218,7 +209,7 @@ const OurTeam = () => {
           <div className=" pt-[15px]">
             <TeamImages
               src={Mfoniso}
-              hoverSrc={Mfoniso2}
+              hoverSrc={Mfoniso3}
               normalWidth={130}
               normalHeight={130}
               isDimmed={selectedGroup === "developers"}
@@ -237,7 +228,7 @@ const OurTeam = () => {
           <div className=" translate-y-[-20px] md:translate-y-0">
             <TeamImages
               src={Gift}
-              hoverSrc={Gift2}
+              hoverSrc={Gift3}
               normalWidth={180}
               normalHeight={180}
               isDimmed={selectedGroup === "designers"}
@@ -248,7 +239,7 @@ const OurTeam = () => {
           <div className=" translate-y-[-60px] md:translate-y-[-30px]">
             <TeamImages
               src={Abraham}
-              hoverSrc={Abraham2}
+              hoverSrc={Abraham3}
               normalWidth={180}
               normalHeight={180}
               isDimmed={selectedGroup === "developers"}
@@ -257,7 +248,7 @@ const OurTeam = () => {
           <div className=" translate-y-[-10px]">
             <TeamImages
               src={Aniebet}
-              hoverSrc={Aniebet2}
+              hoverSrc={Aniebet3}
               normalWidth={130}
               normalHeight={130}
               isDimmed={selectedGroup === "designers"}
@@ -268,7 +259,7 @@ const OurTeam = () => {
           <div className=" translate-y-[-50px]">
             <TeamImages
               src={Shalom}
-              hoverSrc={Shalom2}
+              hoverSrc={Shalom3}
               normalWidth={130}
               normalHeight={130}
               isDimmed={selectedGroup === "developers"}
@@ -277,7 +268,7 @@ const OurTeam = () => {
           <div className=" translate-y-[-55px] md:translate-y-1">
             <TeamImages
               src={Chris}
-              hoverSrc={Chris2}
+              hoverSrc={Chris3}
               normalWidth={180}
               normalHeight={190}
               isDimmed={selectedGroup === "developers"}
@@ -287,7 +278,7 @@ const OurTeam = () => {
         <div className=" translate-y-[-105px] md:translate-y-[-80px]  translate-x-10 md:translate-x-[-20px] ">
           <TeamImages
             src={Jubril}
-            hoverSrc={Jubril2}
+            hoverSrc={Jubril3}
             normalWidth={130}
             normalHeight={130}
             isDimmed={selectedGroup === "developers"}

@@ -10,13 +10,13 @@ type PROJECTITEM = {
 
 const ProjectItem = ({ project, image, link, span }: PROJECTITEM) => {
   return (
-    <div className="project-item">
+    <div className="project-item rounded-[5px]">
       <Image
         src={image}
         alt="portfolio images"
         width={666}
         height={478}
-        className="w-full"
+        className="w-full rounded-[5px]"
       />
 
       <p className="lg:text-lg text-base font-medium font-grotesk text-black lg:pt-[25px] pt-[15px] group hover:text-cr8tOrange">

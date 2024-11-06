@@ -7,10 +7,7 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel";
-import Advert from "./Advert";
 
 type REVIEWITEM = {
   name: string;
@@ -21,7 +18,7 @@ type REVIEWITEM = {
 
 const ReviewItem = ({ name, position, text, image }: REVIEWITEM) => {
   return (
-    <CarouselItem className="flex flex-col gap-4 items-center border border-solid border-[#E1E1E1] rounded-xl md:basis-1/2 xl:basis-1/4 h-[400px] ">
+    <CarouselItem className="flex flex-col gap-4 items-center border border-[#E1E1E1] rounded-xl md:basis-1/2 xl:basis-1/4 h-[400px] mx-1 hover:border-cr8tOrange hover:border-2">
       <div className=" mt-[17px] w-[266px] flex flex-col justify-center items-center mx-auto ">
         <Image src={image} width={87} height={87} alt="photo" className="" />
 
@@ -42,11 +39,8 @@ const ReviewItem = ({ name, position, text, image }: REVIEWITEM) => {
 const Recommendations = () => {
   return (
     <section className="flex flex-col justify-center items-center w-full px-[24px] md:px-0 ">
-      <Carousel
-        className="md:w-full w-[342px]  "
-        childrenCount={REVIEWS.length}
-      >
-        <CarouselContent className="flex gap-1">
+      <Carousel className="md:w-full w-[342px]" childrenCount={REVIEWS.length}>
+        <CarouselContent className="flex ">
           {REVIEWS.map((review, index) => (
             <ReviewItem
               key={index}
@@ -57,14 +51,7 @@ const Recommendations = () => {
             />
           ))}
         </CarouselContent>
-
-        <CarouselPrevious className="hidden md:flex left-[100px]  z-20  " />
-
-        <CarouselNext className="hidden md:flex right-[100px]" />
       </Carousel>
-      <div className="md:pt-[150px] pt-[50px] ">
-        <Advert />
-      </div>
     </section>
   );
 };

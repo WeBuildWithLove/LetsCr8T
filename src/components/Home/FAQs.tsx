@@ -38,7 +38,7 @@ const FAQs = () => {
             <AccordionItem
               value={item.id}
               key={index}
-              className="rounded-[15px] md:px-[30px] px-[10px] mb-5 font-poppins font-normal text-cr8tBlack flex flex-col bg-[#F8F8F8] gap-[10px] md:w-[641px] xl:w-[641px] lg:w-[450px] w-[342px] overflow-hidden  "
+              className="rounded-[15px] md:px-[30px] px-[10px] mb-5 font-poppins font-normal text-cr8tBlack flex flex-col bg-[#F8F8F8] gap-[10px] md:w-[641px] xl:w-[641px] lg:w-[450px] w-[342px] overflow-hidden   "
             >
               <AccordionTrigger className="h-[60px] text-left md:text-lg text-base min-h-[60px] flex items-center transition-all duration-300 ease-in-out z-10">
                 {item.question}

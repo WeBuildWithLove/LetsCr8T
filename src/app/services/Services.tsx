@@ -9,8 +9,8 @@ import Service4 from "../../../public/service4.svg";
 
 const Services = () => {
   return (
-    <section className="lg:pt-[100px] pt-[23px] lg:px-[80px]  text-cr8tBlack">
-      <div className="flex flex-col md:gap-[100px] gap-[25px] px-6 lg:px-0">
+    <section className="lg:pt-[100px] pt-[23px] px-6  xl:px-[80px]  text-cr8tBlack">
+      <div className="flex flex-col md:gap-[100px] gap-[25px] ">
         <div className="flex flex-col lg:gap-[25px] gap-[15px] md:gap-0 ">
           <div className="flex justify-between">
             <div className="flex xl:gap-[25px] gap-[10px] xl:w-[320px] lg:w-[270px] lg:h-[478px] h-[112px] w-[82px] md:w-[220px] md:h-[438px]">
@@ -72,11 +72,14 @@ const Services = () => {
             innovative development.
           </p>
         </div>
-        <div className="flex lg:justify-between flex-wrap lg:flex-nowrap font-normal font-poppins pt-[18px] lg:pt-0 gap-[10px] lg:gap-0  ">
+        <div className="flex md:justify-between flex-wrap md:flex-nowrap font-normal font-poppins pt-[18px] lg:pt-0 gap-[10px] lg:gap-0 ">
           <h3 className="text-base text-cr8tBlack">SERVICES</h3>
-          <div className="font-poppins text-lg lg:w-[301px] w-[254px] flex flex-col gap-[25px]  ml-auto lg:ml-0">
+          <div className="font-poppins text-lg  flex flex-col gap-[25px]  ml-auto lg:ml-0">
             {ServiceListingData.map((service, index) => (
-              <div key={index} className="flex flex-col gap-[5px] ">
+              <div
+                key={index}
+                className="flex flex-col gap-[5px] lg:pr-[271px] pr-0 "
+              >
                 <h2 className=" font-medium">{service.service_name}</h2>
                 <ul className=" font-light text-base lg:text-lg text-cr8tLightBlack">
                   <li>{service.one}</li>
