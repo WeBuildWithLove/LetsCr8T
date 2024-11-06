@@ -110,7 +110,7 @@ function Navbar() {
           </div>
           <Link href="/contact" className="">
             <AnimatedButton className="w-[147px] h-[56px]">
-              Contact Us
+              Contact Us..
             </AnimatedButton>
           </Link>
         </div>
