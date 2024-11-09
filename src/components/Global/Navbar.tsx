@@ -196,5 +196,5 @@ const links = [
   { name: "Portfolio", url: "/portfolio" },
   { name: "Services", url: "/services" },
   { name: "About", url: "/about" },
-  { name: "Free Tools", url: "/freetools" },
+  // { name: "Free Tools", url: "/freetools" },
 ];

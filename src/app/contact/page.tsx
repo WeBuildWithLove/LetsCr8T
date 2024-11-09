@@ -12,7 +12,7 @@ function Contact() {
   const templateId = process.env.NEXT_PUBLIC_TEMPLATE_QUOTE_ID as string;
   const publicKey = process.env.NEXT_PUBLIC_KEY as string;
 
-  const [name, setName] = React.useState("");
+  const [firstName, setFirstName] = React.useState("");
   const [lastName, setLastName] = React.useState("");
   const [email, setEmail] = React.useState("");
   const [phone, setPhone] = React.useState("");
@@ -21,12 +21,12 @@ function Contact() {
 
   const sendEmail = async () => {
     try {
-      if (!name || !lastName || !email || !phone || !message) {
+      if (!firstName || !lastName || !email || !phone || !message) {
         toast.error("Kindly fill all the fields");
       } else {
         setLoading(true);
         const templateParams = {
-          from_name: name,
+          from_firstName: name,
           from_lastName: lastName,
           from_email: email,
           from_phone: phone,
@@ -46,7 +46,7 @@ function Contact() {
           "Thank you for contacting LetsCr8T! We will get back to you shortly."
         );
         setEmail("");
-        setName("");
+        setFirstName("");
         setLastName("");
         setPhone("");
         setMessage("");
@@ -79,8 +79,8 @@ function Contact() {
             {/* First Name and Last Name */}
             <div className="flex gap-5 flex-wrap lg:flex-nowrap">
               <InputComponent
-                value={name}
-                onChange={(e) => setName(e.target.value)}
+                value={firstName}
+                onChange={(e) => setFirstName(e.target.value)}
                 type="text"
                 placeholder="First Name"
                 className="w-full"
