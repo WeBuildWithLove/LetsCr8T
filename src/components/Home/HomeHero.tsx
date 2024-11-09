@@ -13,24 +13,24 @@ function HomeHero() {
       <div className="flex flex-col xl:gap-[50px] gap-[25px] items-center justify-center xl:px-[123px] md:px-[80px] px-[24px] ">
         <div>
           <p className="leading-[44.8px] lg:leading-[81px]  font-bold text-[32px] xl:text-[70px] lg:text-[60px] md:text-[50px] md:leading-[71px] text-center ">
-            Transform Your{" "}
+            Empowering Your{" "}
             <span className="text-[#FF5A12] font-normal font-urban ">
               Business
             </span>{" "}
-            with <br className="hidden lg:block" /> Stunning Digital Solutions
+            with <br className="hidden lg:block" /> Custom Digital Solutions
           </p>
 
           <p className="text-center text-base md:text-lg font-poppins font-light leading-6 text-cr8tLightBlack pt-5">
-            At <span>LetsCr8T,</span> we create unforgettable first digital
-            experiences – that help your
+            At <span>LetsCr8T,</span> we specialize in building custom websites
+            and digital experiences – that help
             <br className="hidden lg:block" />
-            business grow.
+            small businesses, solopreneurs, and startups thrive online.
             <br className="hidden lg:block" />
-            Whether you&apos;re a startup, small business, or an established
-            company,
+            Whether you’re just starting out or looking to take your business to
+            the next level,
             <br className="hidden lg:block" />
-            we are devoted in bringing your vision to life and ensuring your
-            brand shines online.
+            we create user-friendly websites and apps that engage your audience,
+            build your brand, and drive growth.
           </p>
         </div>
 

@@ -36,13 +36,25 @@ function Commitment() {
             CHARITY
           </span>
         </h1>
+        <div className="font-poppins text-cr8tLightBlack md:text-lg text-base leading-6 font-light md:w-[610px] xl:w-[610px] lg:w-[400px] w-[327px] md:leading-7 pr-[15px] md:pr-0 flex flex-col gap-3  ">
+          <p className="">
+            At LetsCr8T, we believe in giving back. Every month, we offer free
+            web services to one small business in need, providing them with a
+            landing page to support growth and reach more customers.
+          </p>
 
-        <p className="font-poppins text-cr8tLightBlack md:text-lg text-base leading-6 font-light md:w-[610px] xl:w-[610px] lg:w-[400px] w-[327px] md:leading-7 pr-[15px] md:pr-0  ">
-          At LetsCr8T, we believe in giving back. Every month, we offer free web
-          services to one small business, helping them build a strong online
-          presence and grow. We understand the challenges small businesses face
-          and are here to help them succeed.
-        </p>
+          <div className="flex flex-col">
+            <h3 className="font-grotesk font-bold text-cr8tBlack">
+              {" "}
+              How To Apply?
+            </h3>
+            <p>
+              If you own or represent a small business in need of digital
+              support, apply today to see if you qualify for our monthly
+              initiative.
+            </p>
+          </div>
+        </div>
 
         <Link
           href="https://forms.gle/H3TpBS64a2CBNUSb9"

@@ -8,7 +8,7 @@ const PortfolioWorks = () => {
         <p className=" lg:w-[388px] w-[246px]">
           PROJECTS
           <br />
-          We WORK CLOSELY WITH OUR CLIENTS TO CREATE OUTSTANDING EXPERIENCES FOR
+          We WORK CLOSELY WITH OUR CLIENTS TO BUILD EXPERIENCES THAT CAPTIVATE
           THEIR USERS.
         </p>
       </div>
@@ -20,6 +20,7 @@ const PortfolioWorks = () => {
             image={portfolio.image}
             link={portfolio.link}
             span={portfolio.span}
+            gif={portfolio.gif}
           />
         ))}
       </div>

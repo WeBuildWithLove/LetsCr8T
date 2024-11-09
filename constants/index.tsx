@@ -95,7 +95,7 @@ export const Services = [
           web
         </span>{" "}
         apps that are easy to use, responsive, and fit your business needs.
-        Whether you need a simple web or a complex web app, we’ve got you
+        Whether you need a simple web or a sophisticated web app, we’ve got you
         covered.
       </>
     ),
@@ -119,11 +119,12 @@ export const Services = [
         <span className="text-cr8tOrange font-medium font-urban capitalize">
           brand
         </span>{" "}
-        with a unique logo, colors, and style that make your{" "}
+        from the ground up with unique logos, color schemes, and design elements
+        that make your{" "}
         <span className="text-cr8tOrange font-medium font-urban capitalize">
           business
         </span>{" "}
-        easy to recognize and memorable.
+        memorable.
       </>
     ),
     width: "488px",
@@ -141,12 +142,12 @@ export const Services = [
 
     description: (
       <>
-        We keep your website or app{" "}
+        We ensure your website or app{" "}
         <span className="text-cr8tOrange font-medium font-urban capitalize">
-          running smoothly
+          runs smoothly
         </span>{" "}
-        by handling updates, security, and fixes so you don’t have to worry
-        about a thing.
+        by managing updates, security, and troubleshooting, so you can focus on
+        growing your business worry-free.
       </>
     ),
     width: "488px",
@@ -164,16 +165,18 @@ export const Services = [
 
     description: (
       <>
-        We write engaging{" "}
+        We craft compelling content{" "}
         <span className="text-cr8tOrange font-medium font-urban capitalize">
           {" "}
           content
         </span>{" "}
-        that tells your story and connects with your
+        that tells your story and engages your{" "}
         <span className="text-cr8tOrange font-medium font-urban capitalize">
+          {" "}
           audience
         </span>
-        , making it easier to attract and keep customers.
+        , attracting and converting customers with the right message at the
+        right time.
       </>
     ),
     width: "513px",
@@ -245,18 +248,21 @@ export const PORTFOLIO = [
     project: "Daniel Araromi",
     span: "– Portfolio Website",
     link: "https://offer-portfolio.vercel.app/",
+    gif: "/therapy.gif",
   },
   {
     image: "/portfolio-img6.png",
     project: "LetsCr8T",
     span: " – Agency Website",
     link: "https://www.hodlegal.org/",
+    gif: "/therapy.gif",
   },
   {
     image: "/portfolio-img5.png",
     project: "R&R Therapy",
     span: " – Web Application",
     link: "https://therapy-nine-ivory.vercel.app/",
+    gif: "/therapy.gif",
   },
 
   {
@@ -264,6 +270,7 @@ export const PORTFOLIO = [
     project: "H.O.D LEGAL",
     span: " – Website Development",
     link: "https://www.hodlegal.org/",
+    gif: "/therapy.gif",
   },
 
   {
@@ -271,12 +278,14 @@ export const PORTFOLIO = [
     project: "Xhibit",
     span: " – Web Application",
     link: "https://www.hodlegal.org/",
+    gif: "/therapy.gif",
   },
   {
     image: "/portfolio-img3.png",
     project: "WeCr8T ",
     span: " – Agency Website",
     link: "https://www.wecr8t.xyz",
+    gif: "/therapy.gif",
   },
 ];
 
@@ -292,12 +301,12 @@ export const ServiceListingData = [
     service_name: "Branding",
     one: "Brand Strategy ",
     two: " Visual & Motion identity",
-    three: " Brand Guidelines",
+    three: "Brand Guidelines",
   },
 
   {
     service_name: "Creative Tech",
-    one: "Web Development",
+    one: "Custom Website Development",
     two: "Mobile App Development",
     three: "Web Maintenance & Support",
     four: "Content Strategy & Copywriting",
