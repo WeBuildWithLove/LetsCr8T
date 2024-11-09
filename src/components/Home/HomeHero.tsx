@@ -23,8 +23,7 @@ function HomeHero() {
           <p className="text-center text-base md:text-lg font-poppins font-light leading-6 text-cr8tLightBlack pt-5">
             At <span>LetsCr8T,</span> we specialize in building custom websites
             and digital experiences – that help
-            <br className="hidden lg:block" />
-            small businesses, solopreneurs, and startups thrive online.
+            <br className="hidden lg:block" /> your business thrive online.
             <br className="hidden lg:block" />
             Whether you’re just starting out or looking to take your business to
             the next level,
