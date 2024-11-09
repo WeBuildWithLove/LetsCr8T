@@ -17,20 +17,17 @@ const Clients = () => {
         </h1>
 
         <p className="md:text-lg text-base text-cr8tLightBlack font-light text-center md:leading-7 leading-6 font-poppins">
-          Our clients' feedback speaks for itself. See how we've helped
-          businesses grow, improved their online presence, and created digital
+          Our clients have achieved real growth and transformation through our
+          services. Here’s how we’ve helped businesses boost their online
+          presence, strengthen their brand, and create engaging digital
           experiences that drive results.
         </p>
       </div>
-      <Marquee
-        autoFill
-        pauseOnClick
-        pauseOnHover
-        loop={0}
-        className="hidden md:flex"
-      >
-        <Recommendations />
-      </Marquee>
+      <div className="hidden md:flex">
+        <Marquee autoFill pauseOnClick pauseOnHover loop={0} className="">
+          <Recommendations />
+        </Marquee>
+      </div>
       <div className="flex md:hidden">
         <Recommendations />
       </div>

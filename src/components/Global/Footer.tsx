@@ -25,8 +25,8 @@ function Footer() {
         />
         <div className=" flex md:gap-[100px] gap-[30px] text-base font-light font-poppins text-cr8tLightBlack items-center flex-wrap lg:flex-nowrap">
           <p className=" leading-[29px] md:leading-7 md:w-[418px] w-[315px] md:pt-5 pt-[15px]">
-            At LetsCr8T, we design and develop stunning, high-quality websites
-            and web applications for businesses of all sizes.
+            At LetsCr8T, we specialize in building custom websites and digital
+            experiences for small businesses, solopreneurs, and startups.
           </p>
 
           <div className="flex flex-col  md:gap-[3.5px] gap-[5px]  md:pt-0">

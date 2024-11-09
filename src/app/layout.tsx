@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { EB_Garamond, Poppins } from "next/font/google";
 import "./globals.css";
-import Layout from "@/layout";
 import localfont from "next/font/local";
 import { Manrope } from "next/font/google";
+import Head from "next/head";
+import Script from "next/script";
 
 const urban = localfont({
   src: "../../public/fonts/Urban Storm.ttf",
@@ -48,9 +49,39 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "LetsCr8t",
+  title: "LetsCr8T",
   description:
-    "At LetsCr8t, we craft stunning, high-quality websites and web applications for businesses of all sizes.",
+    "At LetsCr8T, we craft stunning, high-quality websites, web applications, and branding solutions to elevate businesses of all sizes.",
+
+  keywords: [
+    "custom websites",
+    "web development",
+    "web design",
+    "mobile app development",
+    "branding solutions",
+    "UI/UX design",
+    "user experience design",
+    "digital agency",
+    "creative technology",
+    "web maintenance",
+    "content strategy",
+    "web accessibility",
+    "visual identity",
+    "brand strategy",
+    "LetsCr8T",
+  ],
+  openGraph: {
+    title: "LetsCr8T",
+    description:
+      "We craft stunning websites, web applications, and branding solutions to elevate businesses of all sizes.",
+    url: "https://letscr8t.xyz",
+    type: "website",
+  },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png", // Custom icon for iOS devices
+  },
+  manifest: "/manifest.json", // A JSON file describing your app for PWA support
 };
 
 export default function RootLayout({
@@ -60,10 +91,36 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#FF5A12" />
+        <meta
+          name="description"
+          content="At LetsCr8T, we craft stunning, high-quality websites, web applications, and branding solutions to elevate businesses of all sizes."
+        />
+        <meta
+          name="keywords"
+          content="custom websites, web development, web design, mobile app development, branding solutions, UI/UX design, user experience design, digital agency, creative technology, web maintenance, content strategy, web accessibility, visual identity, brand strategy, LetsCr8T"
+        />
+        <link rel="canonical" href="https://letscr8t.xyz" />
+      </Head>
       <body
         className={`${poppins.className} ${eb_garamond.className} ${manrope.className} ${urban.variable}  ${grotesk.variable} `}
       >
         {children}
+        <Script id="tawk-to-script" strategy="afterInteractive">
+          {`
+            var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+            (function(){
+              var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+              s1.async=true;
+              s1.src='https://embed.tawk.to/672d41da4304e3196adf1118/1ic4ciff3';
+              s1.charset='UTF-8';
+              s1.setAttribute('crossorigin','*');
+              s0.parentNode.insertBefore(s1,s0);
+            })();
+          `}
+        </Script>
       </body>
     </html>
   );

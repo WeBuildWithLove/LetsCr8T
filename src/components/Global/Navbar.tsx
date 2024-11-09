@@ -14,7 +14,7 @@ function Navbar() {
   const [open, setOpen] = React.useState(false);
 
   return (
-    <div className="sticky top-0 z-20 w-full">
+    <div className="sticky top-0 z-20 w-full overflow-hidden">
       {/* Header */}
       <div className="flex justify-between border-b border-cr8tLightBlack border-opacity-[0.1] font-grotesk text-base font-medium lg:h-[100px] h-[70px] text-Cr8tGray bg-[#F4F4F4] px-[24px] xl:px-[80px] lg:px-[40px] items-center">
         {/* Logo */}
@@ -196,4 +196,5 @@ const links = [
   { name: "Portfolio", url: "/portfolio" },
   { name: "Services", url: "/services" },
   { name: "About", url: "/about" },
+  { name: "Free Tools", url: "/freetools" },
 ];
