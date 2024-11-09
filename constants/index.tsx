@@ -165,7 +165,7 @@ export const Services = [
 
     description: (
       <>
-        We craft compelling content{" "}
+        We craft compelling
         <span className="text-cr8tOrange font-medium font-urban capitalize">
           {" "}
           content
