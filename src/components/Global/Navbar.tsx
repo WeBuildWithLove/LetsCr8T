@@ -119,8 +119,8 @@ function Navbar() {
       {/* Mobile Menu */}
       <div
         className={`${
-          open ? "top-[60px]" : "top-[-100%]"
-        } lg:hidden fixed bg-[#F4F4F4] w-full h-screen p-[20px] flex flex-col justify-center items-center transition-all duration-700 ease-in-out`}
+          open ? "top-[70%]" : "top-[-100%]"
+        } lg:hidden fixed bg-red-500  w-full h-screen p-[20px] flex flex-col justify-center items-center transition-all duration-700 ease-in-out`}
       >
         <div className="flex flex-col items-center font-grotesk text-base font-medium text-Cr8tGray gap-5">
           {links.map((link, index) => (
