@@ -82,14 +82,6 @@ export default function RootLayout({
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="theme-color" content="#FF5A12" />
-        <meta
-          name="description"
-          content="At LetsCr8T, we craft stunning, high-quality websites, web applications, and branding solutions to elevate businesses of all sizes."
-        />
-        <meta
-          name="keywords"
-          content="custom websites, web development, web design, mobile app development, branding solutions, UI/UX design, user experience design, digital agency, creative technology, web maintenance, content strategy, web accessibility, visual identity, brand strategy, LetsCr8T"
-        />
         <link rel="canonical" href="https://letscr8t.xyz" />
       </Head>
       <body
