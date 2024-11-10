@@ -51,7 +51,7 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   title: "LetsCr8T",
   description:
-    "At LetsCr8T, we craft stunning, high-quality websites, web applications, and branding solutions to elevate businesses of all sizes.",
+    "At LetsCr8T, we craft custom websites and digital experiences that help your business thrive online. Engage your audience, elevate your brand, and drive growth—let’s get started!",
 
   keywords: [
     "custom websites",
@@ -70,18 +70,6 @@ export const metadata: Metadata = {
     "brand strategy",
     "LetsCr8T",
   ],
-  openGraph: {
-    title: "LetsCr8T",
-    description:
-      "We craft stunning websites, web applications, and branding solutions to elevate businesses of all sizes.",
-    url: "https://letscr8t.xyz",
-    type: "website",
-  },
-  icons: {
-    icon: "/favicon.ico",
-    apple: "/apple-touch-icon.png", // Custom icon for iOS devices
-  },
-  manifest: "/manifest.json", // A JSON file describing your app for PWA support
 };
 
 export default function RootLayout({
