@@ -65,7 +65,7 @@ function Contact() {
             Contact LetsCr8T
           </h1>
           <p className=" text-base md:text-lg font-light md:leading-[27px] text-cr8tLightBlack font-poppins leading-6">
-            Got a project in mind or need more information? Fill out the form
+            Have a project in mind or need more information? Fill out the form
             below, and let&apos;s discuss how our digital solutions can help
             your business thrive
           </p>

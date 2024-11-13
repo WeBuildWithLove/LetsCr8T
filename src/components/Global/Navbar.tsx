@@ -14,12 +14,14 @@ function Navbar() {
   const [open, setOpen] = React.useState(false);
 
   return (
-    <div className="sticky top-0 z-20 w-full overflow-hidden">
+    <div className="sticky top-0 z-30 w-full bg-[#F4F4F4]">
+      {" "}
+      {/* z-30 to prevent overlap */}
       {/* Header */}
       <div className="flex justify-between border-b border-cr8tLightBlack border-opacity-[0.1] font-grotesk text-base font-medium lg:h-[100px] h-[70px] text-Cr8tGray bg-[#F4F4F4] px-[24px] xl:px-[80px] lg:px-[40px] items-center">
         {/* Logo */}
         <div className="lg:hidden block">
-          <Link href="/" className="">
+          <Link href="/">
             <Image
               src={LOGO}
               width={82}
@@ -62,7 +64,7 @@ function Navbar() {
 
         {/* Logo (Desktop) */}
         <div className="hidden lg:block">
-          <Link href="/" className="">
+          <Link href="/">
             <Image
               src={LOGO}
               width={109.33}
@@ -108,19 +110,18 @@ function Navbar() {
               />
             </a>
           </div>
-          <Link href="/contact" className="">
+          <Link href="/contact">
             <AnimatedButton className="w-[147px] h-[56px]">
               Contact Us
             </AnimatedButton>
           </Link>
         </div>
       </div>
-
       {/* Mobile Menu */}
       <div
         className={`${
           open ? "top-[70px]" : "top-[-100%]"
-        } lg:hidden fixed bg-[#F4F4F4] w-full h-screen p-[20px] flex flex-col justify-center items-center transition-all duration-700 ease-in-out`}
+        } lg:hidden fixed bg-[#F4F4F4] w-full h-screen p-[20px] flex flex-col justify-center items-center transition-all duration-700 ease-in-out z-20`}
       >
         <div className="flex flex-col items-center font-grotesk text-base font-medium text-Cr8tGray gap-5">
           {links.map((link, index) => (
@@ -130,7 +131,7 @@ function Navbar() {
               href={link.url}
               className={`relative uppercase font-medium text-center ${
                 currentPath === link.url
-                  ? "text-[#202526]" // Active state
+                  ? "text-[#202526]"
                   : "text-[#ADADAD] hover:text-[#202526] hover:before:w-full"
               } before:content-[''] before:absolute before:w-0 before:h-[1.5px] before:bottom-0 before:left-0 before:bg-[#FF5A12] before:transition-all before:duration-300 before:ease-in-out ${
                 currentPath === link.url
@@ -143,7 +144,7 @@ function Navbar() {
           ))}
         </div>
 
-        <div className=" gap-[40px] items-center lg:hidden flex flex-col mt-[220px]">
+        <div className="gap-[40px] items-center lg:hidden flex flex-col mt-[220px]">
           <div className="flex gap-[20px] items-center">
             <a
               href="https://www.linkedin.com/company/letscr8t"
@@ -177,7 +178,7 @@ function Navbar() {
               />
             </a>
           </div>
-          <Link href="/contact" className="">
+          <Link href="/contact">
             <AnimatedButton className="w-[147px] h-[56px]">
               Contact Us
             </AnimatedButton>
@@ -196,5 +197,4 @@ const links = [
   { name: "Portfolio", url: "/portfolio" },
   { name: "Services", url: "/services" },
   { name: "About", url: "/about" },
-  // { name: "Free Tools", url: "/freetools" },
 ];
