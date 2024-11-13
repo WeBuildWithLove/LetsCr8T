@@ -14,34 +14,10 @@ function Navbar() {
   const [open, setOpen] = React.useState(false);
 
   return (
-    <div className="sticky top-0 z-30 w-full bg-[#F4F4F4]">
-      {" "}
-      {/* z-30 to prevent overlap */}
+    <div className="sticky top-0 z-20 w-full bg-[#F4F4F4]">
       {/* Header */}
-      <div className="flex justify-between border-b border-cr8tLightBlack border-opacity-[0.1] font-grotesk text-base font-medium lg:h-[100px] h-[70px] text-Cr8tGray bg-[#F4F4F4] px-[24px] xl:px-[80px] lg:px-[40px] items-center">
-        {/* Logo */}
-        <div className="lg:hidden block">
-          <Link href="/">
-            <Image
-              src={LOGO}
-              width={82}
-              height={30}
-              alt="Logo"
-              style={{ width: "auto" }}
-            />
-          </Link>
-        </div>
-
-        {/* Mobile Toggle */}
-        <div className="lg:hidden" onClick={() => setOpen(!open)}>
-          {open ? (
-            <X size={18.5} strokeWidth={3} color="#202526" />
-          ) : (
-            <Plus size={18.5} color="#202526" strokeWidth={3} />
-          )}
-        </div>
-
-        {/* Navigation Links (Desktop) */}
+      <div className="flex justify-between items-center h-[70px] lg:h-[100px] px-[24px] xl:px-[80px] lg:px-[40px] border-b border-cr8tLightBlack border-opacity-[0.1] font-grotesk text-base font-medium text-Cr8tGray">
+        {/* Left Section - Navigation Links (Desktop) */}
         <div className="hidden lg:flex items-center gap-[20px]">
           {links.map((link, index) => (
             <Link
@@ -62,9 +38,9 @@ function Navbar() {
           ))}
         </div>
 
-        {/* Logo (Desktop) */}
-        <div className="hidden lg:block">
-          <Link href="/">
+        {/* Center Section - Logo */}
+        <div className="lg:flex justify-center flex-1">
+          <Link href="/" className="flex items-center">
             <Image
               src={LOGO}
               width={109.33}
@@ -75,8 +51,8 @@ function Navbar() {
           </Link>
         </div>
 
-        {/* Social Media Icons (Desktop) */}
-        <div className="hidden gap-[30px] items-center lg:flex">
+        {/* Right Section - Social Media Icons and Contact Button (Desktop) */}
+        <div className="hidden lg:flex gap-[30px] items-center">
           <div className="flex gap-[20px] items-center">
             <a
               href="https://www.linkedin.com/company/letscr8t"
@@ -116,18 +92,29 @@ function Navbar() {
             </AnimatedButton>
           </Link>
         </div>
+
+        {/* Mobile Toggle */}
+        <div className="lg:hidden" onClick={() => setOpen(!open)}>
+          {open ? (
+            <X size={24} strokeWidth={3} color="#202526" />
+          ) : (
+            <Plus size={24} color="#202526" strokeWidth={3} />
+          )}
+        </div>
       </div>
-      {/* Mobile Menu */}
+
+      {/* Mobile Menu Dropdown */}
       <div
-        className={`${
-          open ? "top-[70px]" : "top-[-100%]"
-        } lg:hidden fixed bg-[#F4F4F4] w-full h-screen p-[20px] flex flex-col justify-center items-center transition-all duration-700 ease-in-out z-20`}
+        className={`lg:hidden overflow-hidden transition-[max-height] duration-500 ease-in-out ${
+          open ? "max-h-[100vh]" : "max-h-0"
+        } bg-[#F4F4F4]`}
       >
-        <div className="flex flex-col items-center font-grotesk text-base font-medium text-Cr8tGray gap-5">
+        {/* Mobile Menu Links */}
+        <div className="flex flex-col items-center font-grotesk text-base font-medium text-Cr8tGray gap-5 py-[150px] md:py-[455px]">
           {links.map((link, index) => (
             <Link
               key={index}
-              onClick={() => setOpen(!open)}
+              onClick={() => setOpen(false)}
               href={link.url}
               className={`relative uppercase font-medium text-center ${
                 currentPath === link.url
@@ -144,8 +131,9 @@ function Navbar() {
           ))}
         </div>
 
-        <div className="gap-[40px] items-center lg:hidden flex flex-col mt-[220px]">
-          <div className="flex gap-[20px] items-center">
+        {/* Social Media Icons */}
+        <div className="flex flex-col items-center mt-4 lg:hidden">
+          <div className="flex gap-[20px]">
             <a
               href="https://www.linkedin.com/company/letscr8t"
               target="_blank"
@@ -179,7 +167,7 @@ function Navbar() {
             </a>
           </div>
           <Link href="/contact">
-            <AnimatedButton className="w-[147px] h-[56px]">
+            <AnimatedButton className="w-[147px] h-[56px] mt-4">
               Contact Us
             </AnimatedButton>
           </Link>
