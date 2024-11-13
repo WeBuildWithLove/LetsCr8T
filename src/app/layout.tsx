@@ -51,7 +51,7 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   title: "LetsCr8T",
   description:
-    "At LetsCr8T, we craft custom websites and digital experiences that help your business thrive online. Engage your audience, elevate your brand, and drive growth—let’s get started!",
+    "At LetsCr8T, we craft custom websites & digital experiences engage your audience, elevate your brand, & drive growth—let’s get started!",
 
   keywords: [
     "custom websites",
@@ -70,6 +70,30 @@ export const metadata: Metadata = {
     "brand strategy",
     "LetsCr8T",
   ],
+
+  openGraph: {
+    title: "LetsCr8T",
+    description:
+      "Crafting unique digital experiences to engage audiences, elevate brands, and foster growth. Discover custom web design, development, and branding solutions with LetsCr8T.",
+    type: "website",
+    url: "https://letscr8t.xyz",
+    images: [
+      {
+        url: "/portfolio-img6.png", // Placeholder, replace with actual image path
+        width: 1200,
+        height: 630,
+        alt: "LetsCr8T - Crafting custom digital experiences",
+      },
+    ],
+  },
+  // twitter: {
+  //   card: "summary_large_image",
+  //   site: "@LetsCr8T", // Placeholder, replace with actual Twitter handle
+  //   title: "LetsCr8T",
+  //   description:
+  //     "At LetsCr8T, we craft custom websites & digital experiences to engage your audience, elevate your brand, & drive growth.",
+  //   images: ["https://letscr8t.xyz/images/og-image.jpg"], // Placeholder, replace with actual image path
+  // },
 };
 
 export default function RootLayout({
@@ -82,7 +106,6 @@ export default function RootLayout({
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="theme-color" content="#FF5A12" />
-        <link rel="canonical" href="https://letscr8t.xyz" />
       </Head>
       <body
         className={`${poppins.className} ${eb_garamond.className} ${manrope.className} ${urban.variable}  ${grotesk.variable} `}

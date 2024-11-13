@@ -36,7 +36,7 @@ const ProjectItem = ({ project, image, gif, link, span }: PROJECTITEM) => {
         alt="portfolio gif"
         width={666}
         height={478}
-        className={`absolute top-0 left-0 w-full h-auto transition-opacity duration-300 ${
+        className={`absolute top-0 left-0 w-full h-[300px]  transition-opacity duration-300 ${
           isHovered ? "opacity-100" : "opacity-0"
         }`}
       />
