@@ -44,31 +44,31 @@ export const FAQS = [
     id: "1",
     question: "What services does LetsCr8t offer?",
     answer:
-      "We specialize in website and web app development, branding and identity design, web maintenance and support, and content strategy and copywriting. Whether you're building from scratch or need ongoing support, we’ve got you covered.",
+      " LetsCr8T specializes in building custom websites, mobile apps, and digital experiences. We offer services in web design, website development, SEO, user experience (UX) design, and branding to help your business thrive online.",
   },
   {
     id: "2",
     question: "How can I get started with LetsCr8t?",
     answer:
-      "It’s easy! Just click the 'Start Project' button and fill out a quick form, or schedule a free consultation with our team. We’ll discuss your needs and create a plan that’s right for your business.",
+      "Getting started is easy! Simply send us an email, and we'll schedule an initial consultation to discuss your needs and how we can help you achieve your online goals",
   },
   {
     id: "3",
-    question: "How long does it take to build a website?",
+    question: "How long does it take to complete a website project?",
     answer:
-      "The timeline depends on the complexity of your project, but typically, a custom website can take anywhere from 4 to 8 weeks from start to launch. We’ll provide you with a detailed timeline after our initial consultation.",
+      "Project timelines can vary depending on the complexity of the website. Typically, a standard website takes 4-6 weeks from start to finish. We provide a customized timeline during our initial consultation.",
   },
   {
     id: "4",
-    question: "What are your prices?",
+    question: "How much does a custom website cost?",
     answer:
-      "Our prices vary depending on the type and complexity of the project. For example, a basic website will cost less than a custom web app with advanced features. Contact us for a personalized quote based on your specific needs.",
+      "Pricing varies based on your project's requirements, such as the number of pages, specific features, and integrations. We provide a transparent quote after an initial consultation to discuss your needs and goals.",
   },
   {
     id: "5",
     question: "How do we select small businesses for the charity initiative?",
     answer:
-      "We focus on small businesses that demonstrate a need for support in building their online presence. Each month, we choose one business based on their application, growth potential, and how we can best assist them with free web services.",
+      "We focus on small businesses that demonstrate a need for support in building their online presence. Each month, we choose one business based on their application, growth potential, and how we can best assist them with free web services. Interested? click on apply button in the charity section.",
   },
 ];
 
@@ -291,24 +291,27 @@ export const PORTFOLIO = [
 
 export const ServiceListingData = [
   {
-    service_name: "Design",
-    one: "User Experience",
+    service_name: "Design & User Experience",
+    one: "User Experience (UX) Design",
     two: "Prototyping",
     three: "Web Accessibility",
     four: "User testing",
   },
   {
-    service_name: "Branding",
-    one: "Brand Strategy ",
-    two: " Visual & Motion identity",
-    three: "Brand Guidelines",
+    service_name: "Branding & Visual Identity",
+    one: "Branding",
+    two: "Brand Strategy ",
+    three: " Visual & Motion identity",
+    four: "Graphic Design",
+    five: "Brand Guidelines",
+    six: "Content Strategy & Copywriting",
   },
 
   {
-    service_name: "Creative Tech",
+    service_name: "Custom Development",
     one: "Custom Website Development",
     two: "Mobile App Development",
-    three: "Web Maintenance & Support",
-    four: "Content Strategy & Copywriting",
+    three: "Creative Tech",
+    four: "Web Maintenance & Support",
   },
 ];

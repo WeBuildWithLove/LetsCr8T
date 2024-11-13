@@ -21,15 +21,14 @@ function HomeHero() {
           </p>
 
           <p className="text-center text-base md:text-lg font-poppins font-light leading-6 text-cr8tLightBlack pt-5">
-            At <span>LetsCr8T,</span> we specialize in building custom websites
-            and digital experiences – that help
+            At <span>LetsCr8T,</span> we build custom websites and digital
+            experiences – to help
             <br className="hidden lg:block" /> your business thrive online.
             <br className="hidden lg:block" />
-            Whether you’re just starting out or looking to take your business to
-            the next level,
+            Whether you’re just starting or ready to level up,
             <br className="hidden lg:block" />
-            we create user-friendly websites and apps that engage your audience,
-            build your brand, and drive growth.
+            we create user-friendly websites and apps that captivate audiences,
+            strengthen your brand, and drive growth.
           </p>
         </div>
 
