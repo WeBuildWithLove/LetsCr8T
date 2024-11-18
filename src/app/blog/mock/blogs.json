@@ -1,0 +1,115 @@
+[
+  {
+    "id": "1",
+    "title": "5 Essential Features Every Modern Website Needs in 2024",
+    "date": "2024-11-10",
+    "author": "Preye Omusuku",
+    "excerpt": "Staying ahead in today’s digital landscape requires more than just a good-looking website. Modern websites must balance aesthetics, functionality, and user experience to stay competitive. Here are the ten essential features every modern website needs in 2024.",
+    "content": "Staying ahead in today’s digital landscape requires more than just a good-looking website.",
+    "views": 411,
+    "category": "Web Development",
+    "image": "/modernWeb.png",
+    "passport": "/PREYE.svg",
+    "listItems": [
+      "Responsive Design",
+      "Fast Loading Speed",
+      "High-Quality Content",
+      "Intuitive Navigation",
+      "Search Engine Optimization (SEO)"
+    ],
+    "paragraphs": [
+      "With over 55% of global internet traffic coming from mobile devices, having a mobile-friendly website is no longer optional. Responsive design ensures your website adapts seamlessly to different screen sizes, e.g., smartphones, tablets, and desktops.",
+      "Speed matters. Studies show that users abandon a website if it takes more than three seconds to load. A slow website can also hurt your search engine rankings.",
+      "Content is king, even in 2024. A website rich in valuable, well-written content attracts visitors and keeps them engaged. Regularly update your blog with insightful posts to boost your SEO and establish authority in your niche.",
+      "A clear and user-friendly navigation system helps visitors find the information they need quickly. Avoid cluttered menus and stick to a logical structure.",
+      "A modern website needs to be easily discoverable. Incorporate SEO best practices by optimizing meta tags, using relevant keywords, and providing descriptive alt texts for images."
+    ],
+    "conclusion": "A modern website is more than just a digital storefront; it’s a powerful tool for growth and engagement. By implementing these five essential features, you can future-proof your website for success in 2024 and beyond.",
+    "profile": "Preye Omusuku, founder of Letscr8t, transforms ideas into digital experiences. With 3+ years of expertise in React, TypeScript, Next.js, and Tailwind CSS, she creates sleek, high-performing websites and web-apps that deliver results."
+  },
+  {
+    "id": "2",
+    "title": "5 Free Digital Tools Every Small Business Needs in 2024",
+    "date": "2024-11-10",
+    "author": "Preye Omusuku",
+    "excerpt": "Running a small business on a budget? The good news is you don’t need to spend a fortune on digital tools to stay competitive. Here are five free tools every small business can use to streamline operations, improve productivity, and connect with customers in 2024.",
+    "content": "Running a small business on a budget? The good news is you don’t need to spend a fortune on digital tools to stay competitive.",
+    "views": 136,
+    "category": "Digital Tools",
+    "image": "/digitaltools.png",
+    "passport": "/PREYE.svg",
+    "listItems": [
+      "Project Management: Trello",
+      "Accounting & Invoicing: Wave",
+      "Marketing & Social Media Management",
+      "Customer Relationship Management (CRM)",
+      "Website Analytics: Google Analytics"
+    ],
+    "paragraphs": [
+      "Trello simplifies task organization and team collaboration, keeping projects on track and teams aligned.The free version offers up to 10 free boards for different projects.",
+      "Wave is perfect for tracking finances, creating invoices, and managing receipts—all at no cost. The free version includes unlimited invoices and seamless integration with banks for financial monitoring.", 
+      "Canva lets you create professional-looking graphics for social media, websites, and marketing campaigns without any design experience. The free version includes templates for posts, flyers, and presentations, along with access to a library of free photos and icons. ",
+      "HubSpot Free CRM helps you manage leads, track customer interactions, and streamline your sales process. The free version includes unlimited users, up to 1,000,000 contacts, email tracking, and reporting dashboards.",
+      "Unlimited users and 1,000,000 contacts.", 
+      "Google Analytics provides valuable insights into your website’s performance, helping you improve traffic and conversions. The free version includes visitor tracking, page views, session durations, and comprehensive data for optimizing your online presence."
+    ],
+    "conclusion": "By leveraging these free tools, small businesses can enhance productivity, streamline operations, and grow effectively without breaking the bank.",
+    "profile": "Preye Omusuku, founder of Letscr8t, transforms ideas into digital experiences. With 3+ years of expertise in React, TypeScript, Next.js, and Tailwind CSS, she creates sleek, high-performing websites and web-apps that deliver results."
+  },
+  {
+    "id": "3",
+    "title": "Why Every StartUp & Small Business Needs a Website from Day One",
+    "date": "2024-11-18",
+    "author": "Preye Omusuku",
+    "excerpt": "In today’s fast-paced digital age, a website is no longer a luxury—it’s a necessity. Whether you’re launching a start-up or running a small business, having a website from day one sets the foundation for long-term success. Here are five key reasons why creating a website early is critical for your business.",
+    "content": "In today’s fast-paced digital age, a website is no longer a luxury—it’s a necessity.",
+    "views": 116,
+    "category": "Web-Apps",
+    "image": "/webneed.png",
+    "passport": "/PREYE.svg",
+    "listItems": [
+      "Build Instant Credibility",
+      "Be Accessible 24/7",
+      "Cost-Effective Marketing",
+      "Showcase Your Products or Services",
+      "Stay Ahead of Competitors"
+    ],
+    "paragraphs": [
+      "First impressions matter. A professional website assures potential customers that your business is legitimate and reliable. Without a website, you risk losing trust and being overlooked by customers who expect an online presence. Did you know? Studies show that 84% of consumers believe businesses with websites are more credible than those without one.",
+      "Unlike a physical store or office with limited hours, your website is open around the clock. Customers can learn about your products or services, contact you, or even make purchases at any time, ensuring you never miss an opportunity.",
+      "A website acts as a cost-effective marketing hub where you can share updates, promotions, and blog posts, all at minimal cost. Compared to traditional advertising like print or radio, a website is a more affordable and targeted way to reach your audience.",
+      "Your website serves as a digital storefront, allowing you to highlight your offerings with descriptions, pricing, photos, and testimonials. This transparency helps customers understand your value and builds trust.",
+      "Many start-ups and small businesses delay creating a website, missing out on potential customers. By launching your website early, you gain a competitive edge, establish your presence, and build a brand identity before others catch up."
+    ],
+    "conclusion": "A modern website is no longer optional—it’s essential for building credibility, engaging customers, and driving growth. By establishing your online presence from day one, you set the stage for long-term success.",
+    "profile": "Preye Omusuku, founder of Letscr8t, transforms ideas into digital experiences. With 3+ years of expertise in React, TypeScript, Next.js, and Tailwind CSS, she creates sleek, high-performing websites and web-apps that deliver results."
+  },
+  {
+    "id": "4",
+    "title": "5 Best Free AI Tools for Startups & Small Businesses",
+    "date": "2024-11-19",
+    "author": "Preye Omusuku",
+    "excerpt": "In today’s fast-paced digital age, startups and small businesses need every advantage to stay competitive. Artificial intelligence (AI) tools can automate processes, enhance productivity, and even help you scale—all without requiring large budgets. The best part? Many of these tools are free!",
+    "content": "In today’s fast-paced digital age, startups and small businesses need every advantage to stay competitive",
+    "views": 196,
+    "category": "AI Tools",
+    "image": "/AI.png",
+    "passport": "/PREYE.svg",
+    "listItems": [
+      "ChatGPT (OpenAI)",
+      "Trello with AI Integration",
+      "Grammarly",
+      "Canva (Magic Resize Tool)",
+      "Google Analytics"
+    ],
+    "paragraphs": [
+      "ChatGPT is a versatile AI tool that can generate professional emails, social media captions, customer support responses, and more. Whether you’re stuck on an idea or need quick text-based solutions, ChatGPT has your back.",
+      "Trello is a favorite for organizing tasks, and its AI integration takes it to the next level by optimizing workflows and providing smart suggestions for task prioritization.", 
+      "Grammarly is your AI writing assistant, ensuring every piece of communication is polished and professional. From grammar corrections to tone adjustments, it’s an essential tool for any business ",
+      "Canva simplifies design tasks with its intuitive interface and AI-driven tools like Magic Resize, which allows you to adjust the size of graphics for different platforms in just one click", 
+      "Google Analytics uses AI to provide insights about your website’s traffic, helping you understand visitor behavior and optimize for conversions."
+    ],
+    "conclusion": "By leveraging these free tools, small businesses can enhance productivity, streamline operations, and grow effectively without breaking the bank.",
+    "profile": "Preye Omusuku, founder of Letscr8t, transforms ideas into digital experiences. With 3+ years of expertise in React, TypeScript, Next.js, and Tailwind CSS, she creates sleek, high-performing websites and web-apps that deliver results."
+  }
+]

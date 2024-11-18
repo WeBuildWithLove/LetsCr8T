@@ -17,7 +17,7 @@ const Advert = () => {
         className="md:mt-[20px] mt-[25px]  w-[146px] md:w-[156px] "
       >
         <AnimatedButton className="md:w-[156px] h-[56px] w-[146px]">
-          Get In Touch
+          Work With Us
         </AnimatedButton>
       </Link>
     </div>

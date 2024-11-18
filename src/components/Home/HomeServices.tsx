@@ -1,28 +1,15 @@
-"use client";
-
 import React from "react";
 import { Services } from "../../../constants";
 import Link from "next/link";
 import Image from "next/image";
 import ConnectingDots from "../../../public/connecting-dots.svg";
 import AnimatedButton from "../ui/animatedButton";
-import AnimatedContainer from "../Animations/AnimatedContainer";
-import ServicePlayer from "../../../public/service.gif";
+import Advert from "../Global/Advert";
 
 const HomeServices = () => {
   return (
-    <section className=" md:pt-[100px] pt-[70px] px-[32px] md:px-0 items-center">
-      <AnimatedContainer className="flex flex-col items-center justify-center mx-auto">
-        <div className="flex justify-center items-center w-full h-full">
-          <Image
-            src={ServicePlayer}
-            alt="services gif player"
-            className="object-contain md:mr-[15px] md:mb-[-15px] mr-[10px] mb-[-10px]"
-          />
-        </div>
-      </AnimatedContainer>
-
-      <div className="flex flex-col md:gap-[100px] gap-[35px] md:pt-[100px] pt-[50px]">
+    <section className=" md:pt-[100px] pt-[50px] px-[32px] md:px-0 items-center">
+      <div className="flex flex-col md:gap-[50px] gap-[35px]">
         <div className="md:w-[304px] w-[170px] flex flex-col justify-center gap-[10px] mx-auto items-center">
           <h2 className="font-urban md:text-2xl text-base font-normal text-cr8tOrange">
             SERVICES
@@ -63,7 +50,7 @@ const HomeServices = () => {
           ))}
         </div>
       </div>
-      <div className="flex justify-center mt-[25px]">
+      {/* <div className="flex justify-center mt-[25px]">
         <Link href="/services" className="">
           <AnimatedButton
             className="w-[199px] lg:w-[223px] lg:h-[56px] h-[50px]"
@@ -72,6 +59,9 @@ const HomeServices = () => {
             View All Services
           </AnimatedButton>
         </Link>
+      </div> */}
+      <div className="md:pt-[150px] pt-[50px] ">
+        <Advert />
       </div>
     </section>
   );

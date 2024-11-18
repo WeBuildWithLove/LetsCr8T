@@ -9,7 +9,7 @@ import Twitter from "@/app/assets/icons/Twitter";
 
 function Footer() {
   return (
-    <div className=" ">
+    <div className="">
       <div className="md:pl-[80px] lg:block flex flex-col justify-center mx-auto items-center mt-[150px] lg:mt-0">
         <ElevateCard />
       </div>
@@ -25,8 +25,9 @@ function Footer() {
         />
         <div className=" flex md:gap-[100px] gap-[30px] text-base font-light font-poppins text-cr8tLightBlack items-center flex-wrap lg:flex-nowrap">
           <p className=" leading-[29px] md:leading-7 md:w-[418px] w-[315px] md:pt-5 pt-[15px]">
-            At LetsCr8T, we specialize in building custom websites and digital
-            experiences for small businesses, solopreneurs, and startups.
+            At Letscr8t, we craft modern, conversion-focused websites that help
+            start-ups and small businesses stand out and turn visitors into
+            customers.
           </p>
 
           <div className="flex flex-col  md:gap-[3.5px] gap-[5px]  md:pt-0">
@@ -40,9 +41,7 @@ function Footer() {
             </span>
           </div>
           <div className="flex flex-col  md:gap-[3.5px] gap-[5px]">
-            <p className="uppercase font-medium text-cr8tBlack">
-              Connect With Us
-            </p>
+            <p className="uppercase font-medium text-cr8tBlack">Follow Us On</p>
             <span className="flex items-center gap-5">
               <a
                 href="https://www.linkedin.com/company/letscr8t"
@@ -85,7 +84,7 @@ function Footer() {
           <Copyright size={24} color="#ADADAD" className="hidden md:block" />
           <Copyright size={18} color="#ADADAD" className="block md:hidden" />
           <p className="md:text-base text-xs text-cr8tLightBlack font-light">
-            2024,<span className=" font-semibold">LetsCr8T.</span>All Right
+            2024 <span className=" font-semibold">LetsCr8T.</span> All Rights
             Reserved.
           </p>
         </div>

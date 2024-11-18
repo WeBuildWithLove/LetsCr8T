@@ -13,37 +13,32 @@ function HomeHero() {
       <div className="flex flex-col xl:gap-[50px] gap-[25px] items-center justify-center xl:px-[123px] md:px-[80px] px-[24px] ">
         <div>
           <p className="leading-[44.8px] lg:leading-[81px]  font-bold text-[32px] xl:text-[70px] lg:text-[60px] md:text-[50px] md:leading-[71px] text-center ">
-            Empowering Your{" "}
+            Modern{" "}
             <span className="text-[#FF5A12] font-normal font-urban ">
-              Business
+              Websites
             </span>{" "}
-            with <br className="hidden lg:block" /> Custom Digital Solutions
+            That Turn <br className="hidden lg:block" /> Your{" "}
+            <span className="line-through decoration-[#FF5A12]">Visitors </span>
+            Into Customers
           </p>
 
           <p className="text-center text-base md:text-lg font-poppins font-light leading-6 text-cr8tLightBlack pt-5">
-            At <span>LetsCr8T,</span> we build custom websites and digital
-            experiences – to help
-            <br className="hidden lg:block" /> your business thrive online.
-            <br className="hidden lg:block" />
-            Whether you’re just starting or ready to level up,
-            <br className="hidden lg:block" />
-            we create user-friendly websites and apps that captivate audiences,
-            strengthen your brand, and drive growth.
+            Crafted to impress, engineered to drive results
           </p>
         </div>
 
         <div className="flex md:gap-[34px] gap-[20px] flex-wrap items-center justify-center">
           <Link href="/contact" className="">
             <AnimatedButton
-              className="w-[199px] md:w-[229px] md:h-[56px] h-[50px] "
+              className="w-[200px] md:w-[230px] md:h-[56px] h-[50px] "
               withHeartbeat
             >
-              Start Project
+              Lets Get You Started
             </AnimatedButton>
           </Link>
           <Link href="/portfolio" className="">
-            <Button className="border border-[#FF5A12] rounded-full w-[199px] md:w-[229px] md:h-[56px] h-[50px] hover:bg-[#FF5A12] hover:text-white font-manrope font-semibold text-base">
-              See Portfolio
+            <Button className="border border-[#FF5A12] rounded-full w-[200px] md:w-[230px] md:h-[56px] h-[50px] hover:bg-[#FF5A12] hover:text-white font-manrope font-semibold text-base">
+              See Our Work
             </Button>
           </Link>
         </div>

@@ -14,13 +14,12 @@ const ElevateCard = () => {
           in mind?
         </h1>
         <p className="md:pt-[10px] pt-[5px] text-cr8tLightBlack text-base font-light font-poppins leading-[23px]">
-          We don’t just work—we create with joy, blending creativity and
-          determination to turn ideas into reality. Let’s bring your next great
-          project to life together.
+          We create with purpose, blending creativity and strategy to turn ideas
+          into results. Let’s bring your vision to life together.
         </p>
-        <Link href="/contact" className="mt-[25px] md:w-[147px] w-[137px]">
-          <AnimatedButton className="md:w-[147px] w-[137px] h-[56px]">
-            Contact Us
+        <Link href="/contact" className="mt-[25px] ">
+          <AnimatedButton className="md:w-[148px] w-[138px] h-[56px]">
+            Create With Us
           </AnimatedButton>
         </Link>
       </div>

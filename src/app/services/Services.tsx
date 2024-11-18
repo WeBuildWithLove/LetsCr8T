@@ -53,23 +53,24 @@ const Services = () => {
           <h3 className="text-base text-cr8tBlack">APPROACH</h3>
 
           <p className="lg:text-lg text-base leading-6 lg:w-[572px] w-[256px] text-cr8tLightBlack md:leading-[27px] ml-auto lg:ml-0 font-light">
-            Whether it’s strategy, branding, web design, product development, or
-            app creation, we provide solutions uniquely crafted for your
-            audience. With deep expertise across diverse fields, we’re here to
-            build branded, interactive experiences that make an impact.
+            We craft solutions tailored to your audience—whether it’s web
+            design, branding, strategy, or app development. Each project is
+            unique, and we adapt to your specific goals to create impactful,
+            interactive experience
             <br />
             <br />
-            {`Each project is distinct, and we embrace a flexible approach to meet your specific goals and context. By blending strategic insights, collaborative design, and cutting-edge development, we’re committed to delivering standout digital experiences.`}
+            By combining strategic thinking, collaborative design, and
+            cutting-edge development, we deliver digital solutions that not only
+            look stunning but drive results.
           </p>
         </div>
         <div className="md:pr-[123px] w-[341px] md:w-full font-grotesk xl:text-[70px]  lg:text-[50px] text-[32px] leading-[44.8px] xl:leading-[98px] lg:leading-[68px] ">
           <p>
-            {`We’re dedicated to crafting exceptional `}
+            {`We combine strategy, creativity, and `}
             <span className="font-urban font-normal  text-cr8tOrange">
-              DIGITAL EXPERIENCES
+              innovation
             </span>{" "}
-            that help your business grow, combining smart strategy, creative
-            design & cutting-edge development.
+            to craft solutions that captivate, engage, and drive results.
           </p>
         </div>
         <div className="flex md:justify-between flex-wrap md:flex-nowrap font-normal font-poppins pt-[18px] lg:pt-0 gap-[10px] lg:gap-0 ">

@@ -1,41 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:wght@300;400;500;600;700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
-
 :root {
   --font-urban: "Urban Storm", sans-serif;
   --font-grotesk: "BDO Grotesk", sans-serif;
 }
-body{
-  background:#F4F4F4;
+body {
+  background: #f4f4f4;
   color: #202526;
 }
 .hero_bg {
-  background-image: url('/hero-image-1.svg'), url('/hero-image-2.svg');
+  background-image: url("/hero-image-1.svg"), url("/hero-image-2.svg");
   background-repeat: no-repeat;
   background-position: left 80px top 31px, right 80px top 51px;
-  background-size: 384px, 414px
+  background-size: 384px, 414px;
 }
-.footer_bg{
-  background-image: url('/hero-image-2.svg');
+.blog_bg {
+  background-image: url("/blog-notes.svg"), url("/blog-chats.svg"),
+    url("/blog-connectivity.svg");
+  background-repeat: no-repeat;
+  background-position: left 33px top 33px, right 340px top 40px,
+    right 90px top 80px;
+}
+.footer_bg {
+  background-image: url("/hero-image-2.svg");
   background-repeat: no-repeat;
   background-position: right 80px top 17px;
-  background-size:414px 
-  
+  background-size: 414px;
 }
 
 /* .accordionBackground {
@@ -47,70 +50,59 @@ body{
   
 } */
 
-
-
 @media (max-width: 480px) {
-  .footer_bg{
-background-image: block;
+  .footer_bg {
+    background-image: block;
   }
 
-  .hero_bg{
+  .hero_bg {
     background-image: none;
-      }
+  }
 
-  .footer_mobile_bg{
-    background-image:block;
+  .footer_mobile_bg {
+    background-image: block;
     background-repeat: no-repeat;
     background-position: right 24px top 250px;
-    background-size:250px 
-    
+    background-size: 250px;
   }
   /* .accordionBackground {
     background-image: url('../../public/question-mark.svg');
   
   } */
-  
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-  .hero_bg{
+  .hero_bg {
     background-image: block;
     background-repeat: no-repeat;
     background-position: left 30px top 31px, right 30px top 51px;
-    background-size: 250px, 300px
-      }
+    background-size: 250px, 300px;
+  }
 
-      .footer_mobile_bg{
-        background-image: block;
-        background-repeat: no-repeat;
-        background-position: right 50px top 200px;
-        background-size:414px 
-        
-      }
-      /* .accordionBackground {
+  .footer_mobile_bg {
+    background-image: block;
+    background-repeat: no-repeat;
+    background-position: right 50px top 200px;
+    background-size: 414px;
+  }
+  /* .accordionBackground {
         background-image: block;
       
       }
        */
-      
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-  .hero_bg{
+  .hero_bg {
     background-image: block;
     background-repeat: no-repeat;
     background-position: left 40px top 31px, right 40px top 51px;
     background-size: 324px, 356px;
-  
-
-      }
-      /* .accordionBackground {
+  }
+  /* .accordionBackground {
         background-image: none;
       
       } */
 }
-
-
-
 
 .max-container {
   @apply mx-auto max-w-[1440px];
@@ -120,7 +112,7 @@ background-image: block;
   @apply px-6 lg:px-20;
 }
 
-.icon{
+.icon {
   font-size: 40px;
 }
 
@@ -131,7 +123,7 @@ background-image: block;
 }
 
 .custom-bullets li::marker {
-  color: #4B0082; /* Change to your desired bullet color */
+  color: #4b0082; /* Change to your desired bullet color */
 }
 .default-transition {
   transition-duration: 0.5s;
@@ -141,12 +133,12 @@ background-image: block;
 
 .bg-cr8tBlack {
   --tw-bg-opacity: 1;
-  background-color: #202526 
+  background-color: #202526;
 }
 
 .bg-cr8tOrnge {
   --tw-bg-opacity: 1;
-  background-color: #FF5A12 var(--tw-bg-opacity); 
+  background-color: #ff5a12 var(--tw-bg-opacity);
 }
 
 .text-cr8tWhite {
@@ -162,15 +154,16 @@ background-image: block;
   transition-property: width;
 }
 @keyframes heartbeat {
-  0%, 30% {
+  0%,
+  30% {
     width: 26px; /* Initial state */
   }
   40% {
     width: 19px; /* Shrink */
   }
 
-
-  70%, 100% {
+  70%,
+  100% {
     width: 26px; /* Hold original size for a pause */
   }
 }
@@ -215,12 +208,3 @@ button:hover .settings-static-icon {
 button:hover .settings-animated-icon {
   display: block; /* Show the animated icon */
 }
-
-
-
-
-
-
-
-
-

@@ -88,7 +88,7 @@ function Navbar() {
           </div>
           <Link href="/contact">
             <AnimatedButton className="w-[147px] h-[56px]">
-              Contact Us
+              Let's Talk
             </AnimatedButton>
           </Link>
         </div>
@@ -169,7 +169,7 @@ function Navbar() {
             </div>
             <Link href="/contact">
               <AnimatedButton className="w-[147px] h-[56px] mt-4">
-                Contact Us
+                Let's Talk
               </AnimatedButton>
             </Link>
           </div>
@@ -184,7 +184,8 @@ export default Navbar;
 // Link items for navigation
 const links = [
   { name: "Home", url: "/" },
-  { name: "Portfolio", url: "/portfolio" },
+  { name: "Our Work", url: "/our-work" },
   { name: "Services", url: "/services" },
   { name: "About", url: "/about" },
+  { name: "Blog", url: "/blog" },
 ];

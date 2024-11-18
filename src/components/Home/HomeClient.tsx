@@ -17,10 +17,7 @@ const Clients = () => {
         </h1>
 
         <p className="md:text-lg text-base text-cr8tLightBlack font-light text-center md:leading-7 leading-6 font-poppins">
-          Our clients have achieved real growth and transformation through our
-          services. Here’s how we’ve helped businesses boost their online
-          presence, strengthen their brand, and create engaging digital
-          experiences that drive results.
+          Hear From Businesses Like Yours That Trust Us to Deliver Results
         </p>
       </div>
       <div className="hidden md:flex">
@@ -30,9 +27,6 @@ const Clients = () => {
       </div>
       <div className="flex md:hidden">
         <Recommendations />
-      </div>
-      <div className="md:pt-[150px] pt-[50px] ">
-        <Advert />
       </div>
     </section>
   );

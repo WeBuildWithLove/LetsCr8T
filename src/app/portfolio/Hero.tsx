@@ -5,8 +5,8 @@ const Hero = () => {
         <p className="lg:w-[388px] w-[224px]">
           LetsCr8T
           <br />
-          WE CRAFT DIGITAL PRODUCTS, BRANDS, AND EXPERIENCES THAT YOUR CUSTOMERS
-          WILL LOVE.
+          WE CRAFT DIGITAL PRODUCTS, BRANDS, AND EXPERIENCES YOUR CUSTOMERS WILL
+          LOVE.
         </p>
       </div>
       <div className="lg:pt-[100px] pt-[50px] font-grotesk  xl:text-[150px] lg:text-[100px] md:text-[80px] text-[32px] font-normal text-cr8tBlack  xl:leading-[150px]  leading-[44px] md:leading-[110px] px-[28px] md:px-0 flex flex-col">

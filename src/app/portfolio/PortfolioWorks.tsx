@@ -9,7 +9,7 @@ const PortfolioWorks = () => {
           PROJECTS
           <br />
           We WORK CLOSELY WITH OUR CLIENTS TO BUILD EXPERIENCES THAT CAPTIVATE
-          THEIR USERS.
+          AND CONVERT.
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:gap-[50px] gap-[15px] lg:mt-[50px] mt-[25px]">
