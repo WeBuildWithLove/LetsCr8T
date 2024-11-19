@@ -15,7 +15,7 @@ const OurStory = () => {
             </span>
             <div className="flex flex-col lg:text-lg lg:leading-[27px] text-base leading-6">
               <Paragraph
-                message="LetsCr8T, we specialize in developing custom websites and web applications that help small businesses and startups thrive online."
+                message="LetsCr8T, we transform ideas into digital realities, building digital platforms  that help small businesses thrive."
                 className="lg:block hidden  lg:w-[428px]  w-[342px]"
               />
 
@@ -23,17 +23,19 @@ const OurStory = () => {
                 <span className=" px-[6px] py-[6px] mr-1 bg-cr8tOrange rounded-[7px] font-normal  text-lg text-[#F4F4F4]">
                   At
                 </span>
-                LetsCr8T, we specialize in developing custom websites and web
-                applications that help small businesses and startups thrive
-                online.
+                LetsCr8T, we transform ideas into digital realities, building
+                digital platforms that help small businesses thrive.
               </p>
             </div>
           </div>
           <div className="flex flex-col lg:text-lg md:leading-[27px] text-base leading-6 xl:w-[572px] lg:w-[472px]  min-w-[342px]">
-            <Paragraph message="Our team combines creativity and technical expertise to deliver digital solutions that drive growth and connect you with your audience" />
+            <Paragraph message="We design custom solutions that not only look great but also help businesses connect with their audience and achieve real growth" />
             <br />
 
-            <Paragraph message="We're also passionate about giving back. Through our charity initiatives, we offer free web services to small businesses in need, helping them succeed in the digital world." />
+            <Paragraph
+              message="We’re also passionate about giving back. Through our initiatives, we offer free web services to small businesses in need, empowering them to succeed in the digital age
+"
+            />
           </div>
         </div>
         <div className="border border-Cr8tGray hidden md:block h-[317px] border-opacity-20 lg:mr-[2%] xl:mr-0 "></div>
@@ -44,7 +46,7 @@ const OurStory = () => {
             </span>
 
             <Paragraph
-              message="We build custom websites and digital solutions tailored to help your business grow online. Whether you need a user-friendly app or a unique brand identity, we’re here to support you."
+              message="To empower startups and small businesses with custom digital solutions that inspire, engage, and convert—helping them grow and succeed in a competitive online landscape."
               className="flex flex-col lg:text-lg text-base  lg:leading-[27px] leading-6 xl:w-[572px] lg:w-[472px]  min-w-[342px] "
             />
           </div>
@@ -54,7 +56,7 @@ const OurStory = () => {
             </span>
 
             <Paragraph
-              message="To empower small businesses and startups with digital solutions that help them stand out and succeed online."
+              message="To become the go-to partner for businesses seeking modern, user-focused websites and digital experiences that turn ideas into results."
               className="flex flex-col  lg:text-lg text-base lg:leading-[27px] leading-6 xl:w-[572px] lg:w-[472px] min-w-[342px]"
             />
           </div>

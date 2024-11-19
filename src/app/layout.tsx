@@ -51,7 +51,7 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   title: "LetsCr8T",
   description:
-    "At LetsCr8T, we craft custom websites & digital experiences engage your audience, elevate your brand, & drive growth—let’s get started!",
+    "At LetsCr8T, we craft custom websites & digital experiences that engage your audience, elevate your brand, & drive growth — let’s get started!",
 
   keywords: [
     "custom websites",
@@ -79,7 +79,7 @@ export const metadata: Metadata = {
     url: "https://letscr8t.xyz",
     images: [
       {
-        url: "/portfolio-img6.png", // Placeholder, replace with actual image path
+        url: "/portfolio-img6.png",
         width: 1200,
         height: 630,
         alt: "LetsCr8T - Crafting custom digital experiences",

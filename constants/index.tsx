@@ -82,21 +82,19 @@ export const Services = [
         height={90}
       />
     ),
-    service: "Mobile & Web App Development",
+    service: "Website Design & Development",
     description: (
       <>
-        We create custom{" "}
+        We create responsive, conversion-focused{" "}
         <span className="text-cr8tOrange font-medium font-urban capitalize">
-          Mobile
+          Websites
         </span>{" "}
         and{" "}
         <span className="text-cr8tOrange font-medium font-urban capitalize">
           {" "}
-          web
+          Web-Apps
         </span>{" "}
-        apps that are easy to use, responsive, and fit your business needs.
-        Whether you need a simple web or a sophisticated web app, we’ve got you
-        covered.
+        that captivate users and drive business results.
       </>
     ),
     width: "607px",
@@ -111,43 +109,20 @@ export const Services = [
         height={90}
       />
     ),
-    service: "Branding & Identity Design",
+
+    service: "Branding & Visual Identity",
 
     description: (
       <>
-        We help build your{" "}
+        We Design logos, color schemes, and{" "}
         <span className="text-cr8tOrange font-medium font-urban capitalize">
           brand
         </span>{" "}
-        from the ground up with unique logos, color schemes, and design elements
-        that make your{" "}
+        assets that make your{" "}
         <span className="text-cr8tOrange font-medium font-urban capitalize">
           business
         </span>{" "}
-        memorable.
-      </>
-    ),
-    width: "488px",
-  },
-  {
-    icon: (
-      <Image
-        src={SupportIcon}
-        alt="icon of maintenance and support"
-        width={90}
-        height={90}
-      />
-    ),
-    service: "Web Maintenance & Support",
-
-    description: (
-      <>
-        We ensure your website or app{" "}
-        <span className="text-cr8tOrange font-medium font-urban capitalize">
-          runs smoothly
-        </span>{" "}
-        by managing updates, security, and troubleshooting, so you can focus on
-        growing your business worry-free.
+        unforgettable.
       </>
     ),
     width: "488px",
@@ -161,25 +136,47 @@ export const Services = [
         height={90}
       />
     ),
-    service: "Content Strategy & Copywriting",
+    service: "SEO & Content Strategy",
 
     description: (
       <>
-        We craft compelling
+        We
         <span className="text-cr8tOrange font-medium font-urban capitalize">
           {" "}
-          content
+          optimize
         </span>{" "}
-        that tells your story and engages your{" "}
+        your website for search engines and craft compelling{" "}
         <span className="text-cr8tOrange font-medium font-urban capitalize">
           {" "}
-          audience
+          content{" "}
         </span>
-        , attracting and converting customers with the right message at the
-        right time.
+        that speaks to your audience.
       </>
     ),
     width: "513px",
+  },
+
+  {
+    icon: (
+      <Image
+        src={SupportIcon}
+        alt="icon of maintenance and support"
+        width={90}
+        height={90}
+      />
+    ),
+    service: "Web Maintenance & Support",
+
+    description: (
+      <>
+        We Keep your website, up-to-date, and{" "}
+        <span className="text-cr8tOrange font-medium font-urban capitalize">
+          performing
+        </span>{" "}
+        at its best with our ongoing support services.
+      </>
+    ),
+    width: "488px",
   },
 ];
 
@@ -248,14 +245,7 @@ export const PORTFOLIO = [
     project: "Daniel Araromi",
     span: "– Portfolio Website",
     link: "https://offer-portfolio.vercel.app/",
-    gif: "/therapy.gif",
-  },
-  {
-    image: "/portfolio-img6.png",
-    project: "LetsCr8T",
-    span: " – Agency Website",
-    link: "https://www.hodlegal.org/",
-    gif: "/therapy.gif",
+    gif: "/Daniel-Portfolio.gif",
   },
   {
     image: "/portfolio-img5.png",
@@ -264,54 +254,212 @@ export const PORTFOLIO = [
     link: "https://therapy-nine-ivory.vercel.app/",
     gif: "/therapy.gif",
   },
+  {
+    image: "/portfolio-img4.png",
+    project: "Xhibit",
+    span: " – Web Application",
+    link: "https://www.hodlegal.org/",
+    gif: "/xhibit-portfolio.gif",
+  },
 
   {
     image: "/portfolio-img2.png",
     project: "H.O.D LEGAL",
     span: " – Website Development",
     link: "https://www.hodlegal.org/",
-    gif: "/therapy.gif",
+    gif: "/hod-portfolio.gif",
   },
 
   {
-    image: "/portfolio-img4.png",
-    project: "Xhibit",
-    span: " – Web Application",
+    image: "/portfolio-img6.png",
+    project: "LetsCr8T",
+    span: " – Agency Website",
     link: "https://www.hodlegal.org/",
-    gif: "/therapy.gif",
+    gif: "/letscr8t-portfolio.gif",
   },
   {
     image: "/portfolio-img3.png",
     project: "WeCr8T ",
     span: " – Agency Website",
     link: "https://www.wecr8t.xyz",
-    gif: "/therapy.gif",
+    gif: "/Wecr8t-portfolio.gif",
+  },
+];
+export const worksData = [
+  {
+    image: "/project-1.svg",
+    project: "XHIBIT",
+    link: "https://offer-portfolio.vercel.app/",
+  },
+  {
+    image: "/project-2.svg",
+    project: "Risidio",
+    link: "https://therapy-nine-ivory.vercel.app/",
+  },
+  {
+    image: "/project-1.svg",
+    project: "XHIBIT",
+    link: "https://offer-portfolio.vercel.app/",
+  },
+  {
+    image: "/project-2.svg",
+    project: "Risidio",
+    link: "https://therapy-nine-ivory.vercel.app/",
+  },
+  {
+    image: "/project-1.svg",
+    project: "XHIBIT",
+    link: "https://offer-portfolio.vercel.app/",
   },
 ];
 
 export const ServiceListingData = [
   {
     service_name: "Design & User Experience",
-    one: "User Experience (UX) Design",
+    one: " UX Design",
     two: "Prototyping",
     three: "Web Accessibility",
     four: "User testing",
   },
+
   {
     service_name: "Branding & Visual Identity",
     one: "Branding",
     two: "Brand Strategy ",
     three: " Visual & Motion identity",
     four: "Graphic Design",
-    five: "Brand Guidelines",
-    six: "Content Strategy & Copywriting",
   },
 
   {
     service_name: "Custom Development",
-    one: "Custom Website Development",
+    one: "Website Development",
     two: "Mobile App Development",
-    three: "Creative Tech",
-    four: "Web Maintenance & Support",
+    three: "E-Commerce Solutions",
+    four: "Creative Tech",
+  },
+  {
+    service_name: "Content Strategy & Maintenance",
+    one: "Content Strategy",
+    two: "SEO Copywriting",
+    three: "Ongoing Maintenance:",
+    four: "Support Services",
+  },
+];
+export const categoriesData = [
+  {
+    title: "Website Design & User Experience",
+  },
+  {
+    title: "Web Development & Technology",
+  },
+  {
+    title: " Tools & Productivity",
+  },
+  {
+    title: "Case Studies & Projects",
+  },
+  {
+    title: "Start-Up & Small Business Success",
+  },
+  {
+    title: "Web Trends & Innovations",
+  },
+];
+export const recentPostData = [
+  {
+    date: "November 12, 2024",
+    title: "  10 Essential Features Every Modern Website Needs in 2024",
+  },
+  {
+    date: "November 12, 2024",
+    title: "  10 Essential Features Every Modern Website Needs in 2024",
+  },
+  {
+    date: "November 12, 2024",
+    title: "  10 Essential Features Every Modern Website Needs in 2024",
+  },
+];
+
+export const clientChallengeData = [
+  {
+    icon: "/crown.svg",
+    title: "Stunning Designs That Captivate",
+    content:
+      "We create visually striking, user-friendly designs that leave a lasting impression on your audience.",
+  },
+
+  {
+    icon: "/crown.svg",
+    title: "Copy That Connects",
+    content:
+      "Your message matters. We craft clear, engaging copy that speaks to your audience and drives action",
+  },
+  {
+    icon: "/crown.svg",
+    title: "Built for Mobile and Speed",
+    content:
+      "With over 50% of web traffic on mobile, we ensure your site is fast, responsive, and built to perform everywhere.",
+  },
+  {
+    icon: "/crown.svg",
+    title: "Strong Calls-to-Action (CTAs)",
+    content:
+      "We guide visitors seamlessly from curiosity to conversion with bold, strategic CTAs that get results.",
+  },
+
+  {
+    icon: "/crown.svg",
+    title: "Future-Proof Development",
+    content:
+      "Your website or app will be scalable, secure, and ready to grow alongside your business",
+  },
+  {
+    icon: "/crown.svg",
+    title: "Support You Can Count On",
+    content:
+      "We’re here to help—before, during, and after your launch. Think of us as your long-term partner.",
+  },
+];
+
+// export const solutionsData = [
+//   {
+//     icon: "/crown.svg",
+//     title: "Designs That Captivate",
+//     content:
+//       "We craft visually stunning, user-friendly designs that make an unforgettable first impression, keeping visitors engaged and eager to learn more",
+//   },
+
+//   {
+//     icon: "/crown.svg",
+//     title: "Copy That Resonates",
+//     content:
+//       "Our messaging is clear, compelling, and tailored to your audience, ensuring visitors feel understood and are more likely to take action.",
+//   },
+//   {
+//     icon: "/crown.svg",
+//     title: "Development That Converts",
+//     content:
+//       "We build fast, seamless websites, guiding visitors smoothly from curiosity to action—turning clicks into customers.",
+//   },
+// ];
+export const howItWorksData = [
+  {
+    icon: "/3.svg",
+    title: "Schedule",
+    content:
+      "Book a free consultation to discuss your vision and how we can bring it to life.",
+  },
+
+  {
+    icon: "/1.svg",
+    title: "Create",
+    content:
+      "We design and develop a solution tailored to your business needs.",
+  },
+  {
+    icon: "/2.svg",
+    title: "Launch",
+    content:
+      "Bring your vision to life, share it with the world, and start growing your business.",
   },
 ];

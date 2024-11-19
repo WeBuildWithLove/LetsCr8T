@@ -13,9 +13,8 @@ const Hero = () => {
           </h1>
 
           <p className="md:text-lg text-base font-light font-poppins md:leading-[27px] leading-6 text-cr8tLightBlack">
-            Discover our passion for crafting digital solutions that drive
-            business growth — and meet the team dedicated to bringing your
-            vision to life.
+            We build websites and web-apps that help businesses grow. Meet the
+            team turning ideas into results.
           </p>
         </div>
         <div className="md:mt-20 mt-[30px]">
