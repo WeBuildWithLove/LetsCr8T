@@ -57,7 +57,7 @@ function Navbar() {
           <Socials />
           <Link href="/contact">
             <AnimatedButton className="w-[147px] h-[56px]">
-              Let`&apos;`s Talk
+              {`Let's Talk`}
             </AnimatedButton>
           </Link>
         </div>
@@ -106,7 +106,7 @@ function Navbar() {
             <Socials />
             <Link href="/contact">
               <AnimatedButton className="w-[147px] h-[56px] mt-4">
-                Let`&apos;`s Talk
+                {`Let's Talk`}
               </AnimatedButton>
             </Link>
           </div>
