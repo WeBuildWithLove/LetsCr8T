@@ -7,6 +7,7 @@ import Image from "next/image";
 import { Github, Linkedin, Plus, X } from "lucide-react";
 import Twitter from "@/app/assets/icons/Twitter";
 import AnimatedButton from "../ui/animatedButton";
+import Socials from "../ui/socials";
 
 function Navbar() {
   const router = useRouter();
@@ -53,42 +54,10 @@ function Navbar() {
 
         {/* Right Section - Social Media Icons and Contact Button (Desktop) */}
         <div className="hidden lg:flex gap-[30px] items-center">
-          <div className="flex gap-[20px] items-center">
-            <a
-              href="https://www.linkedin.com/company/letscr8t"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Linkedin
-                color="gray"
-                size={24}
-                strokeWidth={1}
-                className="text-gray-500 hover:fill-[#FF5A12] cursor-pointer transition-colors duration-300"
-              />
-            </a>
-            <a
-              href="https://x.com/LetsCr8T"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Twitter className="text-gray-500 hover:fill-[#FF5A12] hover:text-[#FF5A12] cursor-pointer transition-colors duration-300" />
-            </a>
-            <a
-              href="https://github.com/WeBuildWithLove"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Github
-                color="gray"
-                size={24}
-                strokeWidth={1}
-                className="text-gray-500 hover:fill-[#FF5A12] cursor-pointer transition-colors duration-300"
-              />
-            </a>
-          </div>
+          <Socials />
           <Link href="/contact">
             <AnimatedButton className="w-[147px] h-[56px]">
-              Let's Talk
+              {`Let's Talk`}
             </AnimatedButton>
           </Link>
         </div>
@@ -134,42 +103,10 @@ function Navbar() {
 
           {/* Social Media Icons */}
           <div className="flex flex-col items-center mt-4 lg:hidden">
-            <div className="flex gap-[20px]">
-              <a
-                href="https://www.linkedin.com/company/letscr8t"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Linkedin
-                  color="gray"
-                  size={24}
-                  strokeWidth={1}
-                  className="text-gray-500 hover:fill-[#FF5A12] cursor-pointer transition-colors duration-300"
-                />
-              </a>
-              <a
-                href="https://x.com/LetsCr8T"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Twitter className="text-gray-500 hover:fill-[#FF5A12] hover:text-[#FF5A12] cursor-pointer transition-colors duration-300" />
-              </a>
-              <a
-                href="https://github.com/WeBuildWithLove"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Github
-                  color="gray"
-                  size={24}
-                  strokeWidth={1}
-                  className="text-gray-500 hover:fill-[#FF5A12] cursor-pointer transition-colors duration-300"
-                />
-              </a>
-            </div>
+            <Socials />
             <Link href="/contact">
               <AnimatedButton className="w-[147px] h-[56px] mt-4">
-                Let's Talk
+                {`Let's Talk`}
               </AnimatedButton>
             </Link>
           </div>

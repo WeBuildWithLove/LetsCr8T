@@ -3,7 +3,7 @@ const Hero = () => {
     <section className="pt-[50px] lg:px-[80px]  px-6">
       <div className=" flex justify-end lg:text-base text-[15px] lg:leading-6 leading-[22.5px] font-poppins font-light text-cr8tLightBlack">
         <p className="lg:w-[388px] w-[273px]">
-          LetsCr8T
+          <span className="text-Cr8tGray">LetsCr8T</span>
           <br />
           BRINGING BUSINESSES AND CUSTOMERS TOGETHER WITH DESIGN THAT DELIVERS
           RESULTS.

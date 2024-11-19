@@ -9,6 +9,7 @@ import DateViews from "@/components/ui/dateViews";
 import Author from "@/components/ui/Cards/author";
 import BlogFooter from "@/components/ui/blogFooter";
 import Head from "next/head";
+import Advert from "@/components/Global/Advert";
 
 const BlogDetail = () => {
   const { id } = useParams(); // Retrieve dynamic ID from the URL
@@ -78,6 +79,9 @@ const BlogDetail = () => {
           <Aside />
         </div>
       </article>
+      <div className="mt-[150px]">
+        <Advert />
+      </div>
     </Layout>
   );
 };

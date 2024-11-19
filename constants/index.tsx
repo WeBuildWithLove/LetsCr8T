@@ -285,6 +285,33 @@ export const PORTFOLIO = [
     gif: "/Wecr8t-portfolio.gif",
   },
 ];
+export const worksData = [
+  {
+    image: "/project-1.svg",
+    project: "XHIBIT",
+    link: "https://offer-portfolio.vercel.app/",
+  },
+  {
+    image: "/project-2.svg",
+    project: "Risidio",
+    link: "https://therapy-nine-ivory.vercel.app/",
+  },
+  {
+    image: "/project-1.svg",
+    project: "XHIBIT",
+    link: "https://offer-portfolio.vercel.app/",
+  },
+  {
+    image: "/project-2.svg",
+    project: "Risidio",
+    link: "https://therapy-nine-ivory.vercel.app/",
+  },
+  {
+    image: "/project-1.svg",
+    project: "XHIBIT",
+    link: "https://offer-portfolio.vercel.app/",
+  },
+];
 
 export const ServiceListingData = [
   {
@@ -320,22 +347,22 @@ export const ServiceListingData = [
 ];
 export const categoriesData = [
   {
-    title: "BlockChain",
+    title: "Website Design & User Experience",
   },
   {
-    title: "Criptocurrency marrket",
+    title: "Web Development & Technology",
   },
   {
-    title: "ICO listing",
+    title: " Tools & Productivity",
   },
   {
-    title: "Tokenomics",
+    title: "Case Studies & Projects",
   },
   {
-    title: "Marketing",
+    title: "Start-Up & Small Business Success",
   },
   {
-    title: "Vrindacoin",
+    title: "Web Trends & Innovations",
   },
 ];
 export const recentPostData = [
@@ -356,63 +383,83 @@ export const recentPostData = [
 export const clientChallengeData = [
   {
     icon: "/crown.svg",
-    title: "Is Your Message Clear Enough?",
+    title: "Stunning Designs That Captivate",
     content:
-      "Visitors need to instantly understand what you offer and why it’s the best choice. If your value proposition is unclear or buried under jargon, they’ll leave",
+      "We create visually striking, user-friendly designs that leave a lasting impression on your audience.",
   },
 
   {
     icon: "/crown.svg",
-    title: "Is Your Website Built for Humans?",
+    title: "Copy That Connects",
     content:
-      "Confusing layouts, slow loading times, or poor mobile experience frustrate visitors. Over 50% of web traffic is mobile—if your site isn’t smooth, people won’t stay.",
+      "Your message matters. We craft clear, engaging copy that speaks to your audience and drives action",
   },
   {
     icon: "/crown.svg",
-    title: "Are You Asking Visitors to Take Action?",
+    title: "Built for Mobile and Speed",
     content:
-      "Without bold, clear calls-to-action (CTAs), visitors don’t know what to do next. Whether it’s booking, buying, or signing up, guide them to take action!",
+      "With over 50% of web traffic on mobile, we ensure your site is fast, responsive, and built to perform everywhere.",
+  },
+  {
+    icon: "/crown.svg",
+    title: "Strong Calls-to-Action (CTAs)",
+    content:
+      "We guide visitors seamlessly from curiosity to conversion with bold, strategic CTAs that get results.",
+  },
+
+  {
+    icon: "/crown.svg",
+    title: "Future-Proof Development",
+    content:
+      "Your website or app will be scalable, secure, and ready to grow alongside your business",
+  },
+  {
+    icon: "/crown.svg",
+    title: "Support You Can Count On",
+    content:
+      "We’re here to help—before, during, and after your launch. Think of us as your long-term partner.",
   },
 ];
 
-export const solutionsData = [
-  {
-    icon: "/crown.svg",
-    title: "Designs That Captivate",
-    content:
-      "We craft visually stunning, user-friendly designs that make an unforgettable first impression, keeping visitors engaged and eager to learn more",
-  },
+// export const solutionsData = [
+//   {
+//     icon: "/crown.svg",
+//     title: "Designs That Captivate",
+//     content:
+//       "We craft visually stunning, user-friendly designs that make an unforgettable first impression, keeping visitors engaged and eager to learn more",
+//   },
 
-  {
-    icon: "/crown.svg",
-    title: "Copy That Resonates",
-    content:
-      "Our messaging is clear, compelling, and tailored to your audience, ensuring visitors feel understood and are more likely to take action.",
-  },
-  {
-    icon: "/crown.svg",
-    title: "Development That Converts",
-    content:
-      "We build fast, seamless websites, guiding visitors smoothly from curiosity to action—turning clicks into customers.",
-  },
-];
+//   {
+//     icon: "/crown.svg",
+//     title: "Copy That Resonates",
+//     content:
+//       "Our messaging is clear, compelling, and tailored to your audience, ensuring visitors feel understood and are more likely to take action.",
+//   },
+//   {
+//     icon: "/crown.svg",
+//     title: "Development That Converts",
+//     content:
+//       "We build fast, seamless websites, guiding visitors smoothly from curiosity to action—turning clicks into customers.",
+//   },
+// ];
 export const howItWorksData = [
   {
     icon: "/3.svg",
     title: "Schedule",
     content:
-      "Send and email or Book a free consultation to discuss your goals and challenges.",
+      "Book a free consultation to discuss your vision and how we can bring it to life.",
   },
 
   {
     icon: "/1.svg",
     title: "Create",
-    content: "We design and develop a website tailored to your business needs.",
+    content:
+      "We design and develop a solution tailored to your business needs.",
   },
   {
     icon: "/2.svg",
     title: "Launch",
     content:
-      "Go live with a conversion focused website ready to grow your business.",
+      "Bring your vision to life, share it with the world, and start growing your business.",
   },
 ];

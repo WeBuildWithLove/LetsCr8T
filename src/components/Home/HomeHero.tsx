@@ -23,7 +23,7 @@ function HomeHero() {
           </p>
 
           <p className="text-center text-base md:text-lg font-poppins font-light leading-6 text-cr8tLightBlack pt-5">
-            Crafted to impress, engineered to drive results
+            Crafted to impress, Built to Convert
           </p>
         </div>
 

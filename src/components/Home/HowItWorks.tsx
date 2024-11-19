@@ -11,7 +11,7 @@ const HowItWorks = () => {
       <div className="bg-white w-full flex flex-col gap-[50px] justify-center items-center mx-auto py-[50px] rounded-[20px] ">
         <div className="flex flex-col justify-center items-center text-center gap-[10px]">
           <h2 className="font-urban md:text-2xl text-base font-normal text-cr8tOrange">
-            How It Works
+            What Happens Next?
           </h2>
           <p className="text-Cr8tGray font-grotesk md:font-semibold font-medium md:text-[32px] text-2xl  text-center">
             Simple Steps, Big Results
@@ -77,8 +77,8 @@ const HowItWorks = () => {
           ))}
         </div>
 
-        <AnimatedButton className=" px-3 md:h-[56px] h-[50px] ">
-          Schedule Your Free Call With Preye
+        <AnimatedButton className=" w-[25%] md:h-[56px] h-[50px] ">
+          Book Your Free Call With Preye
           <Image src={Preye} alt="Preye Omusuku" width={45} height={45} />
         </AnimatedButton>
       </div>

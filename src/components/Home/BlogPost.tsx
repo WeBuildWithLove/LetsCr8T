@@ -1,14 +1,9 @@
 "use client";
 
-import Link from "next/link";
 import BlogHomeCard from "../ui/Cards/blogHomeCard";
-import blogsData from "../../app/blog/mock/blogs.json"; // Static import
+import { recentBlogs } from "@/lib/utils";
 
 const BlogPost = () => {
-  const recentBlogs = blogsData
-    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
-    .slice(0, 3);
-
   return (
     <section className="mt-[150px]">
       <div className="flex flex-col gap-[50px]">
@@ -26,6 +21,7 @@ const BlogPost = () => {
             Unforgettable and Drive More Customers.
           </p>
         </div>
+
         <div className="flex justify-evenly">
           {recentBlogs.map((blog) => (
             <BlogHomeCard
@@ -34,6 +30,8 @@ const BlogPost = () => {
               title={blog.title}
               excerpt={blog.content.slice(0, 100) + "..."}
               image={blog.image}
+              recentDay={blog.recentDay}
+              recentMonth={blog.recentMonth}
             />
           ))}
         </div>

@@ -7,7 +7,7 @@ import FAQs from "@/components/Home/FAQs";
 import BlogPost from "@/components/Home/BlogPost";
 import ServiceDisplay from "@/components/Home/ServiceDisplay";
 import ClientChallenges from "@/components/Home/ClientChallenges";
-import Solutions from "@/components/Home/Solutions";
+// import Solutions from "@/components/Home/Solutions";
 import HowItWorks from "@/components/Home/HowItWorks";
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
       <HomeHero />
       <ServiceDisplay />
       <ClientChallenges />
-      <Solutions />
+      {/* <Solutions /> */}
       <HowItWorks />
       <HomeClient />
       <HomeServices />
