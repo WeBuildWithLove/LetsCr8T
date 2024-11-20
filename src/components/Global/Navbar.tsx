@@ -54,10 +54,29 @@ function Navbar() {
 
         {/* Right Section - Social Media Icons and Contact Button (Desktop) */}
         <div className="hidden lg:flex gap-[30px] items-center">
-          <Socials />
+          <div className="hidden lg:flex items-center gap-[20px]">
+            {linksTwo.map((link, index) => (
+              <Link
+                key={index}
+                href={link.url}
+                className={`relative uppercase font-medium text-[#202526] text-center ${
+                  currentPath === link.url
+                    ? "text-[#202526]"
+                    : "text-[#ADADAD] hover:text-[#202526] hover:before:w-full"
+                } before:content-[''] before:absolute before:w-0 before:h-[1.5px] before:bottom-0 before:left-0 before:bg-[#FF5A12] before:transition-all before:duration-300 before:ease-in-out ${
+                  currentPath === link.url
+                    ? "before:w-full"
+                    : "hover:before:w-full"
+                }`}
+              >
+                {link.name}
+              </Link>
+            ))}
+          </div>
+          {/* <Socials /> */}
           <Link href="/contact">
-            <AnimatedButton className="w-[147px] h-[56px]">
-              {`Let's Talk`}
+            <AnimatedButton className="w-[157px] h-[56px]">
+              Book A Free Call
             </AnimatedButton>
           </Link>
         </div>
@@ -102,11 +121,31 @@ function Navbar() {
           </div>
 
           {/* Social Media Icons */}
-          <div className="flex flex-col items-center mt-4 lg:hidden">
-            <Socials />
+          <div className="flex flex-col items-center mt-4 lg:hidden gap-[40px]">
+            {/* <Socials /> */}
+            <div className="flex flex-col items-center font-grotesk text-base font-medium text-Cr8tGray gap-5">
+              {linksTwo.map((link, index) => (
+                <Link
+                  key={index}
+                  onClick={() => setOpen(false)}
+                  href={link.url}
+                  className={`relative uppercase font-medium text-center ${
+                    currentPath === link.url
+                      ? "text-[#202526]"
+                      : "text-[#ADADAD] hover:text-[#202526] hover:before:w-full"
+                  } before:content-[''] before:absolute before:w-0 before:h-[1.5px] before:bottom-0 before:left-0 before:bg-[#FF5A12] before:transition-all before:duration-300 before:ease-in-out ${
+                    currentPath === link.url
+                      ? "before:w-full"
+                      : "hover:before:w-full"
+                  }`}
+                >
+                  {link.name}
+                </Link>
+              ))}
+            </div>
             <Link href="/contact">
-              <AnimatedButton className="w-[147px] h-[56px] mt-4">
-                {`Let's Talk`}
+              <AnimatedButton className="w-[157px] h-[56px]">
+                Book A Free Call
               </AnimatedButton>
             </Link>
           </div>
@@ -124,5 +163,5 @@ const links = [
   { name: "Our Work", url: "/our-work" },
   { name: "Services", url: "/services" },
   { name: "About", url: "/about" },
-  { name: "Blog", url: "/blog" },
 ];
+const linksTwo = [{ name: "Blog", url: "/blog" }];

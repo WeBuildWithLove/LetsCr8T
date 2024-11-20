@@ -44,31 +44,31 @@ export const FAQS = [
     id: "1",
     question: "What services does LetsCr8t offer?",
     answer:
-      " LetsCr8T specializes in building custom websites, mobile apps, and digital experiences. We offer services in web design, website development, SEO, user experience (UX) design, and branding to help your business thrive online.",
+      "LetsCr8T builds custom websites, mobile apps, and digital solutions. Our services include web design, development, UX design, and branding to help businesses thrive online.",
   },
   {
     id: "2",
     question: "How can I get started with LetsCr8t?",
     answer:
-      "Getting started is easy! Simply send us an email, and we'll schedule an initial consultation to discuss your needs and how we can help you achieve your online goals",
+      "Getting started is simple! Schedule a free consultation to discuss your goals and how we can help.",
   },
   {
     id: "3",
     question: "How long does it take to complete a website project?",
     answer:
-      "Project timelines can vary depending on the complexity of the website. Typically, a standard website takes 4-6 weeks from start to finish. We provide a customized timeline during our initial consultation.",
+      "Timelines vary based on complexity. A standard website typically takes 4-6 weeks. We’ll provide a detailed timeline during our consultation",
   },
   {
     id: "4",
     question: "How much does a custom website cost?",
     answer:
-      "Pricing varies based on your project's requirements, such as the number of pages, specific features, and integrations. We provide a transparent quote after an initial consultation to discuss your needs and goals.",
+      "Costs depend on factors like pages, features, and integrations. We provide a transparent quote after discussing your project needs.",
   },
   {
     id: "5",
     question: "How do we select small businesses for the charity initiative?",
     answer:
-      "We focus on small businesses that demonstrate a need for support in building their online presence. Each month, we choose one business based on their application, growth potential, and how we can best assist them with free web services. Interested? click on apply button in the charity section.",
+      "We choose businesses needing online support, focusing on growth potential. Apply via the charity section to be considered",
   },
 ];
 
@@ -383,7 +383,7 @@ export const recentPostData = [
 export const clientChallengeData = [
   {
     icon: "/crown.svg",
-    title: "Stunning Designs That Captivate",
+    title: "Captivating Designs",
     content:
       "We create visually striking, user-friendly designs that leave a lasting impression on your audience.",
   },

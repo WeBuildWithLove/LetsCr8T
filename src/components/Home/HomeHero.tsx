@@ -30,14 +30,14 @@ function HomeHero() {
         <div className="flex md:gap-[34px] gap-[20px] flex-wrap items-center justify-center">
           <Link href="/contact" className="">
             <AnimatedButton
-              className="w-[200px] md:w-[230px] md:h-[56px] h-[50px] "
+              className="w-[220px] md:h-[56px] h-[50px] "
               withHeartbeat
             >
-              Lets Get You Started
+              {`Let's Get You Started`}
             </AnimatedButton>
           </Link>
           <Link href="/portfolio" className="">
-            <Button className="border border-[#FF5A12] rounded-full w-[200px] md:w-[230px] md:h-[56px] h-[50px] hover:bg-[#FF5A12] hover:text-white font-manrope font-semibold text-base">
+            <Button className="border border-[#FF5A12] rounded-full w-[220px] md:h-[56px] h-[50px] hover:bg-[#FF5A12] hover:text-white font-manrope font-semibold text-base">
               See Our Work
             </Button>
           </Link>
