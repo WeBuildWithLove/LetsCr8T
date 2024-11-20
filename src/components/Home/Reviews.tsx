@@ -2,19 +2,20 @@ import React from "react";
 import { REVIEWS } from "../../../constants";
 import Image from "next/image";
 import { Carousel, CarouselContent, CarouselItem } from "../ui/carousel";
+// import { Star } from "lucide-react";
 
 const Reviews = () => {
   return (
-    <div className=" ">
+    <div className=" flex flex-col justify-center mx-auto">
       <Carousel
-        className="relative md:w-full w-[342px]"
+        className="relative max-w-[342px]  "
         childrenCount={REVIEWS.length}
       >
-        <CarouselContent className="flex gap-[35px] items-center">
+        <CarouselContent className="flex gap-[35px] items-center justify-center">
           {REVIEWS.map((review, index) => (
             <CarouselItem
               key={index}
-              className="max-w-[300px] h-[300px] w-full rounded-[10px] border px-[17px] py-[17px] flex flex-col justify-center items-center text-center "
+              className="  max-w-[300px] w-full   h-[350px] rounded-[10px] border lg:px-[17px] lg:py-[17px] flex flex-col justify-center items-center text-center  hover:border-cr8tOrange hover:border-2 px-[38px] py-[39px]"
             >
               <Image
                 src={review.image}
@@ -22,7 +23,14 @@ const Reviews = () => {
                 height={87}
                 alt="photo"
                 className=""
-              />
+              />{" "}
+              {/* <div className="flex justify-center items-center">
+                <Star color="#FFD700" fill="#FFD700" />
+                <Star color="#FFD700" fill="#FFD700" />
+                <Star color="#FFD700" fill="#FFD700" />
+                <Star color="#FFD700" fill="#FFD700" />
+                <Star color="#FFD700" fill="#FFD700" />
+              </div> */}
               <div className="flex flex-col gap-[5px] pt-[14px]">
                 <p className="text-base font-bold font-grotesk text-cr8tBlack">
                   {review.name}

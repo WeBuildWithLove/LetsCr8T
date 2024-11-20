@@ -9,9 +9,9 @@ import Reviews from "./Reviews";
 
 const Clients = () => {
   return (
-    <section className=" md:pt-[150px] pt-[50px] flex flex-col md:gap-[50px] gap-[25px] px-[24px] md:px-0  ">
-      <div className=" leading-[33.6px] md:leading-normal md:text-[32px] text-2xl flex flex-col items-center mx-auto md:w-[524px] w-[326px] gap-[10px] text-cr8tBlack ">
-        <h1 className=" font-grotesk md:w-full w-[306px] text-center">
+    <section className="md:pt-[150px] pt-[50px] flex flex-col md:gap-[50px] gap-[25px] px-[24px] md:px-0  ">
+      <div className="flex flex-col items-center mx-auto md:w-[524px]  gap-[10px] text-center  ">
+        <h1 className="font-grotesk md:w-full text-center md:text-[32px] text-2xl text-cr8tBlack">
           Why{" "}
           <span className="text-cr8tOrange capitalize font-urban font-normal">
             Businesses
@@ -33,7 +33,13 @@ const Clients = () => {
         <Recommendations />
       </div> */}
       <div className="hidden md:flex">
-        <Marquee autoFill pauseOnClick pauseOnHover loop={0} className="">
+        <Marquee
+          autoFill
+          pauseOnClick
+          pauseOnHover
+          loop={0}
+          className="flex gap-3"
+        >
           <Reviews />
         </Marquee>
       </div>

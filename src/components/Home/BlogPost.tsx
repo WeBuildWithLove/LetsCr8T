@@ -5,7 +5,7 @@ import { recentBlogs } from "@/lib/utils";
 
 const BlogPost = () => {
   return (
-    <section className="mt-[150px]">
+    <section className="mt-[150px] hidden xl:block">
       <div className="flex flex-col gap-[50px]">
         <div className="leading-[33.6px] md:leading-normal md:text-[32px] text-2xl flex flex-col items-center mx-auto md:w-[524px] w-[326px] gap-[10px] text-cr8tBlack">
           <h2 className="font-grotesk text-center font-medium">
@@ -22,7 +22,7 @@ const BlogPost = () => {
           </p>
         </div>
 
-        <div className="flex justify-evenly">
+        <div className="flex gap-[36px] items-center justify-center">
           {recentBlogs.map((blog) => (
             <BlogHomeCard
               key={blog.id}
