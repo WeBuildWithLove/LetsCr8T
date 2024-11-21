@@ -31,6 +31,7 @@ body {
   background-image: url("/blog-notes.svg"), url("/blog-chats.svg"),
     url("/blog-connectivity.svg");
   background-repeat: no-repeat;
+  background-size: 52px, 54px, 53px;
   background-position: left 33px top 33px, right 340px top 40px,
     right 90px top 80px;
 }
@@ -40,15 +41,14 @@ body {
   background-position: right 80px top 17px;
   background-size: 414px;
 }
-
-/* .accordionBackground {
-  background-image: url('../../public/question-mark.svg');
+.blog_detail {
+  background-image: url("/blog-notes.svg"), url("/blog-chats.svg"),
+    url("/blog-connectivity.svg");
   background-repeat: no-repeat;
-  background-position: center;
-  
-  background-size: 342px 343px;
-  
-} */
+  background-size: 52px, 54px, 53px;
+  background-position: left 33px top 33px, right 340px top 40px,
+    right 90px top 80px;
+}
 
 @media (max-width: 480px) {
   .footer_bg {
@@ -65,10 +65,20 @@ body {
     background-position: right 24px top 250px;
     background-size: 250px;
   }
-  /* .accordionBackground {
-    background-image: url('../../public/question-mark.svg');
-  
-  } */
+  .blog_bg {
+    background-image: url("/blog-notes.svg"), url("/blog-chats.svg");
+    background-repeat: no-repeat;
+    background-size: 20.46px, 24.92px;
+    background-position: left 1px top 63px, right 35.08px top 80px;
+  }
+  .blog_detail {
+    background-image: url("/blog-notes.svg"), url("/blog-chats.svg"),
+      url("/blog-connectivity.svg");
+    background-repeat: no-repeat;
+    background-size: 20.46px, 24.92px, 29.58px;
+    background-position: left 1px top 63px, right 35.08px top 80px,
+      right 35.08px bottom 14px;
+  }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {

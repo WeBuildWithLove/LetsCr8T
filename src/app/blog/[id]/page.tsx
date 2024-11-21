@@ -3,13 +3,13 @@ import { useParams } from "next/navigation";
 import blogsData from "@/app/blog/mock/blogs.json";
 import Image from "next/image";
 import Layout from "@/layout";
-import Hero from "../Hero";
 import Aside from "../Aside";
 import DateViews from "@/components/ui/dateViews";
 import Author from "@/components/ui/Cards/author";
 import BlogFooter from "@/components/ui/blogFooter";
 import Head from "next/head";
 import Advert from "@/components/Global/Advert";
+import HeroDetail from "../HeroDetail";
 
 const BlogDetail = () => {
   const { id } = useParams(); // Retrieve dynamic ID from the URL
@@ -28,9 +28,9 @@ const BlogDetail = () => {
         />
         <meta name="author" content={blog.author} />
       </Head>
-      <Hero />
-      <article className="pt-[150px] lg:px-[80px] px-6">
-        <div className="flex justify-center gap-[104px]">
+      <HeroDetail />
+      <article className="lg:pt-[150px] md:pt-[100px] pt-[50px] lg:px-[80px] px-6">
+        <div className="flex justify-center xl:gap-[104px] gap-[50px] flex-wrap lg:flex-nowrap">
           <div className="flex-1">
             <Image
               src={blog.image}
@@ -38,13 +38,18 @@ const BlogDetail = () => {
               width={803}
               height={346}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              className="rounded-[20px] w-full"
             />
-            <div className="flex gap-[37px] pt-5">
-              <Author name={blog.author} src={blog.passport} />
+            <div className="flex md:gap-[37px] pt-5 ">
+              <div className="hidden xl:flex">
+                <Author name={blog.author} src={blog.passport} />
+              </div>
               <DateViews date={blog.date} views={blog.views} />
             </div>
             <header>
-              <h1 className="text-4xl font-bold mt-[30px]">{blog.title}</h1>
+              <h1 className="md:text-[28px] text-[21px] leading-[27px]  md:leading-[36px] font-grotesk font-medium text-cr8tBlack mt-[30px]">
+                {blog.title}
+              </h1>
               <p className="py-5 text-base font-light font-poppins leading-6 text-cr8tLightBlack">
                 {blog.excerpt}
               </p>
@@ -68,7 +73,7 @@ const BlogDetail = () => {
                 today to get started!
               </p>
             </div>
-            <div className="mt-[30px]">
+            <div className="mt-[30px] ">
               <BlogFooter
                 name={blog.author}
                 src={blog.passport}

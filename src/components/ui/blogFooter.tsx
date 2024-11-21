@@ -11,12 +11,20 @@ interface AuthorProps {
 
 const BlogFooter: FC<AuthorProps> = ({ src, name, intro }) => {
   return (
-    <div className="bg-white rounded-[20px] px-[21px] py-[16px]">
-      <div className="flex gap-5 items-center">
-        <Image src={src} alt="Preye Omusuku" width={100} height={100} />
+    <div className="bg-white rounded-[20px] md:px-[21px] px-[23px] md:py-[16px] py-[23px]">
+      <div className="flex gap-5 items-center flex-wrap xl:flex-nowrap">
+        <Image
+          src={src}
+          alt="Preye Omusuku"
+          width={100}
+          height={100}
+          className="md:w-[100px] md:h-[100px] w-[80px] h-[80px]"
+        />
         <div className="font-poppins  text-cr8tBlack flex flex-col gap-[15px]">
           <p className="text-[21px]  font-bold">About {name}</p>
-          <p className="text-base font-normal  leading-6">{intro}</p>
+          <p className="text-base font-normal  leading-6 text-Cr8tGray">
+            {intro}
+          </p>
           <div className="flex gap-[20px] items-end justify-end ">
             <a
               href="https://www.linkedin.com/in/preyeomusuku"

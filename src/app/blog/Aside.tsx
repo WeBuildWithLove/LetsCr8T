@@ -7,8 +7,7 @@ import React from "react";
 const Aside = () => {
   return (
     <aside>
-      {" "}
-      <div className="flex flex-col gap-[30px]">
+      <div className="flex flex-col gap-[30px] ">
         <SearchCard />
         <Categories />
         <RecentPost />
