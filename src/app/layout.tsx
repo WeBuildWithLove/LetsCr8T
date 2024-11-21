@@ -79,21 +79,29 @@ export const metadata: Metadata = {
     url: "https://letscr8t.xyz",
     images: [
       {
-        url: "/portfolio-img6.png",
+        url: "/Portfolio-hero.png",
         width: 1200,
         height: 630,
         alt: "LetsCr8T - Crafting custom digital experiences",
       },
     ],
   },
-  // twitter: {
-  //   card: "summary_large_image",
-  //   site: "@LetsCr8T", // Placeholder, replace with actual Twitter handle
-  //   title: "LetsCr8T",
-  //   description:
-  //     "At LetsCr8T, we craft custom websites & digital experiences to engage your audience, elevate your brand, & drive growth.",
-  //   images: ["https://letscr8t.xyz/images/og-image.jpg"], // Placeholder, replace with actual image path
-  // },
+  twitter: {
+    card: "summary_large_image",
+    site: "@LetsCr8T",
+    title: "LetsCr8T",
+    description:
+      "At LetsCr8T, we craft custom websites & digital experiences to engage your audience, elevate your brand, & drive growth.",
+    images: [
+      {
+        url: "/Portfolio-hero.png",
+        alt: "LetsCr8T - Crafting custom digital experiences",
+      },
+    ],
+  },
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
@@ -103,7 +111,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <title>LetsCr8T</title>
       <Head>
+        <meta
+          name="description"
+          content="At LetsCr8T, we craft custom websites & digital experiences to engage your audience, elevate your brand, & drive growth."
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="theme-color" content="#FF5A12" />
       </Head>
