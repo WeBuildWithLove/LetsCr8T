@@ -119,6 +119,12 @@ export default function RootLayout({
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="theme-color" content="#FF5A12" />
+        <link
+          rel="icon"
+          href="/favicon.ico"
+          sizes="48x48"
+          type="image/x-icon"
+        />
       </Head>
       <body
         className={`${poppins.className} ${eb_garamond.className} ${manrope.className} ${urban.variable}  ${grotesk.variable} `}
