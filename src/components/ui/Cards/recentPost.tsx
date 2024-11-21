@@ -5,12 +5,12 @@ import { formatDate } from "@/lib/utils";
 
 const RecentPost = () => {
   return (
-    <div className="bg-white w-[445px] rounded-[5px] p-4 px-[40px] py-[40px]">
+    <div className="bg-white  lg:w-[445px] w-full rounded-[20px]  md:px-[40px] md:py-[40px] px-[26px] py-[26px]">
       <div className="flex flex-col gap-[10px]">
-        <h3 className="block text-[21px] font-medium text-cr8tBlack font-grotesk">
+        <h3 className=" md:text-[21px] text-base font-medium text-cr8tBlack font-grotesk">
           Recent Posts
         </h3>
-        <div className="flex flex-col gap-[15px]">
+        <div className="flex flex-col gap-[15px] font-poppins">
           {recentBlogs.map((post, index) => (
             <div key={index} className="flex gap-[10px]">
               <Image
@@ -18,6 +18,7 @@ const RecentPost = () => {
                 alt="Recent Blog Image"
                 width={80}
                 height={80}
+                className="rounded-[5px]"
               />
               <div className="flex flex-col gap-[5px] text-base">
                 <p className="text-cr8tBlack font-medium">

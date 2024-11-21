@@ -24,28 +24,38 @@ type BlogListingCardProps = {
 };
 
 const BlogListingCard: React.FC<BlogListingCardProps> = ({ blog }) => (
-  <div className="bg-white rounded-[20px] px-[40px] py-[40px]">
-    <div className="flex gap-[40px]">
+  <div className="bg-white rounded-[20px] md:px-[40px] px-[15px] py-[15px] md:py-[40px] ">
+    <div className="flex gap-[40px] flex-wrap lg:flex-nowrap w-full">
       <Image
         src={blog.image}
         alt={blog.title}
         width={300}
         height={346}
-        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw "
+        className="rounded-[10px] md:w-full lg:w-[300px] w-[312px] "
       />
-      <div className="flex flex-col gap-[30px]">
+      <div className="flex flex-col md:gap-[30px] gap-[20px]">
         <DateViews date={blog.date} views={blog.views} />
         <div className="flex flex-col gap-[8px]">
-          <h1 className="text-2xl font-bold">{blog.title}</h1>
-          <p className="text-base text-gray-700">{blog.excerpt}</p>
+          <h1 className="md:text-2xl text-[21px] font-medium md:leading-9 leading-[27px] font-grotesk">
+            {blog.title}
+          </h1>
+          <p className="text-base text-cr8tLightBlack font-light leading-6 font-poppins">
+            {blog.excerpt}
+          </p>
         </div>
-        <div className="flex justify-between">
+        <div className="flex md:justify-between flex-wrap md:flex-nowrap gap-[15px] md:gap-0 ">
           <Author src={blog.passport} name={blog.author} />
-          <Link href={`/blog/${blog.id}`}>
-            <AnimatedButton className=" w-[166px]  h-[50px] " withHeartbeat>
-              Read more
-            </AnimatedButton>
-          </Link>
+          <div className="flex w-full justify-end ">
+            <Link href={`/blog/${blog.id}`}>
+              <AnimatedButton
+                className=" md:w-[166px] w-[156px]  h-[50px] "
+                withHeartbeat
+              >
+                Read more
+              </AnimatedButton>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

@@ -21,8 +21,8 @@ const Works = () => {
         </p>
       </div>
       <div className="lg:mt-[50px] mt-[25px]">
-        <Carousel className="relative" childrenCount={worksData.length}>
-          <div className="flex justify-end mt-[20px] pr-12">
+        <Carousel className="relative " childrenCount={worksData.length}>
+          <div className="justify-end mt-[20px] pr-12 md:flex hidden">
             <CarouselPrevious className="relative z-10 flex items-center justify-center w-[30px] h-[30px] rounded-full border-2  hover:border-cr8tOrange border-Cr8tGray" />
             <CarouselNext className="relative z-10 flex items-center justify-center w-[30px] h-[30px] rounded-full border-2 border-Cr8tGray hover:border-cr8tOrange " />
           </div>
@@ -30,15 +30,24 @@ const Works = () => {
             {worksData.map((portfolio, index) => (
               <CarouselItem
                 key={index}
-                className="flex-shrink-0 flex-grow-0 basis-auto"
+                className="flex-shrink-0 flex-grow-0 basis-auto flex flex-col md:gap-[10px] gap-[5px]"
               >
                 <Image
                   src={portfolio.image}
                   alt={`Portfolio ${index + 1}`}
                   width={554}
                   height={684}
-                  className="rounded-lg"
+                  className="rounded-lg w-[283px] h-[283px] lg:w-[554px] lg:h-[684px] "
                 />
+                <a
+                  href={portfolio.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <p className="text-base font-medium italic font-poppins text-Cr8tGray">
+                    {portfolio.project}
+                  </p>
+                </a>
               </CarouselItem>
             ))}
           </CarouselContent>

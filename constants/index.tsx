@@ -288,27 +288,27 @@ export const PORTFOLIO = [
 export const worksData = [
   {
     image: "/project-1.svg",
-    project: "XHIBIT",
+    project: "XHIBIT WEB-APP",
     link: "https://offer-portfolio.vercel.app/",
   },
   {
     image: "/project-2.svg",
-    project: "Risidio",
+    project: "RISIDIO WEBSITE",
     link: "https://therapy-nine-ivory.vercel.app/",
   },
   {
     image: "/project-1.svg",
-    project: "XHIBIT",
+    project: "XHIBIT WEB-APP",
     link: "https://offer-portfolio.vercel.app/",
   },
   {
     image: "/project-2.svg",
-    project: "Risidio",
+    project: "RISIDIO WEBSITE",
     link: "https://therapy-nine-ivory.vercel.app/",
   },
   {
     image: "/project-1.svg",
-    project: "XHIBIT",
+    project: "XHIBIT WEB-APP",
     link: "https://offer-portfolio.vercel.app/",
   },
 ];
@@ -347,10 +347,10 @@ export const ServiceListingData = [
 ];
 export const categoriesData = [
   {
-    title: "Website Design & User Experience",
+    title: "Website Design",
   },
   {
-    title: "Web Development & Technology",
+    title: "Web Development",
   },
   {
     title: " Tools & Productivity",
@@ -359,7 +359,7 @@ export const categoriesData = [
     title: "Case Studies & Projects",
   },
   {
-    title: "Start-Up & Small Business Success",
+    title: "Start-Up & Small Business",
   },
   {
     title: "Web Trends & Innovations",
@@ -421,27 +421,6 @@ export const clientChallengeData = [
   },
 ];
 
-// export const solutionsData = [
-//   {
-//     icon: "/crown.svg",
-//     title: "Designs That Captivate",
-//     content:
-//       "We craft visually stunning, user-friendly designs that make an unforgettable first impression, keeping visitors engaged and eager to learn more",
-//   },
-
-//   {
-//     icon: "/crown.svg",
-//     title: "Copy That Resonates",
-//     content:
-//       "Our messaging is clear, compelling, and tailored to your audience, ensuring visitors feel understood and are more likely to take action.",
-//   },
-//   {
-//     icon: "/crown.svg",
-//     title: "Development That Converts",
-//     content:
-//       "We build fast, seamless websites, guiding visitors smoothly from curiosity to action—turning clicks into customers.",
-//   },
-// ];
 export const howItWorksData = [
   {
     icon: "/3.svg",

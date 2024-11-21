@@ -3,10 +3,10 @@ import { categoriesData } from "../../../../constants";
 
 const Categories = () => {
   return (
-    <div className="bg-white w-[445px] rounded-[5px] p-4 px-[40px] py-[40px]">
-      <div className="flex flex-col gap-[10px]">
-        <h3 className="block text-[21px] font-medium text-cr8tBlack font-grotesk">
-          Search
+    <div className="bg-white lg:w-[445px] w-full  rounded-[20px]  md:px-[40px] md:py-[40px] px-[26px] py-[26px]">
+      <div className="flex flex-col gap-[10px] ">
+        <h3 className="md:text-[21px] text-base font-medium text-cr8tBlack font-grotesk">
+          Categories
         </h3>
         <div>
           {categoriesData.map((list, index) => (

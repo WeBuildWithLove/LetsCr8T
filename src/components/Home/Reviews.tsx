@@ -8,8 +8,9 @@ const Reviews = () => {
   return (
     <div className=" flex flex-col justify-center mx-auto">
       <Carousel
-        className="relative max-w-[342px]  "
+        className="relative max-w-[342px]"
         childrenCount={REVIEWS.length}
+        hiddenOnMd={true}
       >
         <CarouselContent className="flex gap-[35px] items-center justify-center">
           {REVIEWS.map((review, index) => (

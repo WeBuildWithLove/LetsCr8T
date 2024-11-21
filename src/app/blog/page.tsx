@@ -26,14 +26,16 @@ const Blog = () => {
         />
       </Head>
       <Hero />
-      <section className="pt-[150px] lg:px-[80px] px-6">
-        <div className="flex justify-center gap-[104px]">
+      <section className="lg:pt-[150px] md:pt-[100px]  pt-[50px] lg:px-[80px] px-6">
+        <div className="flex flex-wrap xl:flex-nowrap justify-center xl:gap-[80px] gap-[50px]">
           <div className="flex flex-col gap-[30px]">
             {blogsData.map((blog) => (
               <BlogListingCard key={blog.id} blog={blog} />
             ))}
           </div>
-          <Aside />
+          <div className="w-full">
+            <Aside />
+          </div>
         </div>
       </section>
     </Layout>

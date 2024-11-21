@@ -20,6 +20,7 @@ type CarouselProps = {
   orientation?: "horizontal" | "vertical";
   setApi?: (api: CarouselApi) => void;
   childrenCount?: number;
+  hiddenOnMd?: boolean;
 };
 
 type CarouselContextProps = {
@@ -56,6 +57,7 @@ const Carousel = React.forwardRef<
       children,
       className,
       childrenCount,
+
       ...props
     },
     ref
@@ -142,6 +144,7 @@ const Carousel = React.forwardRef<
           <CarouselDots
             count={childrenCount || 0}
             selectedIndex={selectedIndex}
+            hiddenOnMd={props.hiddenOnMd}
           />
         </div>
       </CarouselContext.Provider>
@@ -256,20 +259,27 @@ CarouselNext.displayName = "CarouselNext";
 const CarouselDots = ({
   count,
   selectedIndex,
+  hiddenOnMd = false,
 }: {
   count: number;
   selectedIndex: number;
+  hiddenOnMd?: boolean;
 }) => {
   return (
-    <div className="flex justify-center gap-[5px] mt-[15px] md:hidden ">
+    <div
+      className={cn(
+        "flex justify-center gap-[5px] mt-[15px] items-center",
+        hiddenOnMd
+          ? "md:hidden"
+          : "bg-white w-[90px] bg-opacity-50 mx-auto h-[22px] flex  rounded-[50px]"
+      )}
+    >
       {Array.from({ length: count }).map((_, index) => (
         <div
           key={index}
           className={cn(
             "h-2 w-2 rounded-full transition-colors",
-            index === selectedIndex
-              ? "bg-cr8tOrange w-[20px]"
-              : "bg-[#ADADAD40] opacity-[0.5]"
+            index === selectedIndex ? "bg-cr8tOrange w-[20px]" : "bg-[#FFE8DD]"
           )}
         />
       ))}
