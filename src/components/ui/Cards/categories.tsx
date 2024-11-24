@@ -12,7 +12,7 @@ const Categories = () => {
           {categoriesData.map((list, index) => (
             <ul
               key={index}
-              className="flex flex-col gap-[12px] text-cr8tLightBlack text-base font-light font-poppins"
+              className="flex flex-col gap-[12px] text-Cr8tGray  text-base font-light font-poppins"
             >
               <li>{list.title}</li>
             </ul>
