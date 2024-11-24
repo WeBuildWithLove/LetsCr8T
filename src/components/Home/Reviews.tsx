@@ -8,22 +8,22 @@ const Reviews = () => {
   return (
     <div className=" flex flex-col justify-center mx-auto">
       <Carousel
-        className="relative max-w-[342px]"
+        className="relative  "
         childrenCount={REVIEWS.length}
         hiddenOnMd={true}
       >
-        <CarouselContent className="flex gap-[35px] items-center justify-center">
+        <CarouselContent className="flex gap-[35px] items-center justify-center  ">
           {REVIEWS.map((review, index) => (
             <CarouselItem
               key={index}
-              className="  max-w-[300px] w-full   h-[350px] rounded-[10px] border lg:px-[17px] lg:py-[17px] flex flex-col justify-center items-center text-center  hover:border-cr8tOrange hover:border-2 px-[38px] py-[39px]"
+              className="max-w-[350px] w-full h-[350px] rounded-[10px] border px-[38px] py-[39px] flex flex-col justify-center items-center text-center hover:border-cr8tOrange hover:border-2"
             >
               <Image
                 src={review.image}
                 width={87}
                 height={87}
                 alt="photo"
-                className=""
+                className="rounded-full"
               />{" "}
               {/* <div className="flex justify-center items-center">
                 <Star color="#FFD700" fill="#FFD700" />
