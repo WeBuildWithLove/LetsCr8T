@@ -9,19 +9,19 @@ export const REVIEWS = [
   {
     name: "Harold Uku",
     position: "Founding Partner H.O.D Legal",
-    text: "LetsCr8T exceeded our expectations with a sleek, user-friendly website that perfectly captured our vision. The entire development process exceptional.",
+    text: "LetsCr8T exceeded our expectations with a sleek, user-friendly website that perfectly captured our vision.",
     image: "/harold.jpeg",
   },
   {
     name: "Ebiere Adegbesan",
     position: "CEO Tredek Vine",
-    text: "LetsCr8T really understood what I needed and created a beautiful, easy-to-use website for my business. I’ve noticed more customer engagement since launching. I Highly recommend LetsCr8T.",
+    text: "LetsCr8T really understood what I needed and created a beautiful, easy-to-use website for my business. More customer engagement since launching.",
     image: "/Ebi.jpeg",
   },
   {
     name: "Williams Joseph",
     position: "Founder & CEO of PageScan",
-    text: "Letscr8t built an incredible website for my business. The team listened to my needs, delivered outstanding design and functionality, and exceeded my expectations. I Highly recommend them for your business.",
+    text: "Letscr8t built an incredible website for my business. The team listened to my needs, delivered outstanding design and functionality..",
     image: "/williams.jpeg",
   },
   {

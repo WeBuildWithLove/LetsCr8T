@@ -1,4 +1,5 @@
 import { ChevronLeft } from "lucide-react";
+import Link from "next/link";
 import React from "react";
 
 const HeroDetail = () => {
@@ -10,8 +11,14 @@ const HeroDetail = () => {
             <h1 className="md:text-5xl text-[32px] text-cr8tBlack font-medium font-grotesk leading-[44.8px] md:leading-[62px]">
               Stay Ahead with Letscr8t
             </h1>
+
             <p className=" flex md:text-[21px] text-base font-bold text-Cr8tGray font-poppins leading-6 md:leading-7 text-center">
-              Our Blog{" "}
+              <Link
+                href="/blog"
+                className=" hover:underline hover:decoration-cr8tOrange  hover:text-cr8tOrange"
+              >
+                Our Blog{" "}
+              </Link>
               <span className="text-cr8tBlack flex">
                 <ChevronLeft size={27} color="#202526" /> Read more
               </span>

@@ -15,7 +15,7 @@ const SearchCard = () => {
           id="search-input"
           type="search"
           placeholder="Search your keywords"
-          className="w-full border  rounded-[5px] mt-[10px] pl-4 pr-12 py-2 focus:outline-none focus:ring-1 focus:ring-cr8tOrange text-Cr8tGray text-base font-medium font-poppins"
+          className="w-full border  rounded-[5px] mt-[10px] pl-4 pr-12 py-2 focus:outline-none focus:ring-1 focus:ring-cr8tOrange text-Cr8tGray text-base font-light font-poppins"
         />
         <Search
           className="absolute right-3 top-2/3 transform -translate-y-[5px] text-gray-400"

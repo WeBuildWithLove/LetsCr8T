@@ -23,7 +23,7 @@ const BlogHomeCard: React.FC<BlogCardProps> = ({
   <Link href={`/blog/${id}`}>
     <div className="bg-white max-w-[426px] rounded-[20px] h-[520px] ">
       <div className="px-[30px] py-[30px]">
-        <div className="h-[60px] w-[60px] rounded-tl-[5px] bg-cr8tOrange font-poppins font-medium text-[13px] text-white items-center flex text-center  justify-center absolute">
+        <div className="h-[60px] w-[60px] rounded-br-[5px] rounded-tl-[15px] bg-cr8tOrange font-poppins font-medium text-[13px] text-white items-center flex text-center  justify-center absolute">
           <p>
             {recentDay}
             <br />
@@ -39,7 +39,7 @@ const BlogHomeCard: React.FC<BlogCardProps> = ({
         />
         <div className="text-base font-poppins leading-6 w-[297px] pt-[20px]">
           <h1 className="text-cr8tBlack font-bold">{title}</h1>
-          <p className="font-normal text-cr8tBlack pt-[10px]">{excerpt}</p>
+          <p className="font-normal text-cr8tLightBlack pt-[10px]">{excerpt}</p>
         </div>
 
         <div className="mt-5 w-full  border"></div>
@@ -51,12 +51,12 @@ const BlogHomeCard: React.FC<BlogCardProps> = ({
               width={27}
               height={17}
             />
-            <p className="text-cr8tBlack  opacity-50 text-[21px] font-medium font-poppins">
-              LetsCr8T
+            <p className=" text-Cr8tGray text-[21px] font-medium font-poppins">
+              LetsCr8T Official
             </p>
           </div>
 
-          <ChevronRight color="#202526" className="opacity-50" />
+          <ChevronRight color="#ADADAD" className="" />
         </div>
       </div>
     </div>
