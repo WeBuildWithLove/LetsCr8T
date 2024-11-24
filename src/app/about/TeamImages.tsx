@@ -9,7 +9,6 @@ interface TeamImagesProps {
   normalHeight: number;
   hoverWidth?: number;
   hoverHeight?: number;
-  // hoverScale?: number;
   isDimmed?: boolean;
 }
 
@@ -20,7 +19,6 @@ const TeamImages: React.FC<TeamImagesProps> = ({
   normalHeight,
   hoverWidth,
   hoverHeight,
-  // hoverScale = 1.05,
   isDimmed,
 }) => {
   return (
@@ -34,11 +32,11 @@ const TeamImages: React.FC<TeamImagesProps> = ({
       }}
     >
       {/* Normal image */}
-      {/* when i remove my mouse there should be an animation with ease-in 250 */}
+
       <Image
         src={src}
         alt="Team member"
-        className="absolute group-hover:hidden transition-all ease-in duration-250 "
+        className="absolute group-hover:hidden transition-all ease-out duration-250  "
         width={normalWidth}
         height={normalHeight}
         priority
@@ -48,7 +46,7 @@ const TeamImages: React.FC<TeamImagesProps> = ({
       <Image
         src={hoverSrc}
         alt="Team member hover"
-        className={`absolute hidden group-hover:block  transition-all ease-out hover:scale-[1.08] duration-300 `}
+        className={`absolute hidden group-hover:block  transition-all ease-in hover:scale-[1.08] duration-300 `}
         style={{
           width: hoverWidth || normalWidth,
           height: hoverHeight || normalHeight,

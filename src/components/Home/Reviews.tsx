@@ -16,7 +16,7 @@ const Reviews = () => {
           {REVIEWS.map((review, index) => (
             <CarouselItem
               key={index}
-              className="max-w-[350px] w-full h-[350px] rounded-[10px] border px-[38px] py-[39px] flex flex-col justify-center items-center text-center hover:border-cr8tOrange hover:border-2"
+              className="max-w-[300px] w-full h-[300px] rounded-[10px] px-[17px]  py-[17px] border flex flex-col justify-center items-center text-center hover:border-cr8tOrange hover:border-2"
             >
               <Image
                 src={review.image}

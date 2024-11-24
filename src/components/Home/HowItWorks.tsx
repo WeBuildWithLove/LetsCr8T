@@ -58,7 +58,7 @@ const HowItWorks = () => {
           />
         </div>
 
-        <div className="flex xl:gap-[118px]  gap-[30px] text-center items-center md:px-[136px] px-[30px] flex-wrap justify-center">
+        <div className="flex xl:gap-[118px]  gap-[30px] text-center items-center md:px-[136px] px-[30px] flex-wrap justify-center xl:flex-nowrap">
           {howItWorksData.map((step, index) => (
             <div
               key={index}

@@ -24,7 +24,7 @@ const RecentPost = () => {
                 <p className="text-cr8tBlack font-medium">
                   {formatDate(post.date)}
                 </p>
-                <h3 className="text-Cr8tGray font-normal">{post.title}</h3>
+                <h3 className="text-Cr8tGray font-light">{post.title}</h3>
               </div>
             </div>
           ))}
