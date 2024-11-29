@@ -20,7 +20,7 @@ const Works = () => {
           AND CONVERT.
         </p>
       </div>
-      <div className="lg:mt-[50px] mt-[25px]">
+      <div className="lg:mt-[50px] mt-[25px] overflow-hidden">
         <Carousel
           className="relative overflow-hidden "
           childrenCount={worksData.length}
@@ -33,21 +33,28 @@ const Works = () => {
             {worksData.map((portfolio, index) => (
               <CarouselItem
                 key={index}
-                className="flex-shrink-0 flex-grow-0 basis-auto flex flex-col md:gap-[10px] gap-[5px]"
+                className="flex-shrink-0 flex-grow-0 basis-auto flex flex-col lg:gap-[10px] gap-[5px]"
               >
                 <Image
                   src={portfolio.image}
                   alt={`Portfolio ${index + 1}`}
                   width={554}
                   height={684}
-                  className="rounded-lg w-[283px] h-[283px] lg:w-[554px] lg:h-[684px] "
+                  className="rounded-lg w-[283px] h-[283px] lg:w-[554px] lg:h-[684px] hidden lg:flex "
+                />
+                <Image
+                  src={portfolio.mobile}
+                  alt={`Portfolio ${index + 1}`}
+                  width={283}
+                  height={283}
+                  className="rounded-lg lg:hidden w-[283px] h-[283px]"
                 />
                 <a
                   href={portfolio.link}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <p className="text-base font-medium italic font-poppins text-Cr8tGray cursor-pointer hover:underline hover:decoration-cr8tOrange hover:text-cr8tOrange">
+                  <p className="md:text-base text-[14px] font-medium italic font-poppins text-Cr8tGray cursor-pointer hover:underline hover:decoration-cr8tOrange hover:text-cr8tOrange">
                     {portfolio.project}
                   </p>
                 </a>

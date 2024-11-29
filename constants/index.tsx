@@ -239,78 +239,88 @@ export const teamMembers = [
   },
 ];
 
-export const PORTFOLIO = [
-  {
-    image: "/portfolio-img1.png",
-    project: "Daniel Araromi",
-    span: "– Portfolio Website",
-    link: "https://offer-portfolio.vercel.app/",
-    gif: "/Daniel-Portfolio.gif",
-  },
-  {
-    image: "/portfolio-img5.png",
-    project: "R&R Therapy",
-    span: " – Web Application",
-    link: "https://therapy-nine-ivory.vercel.app/",
-    gif: "/therapy.gif",
-  },
-  {
-    image: "/portfolio-img4.png",
-    project: "Xhibit",
-    span: " – Web Application",
-    link: "https://www.hodlegal.org/",
-    gif: "/xhibit-portfolio.gif",
-  },
+// export const PORTFOLIO = [
+//   {
+//     image: "/portfolio-img1.png",
+//     project: "Daniel Araromi",
+//     span: "– Portfolio Website",
+//     link: "https://offer-portfolio.vercel.app/",
+//     gif: "/Daniel-Portfolio.gif",
+//   },
+//   {
+//     image: "/portfolio-img5.png",
+//     project: "R&R Therapy",
+//     span: " – Web Application",
+//     link: "https://therapy-nine-ivory.vercel.app/",
+//     gif: "/therapy.gif",
+//   },
+//   {
+//     image: "/portfolio-img4.png",
+//     project: "Xhibit",
+//     span: " – Web Application",
+//     link: "https://www.hodlegal.org/",
+//     gif: "/xhibit-portfolio.gif",
+//   },
 
-  {
-    image: "/portfolio-img2.png",
-    project: "H.O.D LEGAL",
-    span: " – Website Development",
-    link: "https://www.hodlegal.org/",
-    gif: "/hod-portfolio.gif",
-  },
+//   {
+//     image: "/portfolio-img2.png",
+//     project: "H.O.D LEGAL",
+//     span: " – Website Development",
+//     link: "https://www.hodlegal.org/",
+//     gif: "/hod-portfolio.gif",
+//   },
 
-  {
-    image: "/portfolio-img6.png",
-    project: "LetsCr8T",
-    span: " – Agency Website",
-    link: "https://www.hodlegal.org/",
-    gif: "/letscr8t-portfolio.gif",
-  },
-  {
-    image: "/portfolio-img3.png",
-    project: "WeCr8T ",
-    span: " – Agency Website",
-    link: "https://www.wecr8t.xyz",
-    gif: "/Wecr8t-portfolio.gif",
-  },
-];
+//   {
+//     image: "/portfolio-img6.png",
+//     project: "LetsCr8T",
+//     span: " – Agency Website",
+//     link: "https://www.hodlegal.org/",
+//     gif: "/letscr8t-portfolio.gif",
+//   },
+//   {
+//     image: "/portfolio-img3.png",
+//     project: "WeCr8T ",
+//     span: " – Agency Website",
+//     link: "https://www.wecr8t.xyz",
+//     gif: "/Wecr8t-portfolio.gif",
+//   },
+// ];
 export const worksData = [
   {
-    image: "/project-1.svg",
-    project: "XHIBIT WEB-APP",
-    link: "https://offer-portfolio.vercel.app/",
-  },
-  {
     image: "/project-2.svg",
-    project: "RISIDIO WEBSITE",
+    project: "XHIBIT - connceting professionals to jobs",
+    link: "https://xhibit-staging.vercel.app/",
+    mobile: "/project-mobile-1.svg",
+  },
+  {
+    image: "/project-5.svg",
+    project: "R&R Therapy - clients & clinicians",
     link: "https://therapy-nine-ivory.vercel.app/",
+    mobile: "/project-mobile-5.svg",
   },
   {
-    image: "/project-1.svg",
-    project: "XHIBIT WEB-APP",
+    image: "/project-4.svg",
+    project: "Cholar - educational social lifestyle",
+    link: "https://rrtherapy.org/",
+    mobile: "/project-mobile-4.svg",
+  },
+  {
+    image: "/project-6.svg",
+    project: "Daniel - personal brand",
     link: "https://offer-portfolio.vercel.app/",
+    mobile: "/project-mobile-3.svg",
   },
   {
-    image: "/project-2.svg",
-    project: "RISIDIO WEBSITE",
-    link: "https://therapy-nine-ivory.vercel.app/",
+    image: "/project-3.svg",
+    project: "RISIDIO - blockchain services",
+    link: "https://risidio.com/",
+    mobile: "/project-mobile-2.svg",
   },
-  {
-    image: "/project-1.svg",
-    project: "XHIBIT WEB-APP",
-    link: "https://offer-portfolio.vercel.app/",
-  },
+  // {
+  //   image: "/project-1.svg",
+  //   project: "XHIBIT WEB-APP",
+  //   link: "https://offer-portfolio.vercel.app/",
+  // },
 ];
 
 export const ServiceListingData = [

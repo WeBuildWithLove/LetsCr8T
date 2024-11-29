@@ -24,7 +24,7 @@ type BlogListingCardProps = {
 };
 
 const BlogListingCard: React.FC<BlogListingCardProps> = ({ blog }) => (
-  <div className="bg-white rounded-[20px] md:px-[40px] px-[15px] py-[15px] md:py-[40px] ">
+  <div className="bg-white rounded-[20px] md:px-[40px] px-[15px] py-[15px] md:py-[40px]  ">
     <div className="flex gap-[40px] flex-wrap lg:flex-nowrap w-full">
       <Image
         src={blog.image}

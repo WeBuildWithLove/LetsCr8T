@@ -3,7 +3,7 @@ import { categoriesData } from "../../../../constants";
 
 const Categories = () => {
   return (
-    <div className="bg-white lg:w-[445px] w-full  rounded-[20px]  md:px-[40px] md:py-[40px] px-[26px] py-[26px]">
+    <div className="bg-white rounded-[20px]  md:px-[40px] md:py-[40px] px-[26px] py-[26px]">
       <div className="flex flex-col gap-[10px] ">
         <h3 className="md:text-[21px] text-base font-medium text-cr8tBlack font-grotesk">
           Categories

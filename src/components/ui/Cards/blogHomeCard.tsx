@@ -39,7 +39,7 @@ const BlogHomeCard: React.FC<BlogCardProps> = ({
         />
         <div className="text-base font-poppins leading-6 w-[297px] pt-[20px]">
           <h1 className="text-cr8tBlack font-bold">{title}</h1>
-          <p className="font-normal text-cr8tLightBlack pt-[10px]">{excerpt}</p>
+          <p className="font-light text-cr8tLightBlack pt-[10px]">{excerpt}</p>
         </div>
 
         <div className="mt-5 w-full  border"></div>

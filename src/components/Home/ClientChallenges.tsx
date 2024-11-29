@@ -39,7 +39,7 @@ const ClientChallenges = () => {
                     <h3 className="md:text-xl text-base font-medium text-cr8tBlack md:leading-[30px] leading-6">
                       {challenge.title}
                     </h3>
-                    <p className="md:text-lg  text-base font-normal md:leading-[27px] text-cr8tLightBlack leading-6">
+                    <p className="md:text-lg  text-base font-light md:leading-[27px] text-cr8tLightBlack leading-6">
                       {challenge.content}
                     </p>
                   </div>

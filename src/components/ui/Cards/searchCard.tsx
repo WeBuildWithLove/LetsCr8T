@@ -3,7 +3,7 @@ import React from "react";
 
 const SearchCard = () => {
   return (
-    <div className="bg-white  lg:w-[445px]   w-full rounded-[20px]  md:px-[40px] px-[26px] md:y-[40px] py-[26px]">
+    <div className="bg-white  rounded-[20px]  md:px-[40px] px-[26px] md:y-[40px] py-[26px]">
       <div className="relative">
         <label
           htmlFor="search-input"
