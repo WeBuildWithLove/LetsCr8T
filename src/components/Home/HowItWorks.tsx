@@ -75,7 +75,7 @@ const HowItWorks = () => {
                 <h3 className="md:text-xl  text-base font-medium text-cr8tBlack">
                   {step.title}
                 </h3>
-                <p className="md:text-lg text-base leading-6 font-normal lmd:eading-[27px] text-cr8tLightBlack">
+                <p className="md:text-lg text-base leading-6 font-light lmd:eading-[27px] text-cr8tLightBlack">
                   {step.content}
                 </p>
               </div>
@@ -83,7 +83,7 @@ const HowItWorks = () => {
           ))}
         </div>
 
-        <AnimatedButton className=" xl:w-[25%] md:w-[50%]  h-[50px] md:flex hidden ">
+        <AnimatedButton className=" xl:w-[30%] md:w-[50%]  h-[50px] md:flex hidden ">
           Book Your Free Call With Preye
           <Image
             src={Preye}

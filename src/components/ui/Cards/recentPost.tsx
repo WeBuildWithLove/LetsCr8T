@@ -5,7 +5,7 @@ import { formatDate } from "@/lib/utils";
 
 const RecentPost = () => {
   return (
-    <div className="bg-white  lg:w-[445px] w-full rounded-[20px]  md:px-[40px] md:py-[40px] px-[26px] py-[26px]">
+    <div className="bg-white  rounded-[20px]  md:px-[40px] md:py-[40px] px-[26px] py-[26px]">
       <div className="flex flex-col gap-[10px]">
         <h3 className=" md:text-[21px] text-base font-medium text-cr8tBlack font-grotesk">
           Recent Posts
@@ -19,6 +19,7 @@ const RecentPost = () => {
                 width={80}
                 height={80}
                 className="rounded-[5px]"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw "
               />
               <div className="flex flex-col gap-[5px] text-base">
                 <p className="text-cr8tBlack font-medium">
