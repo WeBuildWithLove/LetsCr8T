@@ -4,10 +4,8 @@ import React from "react";
 import { usePathname, useRouter } from "next/navigation";
 import LOGO from "../../../public/LOGO.svg";
 import Image from "next/image";
-import { Github, Linkedin, Plus, X } from "lucide-react";
-import Twitter from "@/app/assets/icons/Twitter";
+import { Plus, X } from "lucide-react";
 import AnimatedButton from "../ui/animatedButton";
-import Socials from "../ui/socials";
 
 function Navbar() {
   const router = useRouter();
@@ -74,11 +72,16 @@ function Navbar() {
             ))}
           </div>
           {/* <Socials /> */}
-          <Link href="/contact">
+
+          <a
+            href="https://calendly.com/preyeomusuku"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <AnimatedButton className="w-[157px] h-[56px]">
               Book A Free Call
             </AnimatedButton>
-          </Link>
+          </a>
         </div>
 
         {/* Mobile Toggle */}

@@ -6,13 +6,13 @@ import { Carousel, CarouselContent, CarouselItem } from "../ui/carousel";
 
 const Reviews = () => {
   return (
-    <div className=" flex flex-col justify-center mx-auto overflow-hidden">
+    <div className=" flex flex-col justify-center mx-auto w-full">
       <Carousel
         className="relative"
-        childrenCount={REVIEWS.length}
+        // childrenCount={REVIEWS.length}
         hiddenOnMd={true}
       >
-        <CarouselContent className="flex gap-[35px] items-center justify-center ">
+        <CarouselContent className="flex gap-[35px] items-center justify-center  ">
           {REVIEWS.map((review, index) => (
             <CarouselItem
               key={index}

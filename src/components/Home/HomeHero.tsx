@@ -36,7 +36,7 @@ function HomeHero() {
               {`Let's Get You Started`}
             </AnimatedButton>
           </Link>
-          <Link href="/portfolio" className="">
+          <Link href="/our-work" className="">
             <Button className="border border-[#FF5A12] rounded-full w-[220px] md:h-[56px] h-[50px] hover:bg-[#FF5A12] hover:text-white font-manrope font-semibold text-base">
               See Our Work
             </Button>

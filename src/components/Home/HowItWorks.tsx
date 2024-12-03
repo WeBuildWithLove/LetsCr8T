@@ -83,27 +83,33 @@ const HowItWorks = () => {
           ))}
         </div>
 
-        <AnimatedButton className=" xl:w-[30%] md:w-[50%]  h-[50px] md:flex hidden ">
-          Book Your Free Call With Preye
-          <Image
-            src={Preye}
-            alt="Preye Omusuku"
-            width={45}
-            height={45}
-            className=""
-          />
-        </AnimatedButton>
+        <a
+          href="https://calendly.com/preyeomusuku"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-full md:flex hidden justify-center "
+        >
+          <AnimatedButton className=" xl:w-[30%] md:w-[50%]  h-[50px] ">
+            Book Your Free Call With Preye
+            <Image
+              src={Preye}
+              alt="Preye Omusuku"
+              width={45}
+              height={45}
+              className=""
+            />
+          </AnimatedButton>
+        </a>
 
-        <AnimatedButton className=" w-[187px] h-[50px] md:hidden">
-          Book Your Free Call
-          {/* <Image
-            src={Preye}
-            alt="Preye Omusuku"
-            width={45}
-            height={45}
-            className=""
-          /> */}
-        </AnimatedButton>
+        <a
+          href="https://calendly.com/preyeomusuku"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <AnimatedButton className=" w-[187px] h-[50px] md:hidden">
+            Book Your Free Call
+          </AnimatedButton>
+        </a>
       </div>
     </section>
   );
