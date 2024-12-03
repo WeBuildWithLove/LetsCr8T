@@ -13,6 +13,12 @@ export const REVIEWS = [
     image: "/harold.jpeg",
   },
   {
+    name: "Aniebiet OboPP",
+    position: "Developer BWL",
+    text: "Let’scr8t transformed my vision into a sleek, scalable web app perfectly designed and flawlessly functional. Highly recommended.",
+    image: "/ClientPhoto.svg",
+  },
+  {
     name: "Ebiere Adegbesan",
     position: "CEO Tredek Vine",
     text: "LetsCr8T really understood what I needed and created a beautiful, easy-to-use website for my business. More customer engagement since launching.",

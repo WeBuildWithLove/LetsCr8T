@@ -21,20 +21,20 @@ const Clients = () => {
         </p>
       </div>
 
-      <div className="hidden md:flex">
+      <div className="flex">
         <Marquee
           autoFill
           pauseOnClick
           pauseOnHover
           loop={0}
-          className="flex gap-3"
+          className="flex gap-[35px]"
         >
           <Reviews />
         </Marquee>
       </div>
-      <div className="flex md:hidden">
+      {/* <div className="flex md:hidden">
         <Reviews />
-      </div>
+      </div> */}
     </section>
   );
 };
