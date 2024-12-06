@@ -9,14 +9,14 @@ export const REVIEWS = [
   {
     name: "Harold Uku",
     position: "Founding Partner H.O.D Legal",
-    text: "LetsCr8T exceeded our expectations with a sleek, user-friendly website that perfectly captured our vision.",
-    image: "/harold.jpeg",
+    text: "Letscr8T exceeded our expectations with a sleek, user-friendly website that perfectly captured our vision. Highly recommended",
+    image: "/harol.jpeg",
   },
   {
-    name: "Aniebiet OboPP",
-    position: "Developer BWL",
-    text: "Let’scr8t transformed my vision into a sleek, scalable web app perfectly designed and flawlessly functional. Highly recommended.",
-    image: "/ClientPhoto.svg",
+    name: "Jonathan Deji Martins",
+    position: "CTO Party Bank",
+    text: "Let’scr8t transformed my vision into a sleek, scalable web app perfectly designed and flawlessly functional. I highly recommend them.",
+    image: "/dejj.jpg",
   },
   {
     name: "Ebiere Adegbesan",
@@ -27,21 +27,21 @@ export const REVIEWS = [
   {
     name: "Williams Joseph",
     position: "Founder & CEO of PageScan",
-    text: "Letscr8t built an incredible website for my business. The team listened to my needs, delivered outstanding design and functionality..",
+    text: "Letscr8t built an incredible website for my business. The team listened to my needs, delivered outstanding design and functionality.",
     image: "/williams.jpeg",
   },
   {
-    name: "Daniel Oroemi",
-    position: "Developer BWL",
-    text: "WeCr8t provided us with reliable and efficient web solutions that streamlined our business operations.",
+    name: "Daniel Araromi",
+    position: "Personal Brand Strategist",
+    text: "As a brand strategist, my portfolio is my business card. LetsCr8T brought my vision to life with a visually stunning and incredibly functional portfolio",
     image: "/daniel.jpeg",
   },
-  {
-    name: "Aniebiet OboPP",
-    position: "Developer BWL",
-    text: "WeCr8t provided us with reliable and efficient web solutions that streamlined our business operations.",
-    image: "/ClientPhoto.svg",
-  },
+  // {
+  //   name: "Aniebiet OboPP",
+  //   position: "Developer BWL",
+  //   text: "WeCr8t provided us with reliable and efficient web solutions that streamlined our business operations.",
+  //   image: "/ClientPhoto.svg",
+  // },
 ];
 
 // FAQs
@@ -401,33 +401,33 @@ export const clientChallengeData = [
     icon: "/crown.svg",
     title: "Captivating Designs",
     content:
-      "We create visually striking, user-friendly designs that leave a lasting impression on your audience.",
+      "We create visually stunning, user-friendly designs that leave a lasting impression on your audience.",
   },
 
   {
     icon: "/crown.svg",
     title: "Copy That Connects",
     content:
-      "Your message matters. We craft clear, engaging copy that speaks to your audience and drives action",
+      "Your message matters. We create clear, engaging copy that speaks to your audience and inspires action",
   },
   {
     icon: "/crown.svg",
     title: "Built for Mobile and Speed",
     content:
-      "With over 50% of web traffic on mobile, we ensure your site is fast, responsive, and built to perform everywhere.",
+      "With over 50% of web traffic on mobile, we ensure your site is fast, responsive, and performs seamlessly everywhere.",
   },
   {
     icon: "/crown.svg",
     title: "Strong Calls-to-Action (CTAs)",
     content:
-      "We guide visitors seamlessly from curiosity to conversion with bold, strategic CTAs that get results.",
+      "We design bold, effective CTAs that guide visitors effortlessly from curiosity to conversion.",
   },
 
   {
     icon: "/crown.svg",
     title: "Future-Proof Development",
     content:
-      "Your website or app will be scalable, secure, and ready to grow alongside your business",
+      "Scalable, secure, and built to grow with your business, your website will be ready for what’s next.",
   },
   {
     icon: "/crown.svg",

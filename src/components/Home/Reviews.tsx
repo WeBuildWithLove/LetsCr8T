@@ -23,7 +23,7 @@ const Reviews = () => {
                 width={87}
                 height={87}
                 alt="photo"
-                className="rounded-full"
+                className="rounded-full w-[87px] h-[87px]"
               />{" "}
               {/* <div className="flex justify-center items-center">
                 <Star color="#FFD700" fill="#FFD700" />

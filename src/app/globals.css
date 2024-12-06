@@ -200,21 +200,3 @@ body {
 .animate-spin-slow {
   animation: spin-slow 2s linear infinite;
 }
-
-/* Base settings icon styles */
-.settings-static-icon {
-  display: block; /* Static icon is visible by default */
-}
-
-.settings-animated-icon {
-  display: none; /* Animated icon is hidden by default */
-}
-
-/* On hover, swap the icons */
-button:hover .settings-static-icon {
-  display: none; /* Hide the static icon */
-}
-
-button:hover .settings-animated-icon {
-  display: block; /* Show the animated icon */
-}
