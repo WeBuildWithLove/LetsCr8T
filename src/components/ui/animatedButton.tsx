@@ -1,8 +1,5 @@
 import React from "react";
 import clsx from "clsx";
-import AnimatedSettings from "../../../public/settings.gif";
-import Image from "next/image";
-import SettingsIcon from "@/app/assets/icons/SettingsIcon";
 import LockIcon from "@/app/assets/icons/LockIcon";
 
 interface AnimatedButtonProps {
@@ -10,7 +7,7 @@ interface AnimatedButtonProps {
   className?: string;
   onClick?: () => void;
   withHeartbeat?: boolean;
-  isSettingsButton?: boolean;
+
   disabled?: boolean;
 }
 
@@ -19,7 +16,7 @@ const AnimatedButton: React.FC<AnimatedButtonProps> = ({
   className,
   onClick,
   withHeartbeat = false,
-  isSettingsButton = false,
+
   disabled,
 }) => {
   const baseClasses = `
@@ -36,26 +33,6 @@ const AnimatedButton: React.FC<AnimatedButtonProps> = ({
       disabled={disabled}
     >
       {children}
-
-      {/* Conditionally render the settings icon (static/animated) */}
-      {isSettingsButton && (
-        <div className="w-[30px] h-[30px] relative">
-          {/* Static SettingsIcon SVG (visible by default) */}
-          <div className="settings-static-icon absolute w-full h-full">
-            <SettingsIcon />
-          </div>
-
-          {/* Animated Settings GIF (hidden by default, shown on hover) */}
-          <div className="settings-animated-icon absolute w-full h-full hidden">
-            <Image
-              src={AnimatedSettings}
-              alt="Animated settings icon"
-              width={30}
-              height={30}
-            />
-          </div>
-        </div>
-      )}
 
       {/* Add heartbeat effect for the LockIcon */}
       {withHeartbeat && (

@@ -12,11 +12,11 @@ const ClientChallenges = () => {
       <div className="flex flex-col md:gap-[50px] gap-[30px] justify-center items-center md:w-[710px] mx-auto">
         <div className="flex justify-center text-center flex-col gap-[10px]">
           <h1 className="font-grotesk text-cr8tBlack font-medium md:text-[32px] text-2xl leading-[33.6px] md:leading-[44.8px]">
-            You Have a Vision. We’ll Bring It to Life—and Make It Work for Your
-            Business.
+            You Have a Vision. We Bring It to Life—and Make It Work for Your
+            Business
           </h1>
           <p className="md:text-lg text-base font-light text-cr8tLightBlack md:leading-7 font-poppins leading-7 md:w-[631px] mx-auto">
-            Whether you’re starting fresh or improving what you have, we craft
+            Whether you’re starting fresh or refining what you have, we create
             solutions that turn your ideas into results.
           </p>
         </div>

@@ -93,6 +93,7 @@ const config = {
         "50%": { width: "26px" },
         "100%": { width: "26px" },
       },
+
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",

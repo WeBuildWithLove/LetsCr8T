@@ -40,14 +40,14 @@ const Works = () => {
                   alt={`Portfolio ${index + 1}`}
                   width={554}
                   height={684}
-                  className="rounded-lg w-[283px] h-[283px] lg:w-[554px] lg:h-[684px] hidden lg:flex "
+                  className="rounded-lg w-[554px] h-[684px] hidden lg:flex "
                 />
                 <Image
                   src={portfolio.mobile}
                   alt={`Portfolio ${index + 1}`}
-                  width={283}
-                  height={283}
-                  className="rounded-lg lg:hidden w-[283px] h-[283px]"
+                  width={383}
+                  height={383}
+                  className="rounded-lg lg:hidden w-[383px] h-[383px]"
                 />
                 <a
                   href={portfolio.link}
