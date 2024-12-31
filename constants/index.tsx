@@ -36,12 +36,12 @@ export const REVIEWS = [
     text: "As a brand strategist, my portfolio is my business card. LetsCr8T brought my vision to life with a visually stunning and incredibly functional portfolio",
     image: "/daniel.jpeg",
   },
-  // {
-  //   name: "Aniebiet OboPP",
-  //   position: "Developer BWL",
-  //   text: "WeCr8t provided us with reliable and efficient web solutions that streamlined our business operations.",
-  //   image: "/ClientPhoto.svg",
-  // },
+  {
+    name: "Dr. Egbulefu Promise Chibueze",
+    position: "CEO Copeel Global",
+    text: "Working with LetsCr8T felt like having an extension of our own team. They understood our vision, and delivered a website that truly represents who we are.",
+    image: "/promise.jpeg",
+  },
 ];
 
 // FAQs
@@ -245,52 +245,6 @@ export const teamMembers = [
   },
 ];
 
-// export const PORTFOLIO = [
-//   {
-//     image: "/portfolio-img1.png",
-//     project: "Daniel Araromi",
-//     span: "– Portfolio Website",
-//     link: "https://offer-portfolio.vercel.app/",
-//     gif: "/Daniel-Portfolio.gif",
-//   },
-//   {
-//     image: "/portfolio-img5.png",
-//     project: "R&R Therapy",
-//     span: " – Web Application",
-//     link: "https://therapy-nine-ivory.vercel.app/",
-//     gif: "/therapy.gif",
-//   },
-//   {
-//     image: "/portfolio-img4.png",
-//     project: "Xhibit",
-//     span: " – Web Application",
-//     link: "https://www.hodlegal.org/",
-//     gif: "/xhibit-portfolio.gif",
-//   },
-
-//   {
-//     image: "/portfolio-img2.png",
-//     project: "H.O.D LEGAL",
-//     span: " – Website Development",
-//     link: "https://www.hodlegal.org/",
-//     gif: "/hod-portfolio.gif",
-//   },
-
-//   {
-//     image: "/portfolio-img6.png",
-//     project: "LetsCr8T",
-//     span: " – Agency Website",
-//     link: "https://www.hodlegal.org/",
-//     gif: "/letscr8t-portfolio.gif",
-//   },
-//   {
-//     image: "/portfolio-img3.png",
-//     project: "WeCr8T ",
-//     span: " – Agency Website",
-//     link: "https://www.wecr8t.xyz",
-//     gif: "/Wecr8t-portfolio.gif",
-//   },
-// ];
 export const worksData = [
   {
     image: "/project-2.svg",
@@ -322,11 +276,7 @@ export const worksData = [
     link: "https://risidio.com/",
     mobile: "/project-mobile-2.svg",
   },
-  // {
-  //   image: "/project-1.svg",
-  //   project: "XHIBIT WEB-APP",
-  //   link: "https://offer-portfolio.vercel.app/",
-  // },
+  ,
 ];
 
 export const ServiceListingData = [
