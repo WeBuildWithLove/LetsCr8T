@@ -130,7 +130,7 @@ export default function RootLayout({
         className={`${poppins.className} ${eb_garamond.className} ${manrope.className} ${urban.variable}  ${grotesk.variable} `}
       >
         {children}
-        <Script id="tawk-to-script" strategy="afterInteractive">
+        {/* <Script id="tawk-to-script" strategy="afterInteractive">
           {`
             var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
             (function(){
@@ -142,7 +142,7 @@ export default function RootLayout({
               s0.parentNode.insertBefore(s1,s0);
             })();
           `}
-        </Script>
+        </Script> */}
       </body>
     </html>
   );
