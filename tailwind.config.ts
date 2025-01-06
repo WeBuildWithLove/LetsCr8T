@@ -19,11 +19,9 @@ const config = {
     },
     extend: {
       fontFamily: {
-        poppins: ["Poppins", "Geometric sans serif"],
+        poppins: ["var(--font-poppins)", "sans-serif"],
         urban: ["var(--font-urban)", "sans-serif"],
         grotesk: ["var(--font-grotesk)", "sans-serif"],
-        eb_garamond: ["eb_garamond", "sans-serif"],
-        manrope: ["Manrope", "sans-serif"],
       },
 
       colors: {

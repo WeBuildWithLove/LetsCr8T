@@ -30,7 +30,7 @@ const Works = () => {
             <CarouselNext className="relative z-10 flex items-center justify-center w-[30px] h-[30px] rounded-full border-2 border-Cr8tGray hover:border-cr8tOrange " />
           </div>
           <CarouselContent className="flex gap-[10px]">
-            {worksData.map((portfolio, index) => (
+            {worksData.map((portfolio: any, index) => (
               <CarouselItem
                 key={index}
                 className="flex-shrink-0 flex-grow-0 basis-auto flex flex-col lg:gap-[10px] gap-[5px]"
@@ -42,6 +42,7 @@ const Works = () => {
                   height={684}
                   className="rounded-lg w-[554px] h-[684px] hidden lg:flex "
                 />
+
                 <Image
                   src={portfolio.mobile}
                   alt={`Portfolio ${index + 1}`}

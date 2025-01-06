@@ -1,24 +1,20 @@
-import React from "react";
+import React, { memo } from "react";
 import clsx from "clsx";
 import LockIcon from "@/app/assets/icons/LockIcon";
 
-interface AnimatedButtonProps {
-  children: React.ReactNode;
-  className?: string;
-  onClick?: () => void;
-  withHeartbeat?: boolean;
-
-  disabled?: boolean;
-}
-
-const AnimatedButton: React.FC<AnimatedButtonProps> = ({
+const AnimatedButton = memo(function AnimatedButton({
   children,
   className,
   onClick,
   withHeartbeat = false,
-
   disabled,
-}) => {
+}: {
+  children: React.ReactNode;
+  className?: string;
+  onClick?: () => void;
+  withHeartbeat?: boolean;
+  disabled?: boolean;
+}) {
   const baseClasses = `
     group default-transition relative z-10 overflow-hidden flex items-center justify-center gap-[5px] rounded-full text-center text-mobileButton leading-mobileButton block
     before:left-0 before:absolute before:-z-[1] before:rounded-full before:w-[0%] before:top-0 before:bottom-0 before:transition before:[transition-property:width] before:[transition-duration:500ms]
@@ -45,6 +41,6 @@ const AnimatedButton: React.FC<AnimatedButtonProps> = ({
       )}
     </button>
   );
-};
+});
 
 export default AnimatedButton;
