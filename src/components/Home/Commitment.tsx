@@ -6,46 +6,50 @@ import AnimatedButton from "../ui/animatedButton";
 
 function Commitment() {
   return (
-    <section className="md:pt-[150px] pt-[50px] flex items-center lg:justify-between  xl:gap-10 flex-wrap lg:flex-nowrap xl:px-[80px] px-6  justify-center gap-5">
-      <div className="bg-[#F8F8F8] rounded-[20px] font-poppins flex flex-col  items-center md:w-[692px] xl:w-[692px] lg:w-[500px] w-[342px] md:gap-[50px] gap-[20px] order-2 lg:-order-none p-4">
-        <div className="md:w-[474px] w-[316px] md:pt-[41px] pt-[27px] flex flex-col md:gap-[10px] gap-[5px] text-center  items-center">
-          <p className="md:text-2xl text-base font-semibold text-cr8tBlack">
+    <section className="flex flex-wrap lg:flex-nowrap items-center justify-center lg:justify-between gap-5 xl:gap-10 px-6 xl:px-[80px] pt-[50px] md:pt-[150px]">
+      {/* Left Section */}
+      <div className="bg-[#F8F8F8] rounded-[20px] font-poppins flex flex-col items-center gap-[20px] md:gap-[50px] w-[342px] md:w-[500px] lg:w-[500px] xl:w-[692px] order-2 lg:order-1 p-4">
+        {/* Title and Progress */}
+        <div className="flex flex-col items-center text-center gap-[5px] md:gap-[10px] w-[316px] md:w-[474px] pt-[27px] md:pt-[41px]">
+          <p className="text-base md:text-2xl font-semibold text-cr8tBlack">
             Free Web projects for small businesses
           </p>
-          <p className="text-Cr8tGray font-medium md:text-lg text-base">
+          <p className="text-base md:text-lg font-medium text-Cr8tGray">
             80% of our annual goal completed
           </p>
         </div>
-        <div className="md:mb-[15px] mb-[10.3px] flex flex-col items-center mx-auto">
+
+        {/* Scale Image and Completed Projects */}
+        <div className="flex flex-col items-center gap-[10px] md:mb-[15px] mb-[10px]">
           <Image
             src={Scale}
-            alt="image of a scale"
+            alt="Image of a scale showcasing progress"
             width={363}
             height={241}
             className="w-[301.52px] md:w-[363px]"
           />
-          <div className="bg-white md:w-[271px] w-[240px]  h-[30.7px] font-poppins font-semibold text-center text-[14px]  md:text-base text-Cr8tGray flex flex-col justify-center rounded-[5px]">
-            <p className="">12+ Website completed in 2024</p>
+          <div className="bg-white w-[240px] md:w-[271px] h-[30px] flex items-center justify-center font-poppins font-semibold text-[14px] md:text-base text-Cr8tGray rounded-[5px]">
+            12+ Websites completed in 2024
           </div>
         </div>
       </div>
-      <div className=" flex flex-col md:gap-[10px]  gap-[5px] order-1 lg:-order-none text-cr8tBlack  ">
-        <h1 className="md:text-3xl text-2xl font-grotesk font-medium">
+
+      {/* Right Section */}
+      <div className="flex flex-col text-cr8tBlack gap-[5px] md:gap-[10px] w-[327px] lg:w-[400px] xl:w-[610px] order-1 lg:order-2">
+        <h1 className="text-2xl md:text-3xl font-grotesk font-medium">
           Our Commitment to{" "}
-          <span className="font-urban text-cr8tOrange font-normal">
+          <span className="font-urban font-normal text-cr8tOrange">
             CHARITY
           </span>
         </h1>
-        <div className="font-poppins text-cr8tLightBlack md:text-lg text-base leading-6 font-light md:w-[610px] xl:w-[610px] lg:w-[400px] w-[327px] md:leading-7 pr-[15px] md:pr-0 flex flex-col gap-3  ">
-          <p className="">
+        <div className="flex flex-col gap-3 font-poppins font-light text-base md:text-lg leading-6 md:leading-7 text-cr8tLightBlack pr-[15px] md:pr-0">
+          <p>
             At LetsCr8T, we believe in giving back. Every month, we offer free
             web services to one small business in need, providing them with a
             landing page to support growth and reach more customers.
           </p>
-
           <div className="flex flex-col">
             <h3 className="font-grotesk font-bold text-cr8tBlack">
-              {" "}
               How To Apply?
             </h3>
             <p>
@@ -55,13 +59,12 @@ function Commitment() {
             </p>
           </div>
         </div>
-
         <Link
           href="https://forms.gle/H3TpBS64a2CBNUSb9"
           target="_blank"
-          className="md:mt-[15px] mt-[20px] md:w-[140px] w-[130px]"
+          className="mt-[20px] md:mt-[15px] w-[130px] md:w-[140px]"
         >
-          <AnimatedButton className="md:w-[140px] w-[130px] h-[56px] flex flex-col">
+          <AnimatedButton className="w-[130px] md:w-[140px] h-[56px]">
             Apply Now
           </AnimatedButton>
         </Link>

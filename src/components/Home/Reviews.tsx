@@ -1,37 +1,29 @@
-import React from "react";
+"use client";
+import React, { useMemo } from "react";
 import { REVIEWS } from "../../../constants";
 import Image from "next/image";
 import { Carousel, CarouselContent, CarouselItem } from "../ui/carousel";
-// import { Star } from "lucide-react";
 
-const Reviews = () => {
+const Reviews: React.FC = () => {
+  // Memoize REVIEWS to avoid re-renders
+  const reviewsData = useMemo(() => REVIEWS, []);
+
   return (
-    <div className=" flex flex-col justify-center mx-auto w-full">
-      <Carousel
-        className="relative"
-        // childrenCount={REVIEWS.length}
-        hiddenOnMd={true}
-      >
-        <CarouselContent className="flex gap-[35px] items-center justify-center  ">
-          {REVIEWS.map((review, index) => (
+    <div className="flex flex-col justify-center mx-auto w-full">
+      <Carousel className="relative">
+        <CarouselContent className="flex gap-[35px] items-center justify-center">
+          {reviewsData.map((review) => (
             <CarouselItem
-              key={index}
-              className="max-w-[300px] md:w-full h-[300px] rounded-[10px] px-[17px]  py-[17px] border flex flex-col justify-center items-center text-center hover:border-cr8tOrange hover:border-2"
+              key={review.name}
+              className="max-w-[300px] md:w-full h-[300px] rounded-[10px] px-[17px] py-[17px] border flex flex-col justify-center items-center text-center hover:border-cr8tOrange hover:border-2"
             >
               <Image
                 src={review.image}
                 width={87}
                 height={87}
-                alt="photo"
+                alt={`Photo of ${review.name}`}
                 className="rounded-full w-[87px] h-[87px]"
-              />{" "}
-              {/* <div className="flex justify-center items-center">
-                <Star color="#FFD700" fill="#FFD700" />
-                <Star color="#FFD700" fill="#FFD700" />
-                <Star color="#FFD700" fill="#FFD700" />
-                <Star color="#FFD700" fill="#FFD700" />
-                <Star color="#FFD700" fill="#FFD700" />
-              </div> */}
+              />
               <div className="flex flex-col gap-[5px] pt-[14px]">
                 <p className="text-base font-bold font-grotesk text-cr8tBlack">
                   {review.name}
@@ -40,11 +32,9 @@ const Reviews = () => {
                   {review.position}
                 </p>
               </div>
-              <div>
-                <p className="pt-[10px] text-base font-light font-poppins text-cr8tLightBlack leading-6">
-                  {review.text}
-                </p>
-              </div>
+              <p className="pt-[10px] text-base font-light font-poppins text-cr8tLightBlack leading-6">
+                {review.text}
+              </p>
             </CarouselItem>
           ))}
         </CarouselContent>

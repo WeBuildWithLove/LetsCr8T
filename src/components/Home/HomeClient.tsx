@@ -5,36 +5,36 @@ import Reviews from "./Reviews";
 
 const Clients = () => {
   return (
-    <section className="md:pt-[150px] pt-[50px] flex flex-col md:gap-[50px] gap-[25px] px-[24px] md:px-0  ">
-      <div className="flex flex-col items-center mx-auto md:w-[524px]  gap-[10px] text-center  ">
-        <h1 className="font-grotesk md:w-full text-center md:text-[32px] text-2xl text-cr8tBlack">
+    <section className="flex flex-col gap-[25px] md:gap-[50px] pt-[50px] md:pt-[150px] px-[24px] md:px-0">
+      {/* Section Heading */}
+      <div className="text-center flex flex-col items-center gap-[10px] mx-auto md:w-[524px]">
+        <h1 className="font-grotesk text-cr8tBlack text-2xl md:text-[32px]">
           Why{" "}
           <span className="text-cr8tOrange capitalize font-urban font-normal">
             Businesses
           </span>{" "}
           Trust Us
         </h1>
-
-        <p className="md:text-lg text-base text-cr8tLightBlack font-light text-center md:leading-7 leading-6 font-poppins">
+        <p className="font-poppins text-cr8tLightBlack text-base md:text-lg font-light leading-6 md:leading-7">
           From startups to small businesses, our clients rely on us to turn
           their ideas into results. Here’s what they have to say.
         </p>
       </div>
 
+      {/* Reviews Marquee */}
       <div className="flex">
         <Marquee
           autoFill
           pauseOnClick
           pauseOnHover
           loop={0}
+          speed={50}
+          gradient={false} // Disables gradient for smoother scrolling
           className="flex gap-[35px]"
         >
           <Reviews />
         </Marquee>
       </div>
-      {/* <div className="flex md:hidden">
-        <Reviews />
-      </div> */}
     </section>
   );
 };

@@ -1,9 +1,3 @@
-import Image from "next/image";
-import WebIcon from "../public/web&mobile.gif";
-import BrandingIcon from "../public/branding.gif";
-import SupportIcon from "../public/web-mintenance.gif";
-import ContentIcon from "../public/content.gif";
-
 // REVIEWS
 export const REVIEWS = [
   {
@@ -81,12 +75,18 @@ export const FAQS = [
 export const Services = [
   {
     icon: (
-      <Image
-        src={WebIcon}
-        alt="icon of website development"
-        width={90}
-        height={90}
-      />
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        width="90"
+        height="90"
+        className="object-contain"
+      >
+        <source src="/web&mobile.webm" type="video/webm" />
+        Your browser does not support the video tag.
+      </video>
     ),
     service: "Website Design & Development",
     description: (
@@ -108,12 +108,18 @@ export const Services = [
 
   {
     icon: (
-      <Image
-        src={BrandingIcon}
-        alt="icon of website development"
-        width={90}
-        height={90}
-      />
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        width="90"
+        height="90"
+        className="object-contain"
+      >
+        <source src="/branding.webm" type="video/webm" />
+        Your browser does not support the video tag.
+      </video>
     ),
 
     service: "Branding & Visual Identity",
@@ -135,12 +141,18 @@ export const Services = [
   },
   {
     icon: (
-      <Image
-        src={ContentIcon}
-        alt="icon of Content Strategy & Copywriting"
-        width={90}
-        height={90}
-      />
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        width="90"
+        height="90"
+        className="object-contain"
+      >
+        <source src="/content.webm" type="video/webm" />
+        Your browser does not support the video tag.
+      </video>
     ),
     service: "SEO & Content Strategy",
 
@@ -164,12 +176,18 @@ export const Services = [
 
   {
     icon: (
-      <Image
-        src={SupportIcon}
-        alt="icon of maintenance and support"
-        width={90}
-        height={90}
-      />
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        width="90"
+        height="90"
+        className="object-contain"
+      >
+        <source src="/web-maintenance.webm" type="video/webm" />
+        Your browser does not support the video tag.
+      </video>
     ),
     service: "Web Maintenance & Support",
 
@@ -406,5 +424,62 @@ export const howItWorksData = [
     title: "Launch",
     content:
       "Bring your vision to life, share it with the world, and start growing your business.",
+  },
+];
+
+export const LOGOS = [
+  {
+    src: "/chess.png",
+    alt: "Chess",
+    width: 60,
+    height: 60,
+  },
+  {
+    src: "/logo-white-dark.png",
+    alt: "WeCr8t",
+    width: 150,
+    height: 40,
+  },
+  {
+    src: "/white-hod.png",
+    alt: "White HOD",
+    width: 100,
+    height: 40,
+  },
+  {
+    src: "/save-d-bride.png",
+    alt: "Save D Bride",
+    width: 80,
+    height: 40,
+  },
+  {
+    src: "/splash-screen.png",
+    alt: "Splash Screen",
+    width: 100,
+    height: 40,
+  },
+  {
+    src: "/nurtifeed.png",
+    alt: "Nurtifeed",
+    width: 100,
+    height: 40,
+  },
+  {
+    src: "/frameasy.png",
+    alt: "Frameasy",
+    width: 100,
+    height: 40,
+  },
+  {
+    src: "/readr.png",
+    alt: "Readr",
+    width: 65,
+    height: 40,
+  },
+  {
+    src: "/gericht.png",
+    alt: "Gericht",
+    width: 60,
+    height: 40,
   },
 ];

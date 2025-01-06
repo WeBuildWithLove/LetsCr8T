@@ -1,13 +1,30 @@
-import Commitment from "@/components/Home/Commitment";
-import HomeHero from "@/components/Home/HomeHero";
+import dynamic from "next/dynamic";
 import Layout from "@/layout";
-import HomeClient from "@/components/Home/HomeClient";
-import HomeServices from "@/components/Home/HomeServices";
-import FAQs from "@/components/Home/FAQs";
-import BlogPost from "@/components/Home/BlogPost";
-import ServiceDisplay from "@/components/Home/ServiceDisplay";
-import ClientChallenges from "@/components/Home/ClientChallenges";
-import HowItWorks from "@/components/Home/HowItWorks";
+import React, { Suspense } from "react";
+
+const HomeHero = dynamic(() => import("@/components/Home/HomeHero"), {
+  ssr: true, // Critical content for SSR
+});
+const ServiceDisplay = dynamic(
+  () => import("@/components/Home/ServiceDisplay")
+);
+const ClientChallenges = dynamic(
+  () => import("@/components/Home/ClientChallenges")
+);
+const HowItWorks = dynamic(() => import("@/components/Home/HowItWorks"));
+const HomeClient = dynamic(() => import("@/components/Home/HomeClient"), {
+  ssr: false,
+});
+const HomeServices = dynamic(() => import("@/components/Home/HomeServices"), {
+  ssr: false,
+});
+const Commitment = dynamic(() => import("@/components/Home/Commitment"), {
+  ssr: false,
+});
+const FAQs = dynamic(() => import("@/components/Home/FAQs"), { ssr: false });
+const BlogPost = dynamic(() => import("@/components/Home/BlogPost"), {
+  ssr: false,
+});
 
 export default function Home() {
   return (
@@ -16,11 +33,13 @@ export default function Home() {
       <ServiceDisplay />
       <ClientChallenges />
       <HowItWorks />
-      <HomeClient />
-      <HomeServices />
-      <Commitment />
-      <FAQs />
-      <BlogPost />
+      <Suspense fallback={<div>Loading...</div>}>
+        <HomeClient />
+        <HomeServices />
+        <Commitment />
+        <FAQs />
+        <BlogPost />
+      </Suspense>
     </Layout>
   );
 }
