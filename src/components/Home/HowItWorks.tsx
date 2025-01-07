@@ -20,7 +20,7 @@ const HowItWorks = () => {
         </div>
 
         {/* Icons with Arrows Section */}
-        <div className="hidden xl:flex items-center gap-[67px] px-[237.66px]">
+        <div className="hidden xl:flex items-center gap-[67px]">
           {howItWorksData.map((step, index) => (
             <React.Fragment key={index}>
               <Image
@@ -45,7 +45,7 @@ const HowItWorks = () => {
         </div>
 
         {/* Steps Details */}
-        <div className="flex flex-wrap xl:flex-nowrap gap-[30px] xl:gap-[118px] text-center items-center md:px-[136px] px-[30px] justify-center">
+        <div className="flex flex-wrap xl:flex-nowrap gap-[30px] xl:gap-[100px] text-center items-center md:px-[136px] px-[30px] justify-center">
           {howItWorksData.map((step, index) => (
             <div
               key={index}
