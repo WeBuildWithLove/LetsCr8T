@@ -36,6 +36,7 @@ const BlogHomeCard: React.FC<BlogCardProps> = ({
           width={366}
           height={227}
           className="rounded-[15px]"
+          // placeholder="blur"
         />
         <div className="text-base font-poppins leading-6 w-[297px] pt-[20px]">
           <h1 className="text-cr8tBlack font-bold">{title}</h1>
