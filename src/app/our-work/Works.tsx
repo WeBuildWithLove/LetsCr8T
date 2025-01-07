@@ -60,7 +60,7 @@ const Works = () => {
                         className="rounded-lg hidden lg:block"
                       />
 
-                      <div className="relative w-full h-[283px]">
+                      <div className="relative w-full h-[283px] lg:hidden block">
                         <Image
                           src={portfolio.mobile}
                           alt={`Portfolio ${index + 1}`}
@@ -74,7 +74,7 @@ const Works = () => {
                   )}
 
                   {loading ? (
-                    <Skeleton className="h-6 w-[200px] mt-2 " />
+                    <Skeleton className=" w-[200px] mt-2 " />
                   ) : (
                     <a
                       href={portfolio.link}
