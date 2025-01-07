@@ -61,10 +61,10 @@ const Works = () => {
                       />
 
                       <Image
-                        src={portfolio.image}
+                        src={portfolio.mobile}
                         alt={`Portfolio ${index + 1}`}
-                        width={554}
-                        height={684}
+                        width={283}
+                        height={283}
                         layout="intrinsic"
                         priority={index === 0} // Prioritize the first image
                         className="rounded-lg lg:hidden block"
