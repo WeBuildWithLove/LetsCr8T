@@ -10,7 +10,7 @@ export const REVIEWS = [
     name: "Jonathan Deji Martins",
     position: "CTO Party Bank",
     text: "Let’scr8t transformed my vision into a sleek, scalable web app perfectly designed and flawlessly functional. I highly recommend them.",
-    image: "/dejj.jpg",
+    image: "/dej.jpeg",
   },
   {
     name: "Ebiere Adegbesan",
