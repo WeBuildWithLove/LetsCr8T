@@ -60,16 +60,16 @@ const Works = () => {
                         className="rounded-lg hidden lg:block"
                       />
 
-                      <Image
-                        src={portfolio.mobile}
-                        alt={`Portfolio ${index + 1}`}
-                        width={283}
-                        height={283}
-                        layout="intrinsic"
-                        priority={index === 0} // Prioritize the first image
-                        className="rounded-lg lg:hidden block"
-                        quality={75}
-                      />
+                      <div className="relative w-full h-[283px]">
+                        <Image
+                          src={portfolio.mobile}
+                          alt={`Portfolio ${index + 1}`}
+                          layout="fill"
+                          objectFit="cover"
+                          className="rounded-lg lg:hidden block"
+                          quality={75}
+                        />
+                      </div>
                     </>
                   )}
 
