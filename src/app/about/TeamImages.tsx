@@ -1,4 +1,3 @@
-// TeamImages.tsx
 import React from "react";
 import Image from "next/image";
 
@@ -21,40 +20,33 @@ const TeamImages: React.FC<TeamImagesProps> = ({
   hoverHeight,
   isDimmed,
 }) => {
+  const width = hoverWidth || normalWidth;
+  const height = hoverHeight || normalHeight;
+
   return (
     <div
-      className={`group relative transition-all duration-500 ease-in-out  ${
+      className={`group relative transition-transform duration-500 ease-in-out ${
         isDimmed ? "opacity-10 scale-[0.95]" : "opacity-100 scale-100"
       }`}
-      style={{
-        width: hoverWidth || normalWidth,
-        height: hoverHeight || normalHeight,
-      }}
+      style={{ width, height }}
     >
-      {/* Normal image */}
-
+      {/* Normal Image */}
       <Image
         src={src}
         alt="Team member"
-        className="absolute group-hover:hidden transition-all ease-out duration-250  "
+        className="absolute transition-opacity group-hover:hidden"
         width={normalWidth}
         height={normalHeight}
         priority
       />
 
-      {/* Hover image with scaling */}
+      {/* Hover Image */}
       <Image
         src={hoverSrc}
         alt="Team member hover"
-        className={`absolute hidden group-hover:block  transition-all ease-in hover:scale-[1.08] duration-300 `}
-        style={{
-          width: hoverWidth || normalWidth,
-          height: hoverHeight || normalHeight,
-          transformOrigin: "center",
-          // scale: hoverScale,
-        }}
-        width={hoverWidth || normalWidth}
-        height={hoverHeight || normalHeight}
+        className="absolute hidden group-hover:block transition-transform duration-300 hover:scale-[1.08]"
+        width={width}
+        height={height}
         priority
       />
     </div>

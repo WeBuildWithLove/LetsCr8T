@@ -16,7 +16,7 @@ const OurStory = () => {
             <div className="flex flex-col lg:text-lg lg:leading-[27px] text-base leading-6">
               <Paragraph
                 message="LetsCr8T, we transform ideas into digital realities, building digital platforms  that help small businesses thrive."
-                className="lg:block hidden  lg:w-[428px]  w-[342px]"
+                className="lg:block hidden  lg:w-[428px]  w-[342px] "
               />
 
               <p className="min-w-[342px] font-poppins font-light text-cr8tLightBlack block lg:hidden text-base">

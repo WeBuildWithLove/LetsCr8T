@@ -5,7 +5,6 @@ import Image from "next/image";
 import { Carousel, CarouselContent, CarouselItem } from "../ui/carousel";
 
 const Reviews: React.FC = () => {
-  // Memoize REVIEWS to avoid re-renders
   const reviewsData = useMemo(() => REVIEWS, []);
 
   return (

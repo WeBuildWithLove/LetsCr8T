@@ -271,7 +271,7 @@ const CarouselDots = ({
         "flex justify-center gap-[5px] mt-[15px] items-center",
         hiddenOnMd
           ? "md:hidden"
-          : "bg-white w-[90px] bg-opacity-50 mx-auto h-[22px] flex  rounded-[50px]"
+          : "w-[90px] bg-opacity-50 mx-auto h-[22px] flex  rounded-[50px]"
       )}
     >
       {Array.from({ length: count }).map((_, index) => (
