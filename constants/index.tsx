@@ -267,7 +267,7 @@ export const worksData = [
   {
     image: "/project-2.svg",
     project: "XHIBIT - connceting professionals to jobs",
-    link: "https://xhibit-staging.vercel.app/",
+    link: "https://offer-portfolio.vercel.app/",
     mobile: "/project-mobile-1.svg",
   },
   {
@@ -279,7 +279,7 @@ export const worksData = [
   {
     image: "/project-4.svg",
     project: "Cholar - educational social lifestyle",
-    link: "https://rrtherapy.org/",
+    link: "https://cholar.io/",
     mobile: "/project-mobile-4.svg",
   },
   {
